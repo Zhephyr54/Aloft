@@ -1,0 +1,511 @@
+Ace3 bugs:
+	-- flickering cast bar (fadeout interference?)
+		> try it without AloftCastWarning enabled
+		> look at update loop for position/etc
+	-- underflow on threat, at the beginning of threat updates
+		> look for divide by zero
+		> look for explicitly negative threat, convert everything to "<= 0" checks
+
+for potential poll of upcoming "major" features:
+
+	- AloftExtraText: supply an extra text region or two, for generic use by the user (custom tags)
+	- AloftDe/Buffs: unit buffs/debuffs (on the current target, on friendly groupmembers, and on general hostiles if a) a groupmember has a target and b) if there is a raid icon)
+	- [ShortUnitName(style)]: intelligent abbreviation tag, for unit names; use rules sent to user ? in WoWI PM
+	- totem icons (in lieu of class icons, on totem nameplates; using spell icon from spellbook), raid role icons
+	- vertical nameplates
+		> somewhat invasive feature
+		> start with converting to statusbars and new uniform FontString option system
+	- options preview system/"preview mode"
+		> large/invasive feature
+	- complete set of layout options for different unit types (differentiated roughly at the same granularity as the "Visibility" options, plus the current target) so that different types of things can have different size/color/text settings
+		> have to brainstorm how to structure this
+		> some sort of intermediate UI tree, for these different unit types? how to rationalize with crosscutting features like "Visibility"?
+		> very large/invasive feature
+
+priority:
+
+	- add border to Ace3 port SetAll functionality?
+	- add background to Ace3 port SetAll functionality?
+	- make Ace3 cast bar border target-only/etc?
+
+	- update FAQ with new WoW 3.3 nameplate overlap capabilities
+	- update FAQ with new WoW 3.3 nameplate show/hide capabilities
+	- update FAQ with a list of other/lighter nameplate addons (atrNameplates, TidyPlates, ncPlates, caelNameplates, Overhead, _VirtualPlates, etc)
+	- add a FAQ providing several examples of how to manage the nameplate glow system, options cookbook for various outcomes; remember to mention Blizzard standard aggro glow option set to "always"
+
+	- clean up Combat Text module (post 2009/10/11)
+	- handle "Unknown" units somehow; at least avoid initial data collection; also maybe back off and retry initialization
+
+	- provide some options to disable nameplate glows in PvP (i.e. in arenas and battlegrounds); apparently Blizzard is turning this on in arenas
+-	- add a "configuration mode" that enables all bars/glows/text/etc on all visible nameplates, for placment
+	- option to disable nameplate mouseover tooltips: always, and just in combat, etc
+	- enhance to offer an "alpha" setting for nameplates that are flagged as "securely tanking"; requires tracking glow even when glow module is disabled
+	- look at releasing Aloft to Curse
+	- expand totem detection to other locales
+	- supply an "extra" text region or two, for tags only; make the manifest of them dynamic, with user-specified names? default disabled, default no tags, standard layout options
+-	- unit buffs/debuffs on the current target
+	- unit buffs/debuffs on any group target that has an active group target and a raid target assignment? pestilence glow for DKs, sunder glow, lacerate glow, etc?
+	- add a FAQ on player titles; make sure the lack of titles in BGs is explicitly documented in the FAQ
+	- add a FAQ on the use of the PvP-totem hiding/exception mechanism
+	- figure out why borders are being applied to non-target nameplates (exercised by fiddling with Alpha options)
+	- Ace3 port
+	- nameplate frame width to 40, health bar height to 128
+	- add shaman wolves, shaman fire/earth elementals, mage frost elementals, priest summoned pets to visibility mechanism; make sure these are not subsumed by pet/guardian/totem mechanism in 3.3
+	- add a "ShortName" tag that intelligently shortens unit names (i.e. 'Chilled Earth Elemental' shortened to 'C E Elemental'); model on PitBull mechanism?
+	- incorporate layout options for different types of units, granularity similar to AloftVisibility (but also including the current target?)
+		> add elites, bosses, totems/summons, and etc (including current target), to the taxonomy of unit types
+	- incorporate totem icons (and all icons for summoned "pets") as a logical extension of class icons; use artwork from spellIds; separate size/placement from class icons? rewrite subsystem to be common, and integrate a sequence of texture file/coords?
+	- implement a threat-per-second metric per for nameplates?
+		> threat flash to trigger off of threat-per-second threshold instead of absolute threat threshold?
+	- implement a "who is second on threat" ("next threat") metric for nameplates
+		= include absolute threat, threat per second, and player character name (WoWI user Advis)
+		> requires "Group Threat" to be enabled; collect this during group iteration for "Group Threat"
+			= also collect "max threat character name", as well as max threat numbers
+		> what to put in these tags when player is not at the top of the threat list?
+			= nil throughout?
+			= player's own values?
+			= the data for the person who is at the top of the threat list (so that intuitive arithmetic results in negative numbers)?
+		> make sure that text colors can be changed when "next threat" reaches a threshold of maximum threat on the current target?
+		> trigger glows somehow?
+	- play with vertical nameplate ideas
+		> explicit "vertical" option on everything
+		> switch all texture regions to status bars, to facilitate
+		> switch all fontstrings (including name text) to use an anchor-from (SetPoint), anchor-to (SetPoint), X/Y offset, a justification (L/R/C), and an implicit single "size" (height for horizontal, width for vertical), and "ignore" the other size (width for horizontal, height for vertical)
+		> set the single implicit "size" (height for horizontal, width for vertical) based on font size (plus margins; proportional?), and then allow the WoW Client to control the other size (width for horizontal, height for vertical; adjust slightly for font size, SetZ(GetZ() + margin)); need to sort out how this matches to layout frame and/or health bar 
+		> should anchor be simplified to LEFT/TOP, CENTER, and RIGHT/BOTTOM, and do two SetPoint() calls?
+		> alter justification option descriptions to "TOP"/"CENTER"/"BOTTOM" when user explicitly sets "vertical"?
+		> prototype with NameText and LevelText (since they seem most sensitive to anchoring issues); keep their anchor-to frames
+
+lower:
+
+	- provide a set of custom health bar color/etc settings for nameplates targeted by designated groupmembers/tanks (requires knowing the Ora2/CTRaid tank list, and targets with raid target assignments); overkill given that the icon is required anyway? low priority
+		> want to be able to indicate with health bar color which tank has which mob targeted
+	- provide a set of custom glow color/etc settings for nameplates attacking designated groupmembers/tanks (requires target-of-target tracking versus group members, and targets with raid target assignments); overkill given that the icon is required anyway? low priority
+		> want to be able to indicate with nameplate glow whether hostile unit is targeting a designated tank, or a DPS, to determine if unit is secure or "loose"; WoWI user Delanna
+	- enhance AloftTags.rtf to indicate whether text tags are intended to generate "data" (string/numerical), to be used as true/false, or intended purely to modify other tags (color tags, conditional tags, etc)
+	- indicate explicitly in AloftTags.rtf that tags that generate "data", if strung together, will simply concatenate
+	- some sort of group/raid role icon capability, per PitBull4; use the Blizzard role graphics
+	- expand this digital search tree mechanism for totem/trap snake/bloodworm matching
+	- mouseover highlight should affect nameplate borders (show borders, override colors, etc; user hasutest)
+	- continue to experiment with disabling mouse on hidden nameplates, to see if there is a workaround
+	- an additional nameplate hiding mechanism, based on a running count of visible hostile nameplates
+		> two thresholds, upper and lower; when the hostile count reaches the upper threshold, start hiding, until the hostile count falls to/below the lower threshold
+		> "hide all hostile nameplates" when the upper threshold is reached
+		> separate module? tanking tools module? piggyback on AutoShow module? piggyback on Visibility module?
+		> want to leave the option open to hide individual nameplates at some point, to allow the user to keep some visible (i.e. the lower threshold)
+		> if hiding individual nameplates, want an exception for bosses (if the boss icon is visible on a nameplate, leave the nameplate alone, and don't count it towards the threshold)?
+	- look into collecting the mouseover nameplate, based on highlight region showing; will probably need a frame delay mechanic
+	- move contents of AloftModules/AloftModulesLocale.lua to the individual modules
+	- look at implementing a roster system directly in Aloft (Recount has a simplified form of roster processing)
+	- expand to allow all totems as exceptions (as well as DK bloodworms and snake traps, i suppose)
+
+	- look at reflecting incoming heals on friendly nameplates; incorporate name of healer(s) as a text tag? put this into AloftCastWarning somehow (since it watches everything)?
+	- show crowd control timers on targets even when invoked by other players
+	- show crowd control timers on focus/mouseover targets? associate GUID so that can be done?
+-	- tie crowd control timers on general nameplates into buff/debuff module
+	- provide a mechanism for a player's health/power bar to go on the target's nameplate?
+	- work on race conditions between group roster changes and nameplate initialization... may not have a solution, but keep researching
+	- enable a different size/color for target nameplates?
+	- an AloftGlobal module, where we just create a global table for various things to hang off of? Aloft itself could serve in this role, would save having to look up other modules?
+	- create a "HealthFractionColor" tag, modeled after HealthBarColor tag; expose a color gradient to the user, start and end colors, r/g/b/a, and a step-value (how many steps to use)
+	- health/mana bar color options: aloft color, class color, gradient effect
+	- enhance graphics to employ borders/endcap art from rothui/evl_nameplates and others
+	- implement chat bubbles, provide the feature for bar-style nameplates?
+	- implement a "SetText" hook for name/level text region, to detect straight numerical text, parse/cache level, reinitialize region placement, reformat text, and pass reformatted text to up-hook
+	- stacking point text shows other debuffs (shadow weaving, etc)? provide some means for the player to add spellids to track (validate by looking in the current player's spellbook/talents)?
+	- validate how LibBanzai works (via unit name or unitid), make sure Aloft's interface to it is still functioning correctly
+	- implement a mana bar "deficit" capability, with an option to grow from right or left
+	- enhance deficit health bar to grow from right or left
+	- threat bar grows from right or left?
+	- crowd control bar grows from right or left? will need to change from StatusBar object to normal Frame/TextureRegion/BackgroundRegion
+	- change non-tag event names to include originating module as part of the name? either that or change all such events back to using just "Aloft:" in the name
+-	- enable spell cast/crowd control time text precision as a user option? just offer a single digit of precision?
+	- "PvP" glow module, put one type of glow on the player's current target (default "big red glow"), put another kind of glow on anything that has the player targeted (default "small blue glow")
+	- review and incorporate Stuck's player name identification capabilities
+	- experiment with LibUnitID; replace target tracking with this? or at least see how it does it
+	- unpack new MPQs and go through new WoW version checklist
+	- look into instrumenting global alpha via UIObject:SetAlpha() on individual elements at target change, relative to Blizzard default/global alpha, based on Aloft Alpha settings, so that a "always show at 100% alpha" option can be implemented for individual elements
+	- provide some player title formatting options like those supplied under "Name Text>Pet Owner's Names"
+	- add confirmation to all destructive clearing of "Data Options"
+	- experiment with GetCurrentMapDungeonLevel()
+	- still have some problems with unitid not getting assigned; make sure visibility accepts unitid change event, maybe increase update delay
+	- add a FAQ to tell people how to turn off the elite graphics on nameplates
+	- add a FAQ explaining the new graphics position controls
+	- add pounce/maim stun to crowd control effects?
+	- add charge/intercept stun to crown control effects?
+	- regression test: mage/priest/warlock PvP, warrior/druid/rogue stacked points
+	- make more intelligent/selective use of "hostilePlayer" type
+	- word the title of the "Visibility" FAQ entry more intuitively
+	- [TargetName] is ending up with some sort of residual data, such that "-[TargetName]-" is displayed as "- -"; cycling targets clears this
+	- add a "crit" font scale and a "miss" font scale to combat text options
+	- add a [ThreatStatusColor] tag, and a progressive [ThreatColor], with a user specified range, so that people can control text colors based on threat (between 0 and maximum threat); model updates on [HealthBarColor]
+	- figure out a way to apply [ThreatColor]/[ThreatStatusColor] tags to "Health Bar>Colors>Advanced>Color Format"
+	- provide an "Advanced>Color Format" option to health bar border, as well as health bar proper
+	- have crowd control track combo points on current target, on PLAYER_TARGET_CHANGED and UNIT_COMBO_POINTS; investigate/verify whether UNIT_SPELLCAST_SENT happens for Kidney Shot, and what order UNIT_COMBO_POINTS/UNIT_SPELLCAST_SUCCEEDED occurs; see if Kidney Shot can identify the number of combo points used, and determine its duration from that
+	- track crowd control diminishing returns per-target (by GUID?)
+	- revisit titles in BGs, see if anything has changed or if a solution is feasible
+	- can't hide individual nameplates in combat, but look into alpha, font, text color, health bar color, and other tweaks, as a function of a filtration options or subsystem/capability; some sort of filter tag syntax would be needed, and a named "filter set" or regex capability; be able to duplicate something like http://www.wowinterface.com/downloads/info14655-FactionChampionNameplateColors.html
+	- look into the JIT "LuaText" library used by PitBull4, and see how that might apply to filtration
+
+completed:
+
++++	x look into Szoltomi's bug: this was a "combat lock" issue
+	x clean up Aloft:GetTargetNameplate(); did AloftAlpha:GetTargetNameplate() the same way
+	x implement an [IsPlayer] tag, and/or expose the "type" field as a string tag
+	x automate nameplate bounce when overlap is automatically changed; add an option to allow the user to disable this automation? always? only while out of combat?
+	x add an option to suppress warnings and the startup message
+	x investigate tag problems (concatenating booleans in conditional tags)
+		> example Name Text: [~IsTarget:Name:White][IsTarget:Name:Surround("> "," <"):Red]
+		> compare with TagCompiler-2.0, compare with TagCompiler-1.0
+	x filter unit visibility by unit name (blacklist, "hide all of these"), using digital search tree; this should be O(N) per unit name; this needs to take into account localization/character sets, like the Truncate() tag
+		> incorporate into Visibility module? build at UI load time, throw away at exit, should be similarly efficient regardless of number of unit names incorporated
+	x update FAQ with new WoW 3.3 nameplate range capabilities (identify range, based on hunter skills)
+	x rework README.txt to use large text in certain areas for visual emphasis: [size=+2]text[/size]
+	x promote "recently damaged" check in nameplate glow handling to user option
+	x test combat text against raid-assigned non-targeted units, via AOE amd etc
+	x switch combat text module to use COMBAT_LOG_*_DAMAGE events; extend to include spell text on strike? needs cached GUID for target
+	x new options for Combat Text:
+		> show player damage
+		> show group damage
+		> show other damage (all non-player/non-group)
+		> show on target
+		> show on group
+		> show on identifiable non-target/non-group
+		> include overhealing (including when total - overheal == 0)
+	x filter combat text to self-only (user hasutest)
+	x rationalize spell school colors between AloftCombatText, AloftCastWarning, and Blizzard's combat log
+	x figure out why color tags are broken; use the examples from AloftTags.rtf
+	x localize "Unknown" magic string, at least in the "enUS" locale
+	x look into having AloftCastWarning flag nameplates of active casters, have AloftAlpha coordinate with that and set global alpha to 0.01 below target alpha (or user-specified alpha); AloftCastWarning should insert this option into AloftAlpha's options table
+	x experiment with using nameplate alpha to hide nameplates, instead of Hide(); will need use of a "hidden" value on aloftData, and a tweak to Alpha module to use it
+	x some sort of [Truncate] tag, per LibDogTags; Truncate(value,length,ellipsis=true)
+	x UNRELATED: create some sort of "Battlefield is ready" addon, modeled on http://www.wowinterface.com/downloads/info12173-ReadyCheckSound.html; produce a sound even when in background; apparently http://www.wowinterface.com/downloads/info5720-BGReady30000.3Release.html already does this
+	x add pet to target tracking? test with AloftCastWarning and Voidwalker "Consume Shadows" (channeled); outcome: pet names are not unique (no race, no raid target assignment), hence this cannot be done
+	x prep for ruRU translation, collect strings
+	x prep for deDE translation, collect strings
+	x look at health bar deficit capability again (Acapela has perhaps learned enough); first decide how it should work (make normal healthbar transparent, as soon as damage is taken, then grow from the right in the whatever healthbar color?)
+	x experiment with packing dimensions as a means of reducing UI clutter (whatever tricks the WoW client into tighter nameplate placement)
+	x start researching spellcast "early warning" and/or general PvP cast bar capability (anything with a unique enough unit name could integrate this)
+	x add spellcast spell caching (cast warning) to data options
+	x remove commented LibBabble-Spell-3.0 code, and remove library source files
+	x remove old GratuityLib source files
+	x LDB interface (at least validate FuBar<->LDB integration)
+	x control over frame border insets, so that they can be made to overlap slightly
+	x customize color of cast bar
+	x research tooltip scraping for player titles
+	x add presets for polymorph and shackle
+	x roll AloftPresets addon presets into Aloft, or resurrect AloftPresets addon?
+	x update screen shots
+	x generate a legend for the fully-featureful screenshot
+	x add class icons to nameplates
+	x use "ShowClassColorInNameplate" colors as an indicator of class in itself; integrate with unit type and ClassData
+	x sort out FuBar_LuckyCharms error: regress Aloft to earlier versions, see if it goes away, etc
+	x set minimum height for all bars to 1
+	x move zap of blizzard glow region to central processing of new nameplates in Aloft.lua
+	x track multiple nameplates of the same name, somehow (update nameToNameplateMap?), to help zero in on not just visible nameplates, but just those of a given name
+	x apply math.ceil(health/healthMax) calculations
+	x enable a "target nameplate only" mode? (not fasible, cannot hide nameplates during combat)
+	x add power name/short power name tags
+	x revisit group threat: separate threat bar, separate tags, separate glow? track targets by raid target assignment? collect group*target threat, for all active targets, compare player's threat versus [next] highest threat?
+	x work on elite/unique artwork for nameplates, treat as icon with a large size range and attachment options, put in a separate module
+	x tailor threat glows to leave bottom of bar uncovered
+	x test new LibRoster-2.1 changes, "vehicle" units in groups
+
+	x border options for cast bar, cast warning bar, mana bar, and threat bar
+	x trim default threat flash texture, a three-quarters outline, don't show below the bar; also make a partial outline
+	x reverse aggro glow: show when the Blizzard glow is not showing, hide when Blizzard glow is showing (showing == IsVisible() and "red")
+	x reverse threat glow: show when below the given threshold
+	x AloftStackingCount module; track lacerate/sunder counts (other stacking debuffs?) the same way as combo points, merge into combo point module
+	x AloftCrowdControl module; combine polymorph/shackle timer modules together, add warlock abilities
+	x get rid of "always" flag on mana bar, no longer needed; commented out, in case it is needed again for some reason
+	x update crowd control diminishing returns for PvP, based on data from WoWWiki (10 seconds, etc)
+	x show spell icon, spell name, spell rank, and countdown for crowd control timers
+	x target-of-target: work on handling dynamic changes to roster, raid target assignment, and feature option changes during combat
+
+	x add druid (hibernate/roots) abilities to crowd control
+	x add rogue (sap/blind) abilities to crowd control; what events are used for instant-cast abilities?
+	x sense crowd control timer duration from actual spell rank employed
+	x enable automated nameplate enable/disable capability when entering/leaving combat? when entering/leaving rest? new module? how to organize/present these options?
+	x genericize sunder/lacerate stack detection (rather than maintaining separate functions for each)
+	x make presets module dynamic
+	x border options for crowd control bar
+	x infer "critter" from being level 1 and having low health
+	x color stacking point debuff text based on the amount of time remaining?
+	x incorporate "ruRU" localization
+	x move "common problems" to FAQ as their immediacy subsides
+	x validate Aloft LDB functionality with Fortress/Ninjapanel/StatBlockCore
+	x add a FAQ entry on menu organization (i.e. "Health Text" options available as a sub-menu under "Health Bar" options)
+	x add some quick colored text calling attention to the options screen shot
+	x use some nice pastel colors in the FAQ, to differentiate questions/answers/separators
+	x use colors on separators throughout README.txt
+	x enhance nameplate display to cover instance (IsInInstance()/IsInInstance().instanceType)? ("group" would cover all of that; replace "group" with these?); "PLAYER_ENTERING_WORLD"/"WORLD_MAP_UPDATE"/GetPlayerMapPosition()
+		> tooltip text more like Omen: "Auto show/hide"? make separate options?
+		> tooltip text more like Omen: "Show enemy/neutral/friendly nameplates when you are [condition/state/group]"
+		> make this more environmental than stateful? doing all of this begins to duplicate "Visibility" options...
+			= states: normal (no state), resting, combat, flagged
+			= groups: solo, with a pet, party, raid (this really relates only to friendly nameplates; toss this?)
+			= envirs: world/none, 5-man instance, raid instance, arena, battleground?
+			= what has precedence? how to make the decision (logically or-together everything? assume enabled and then disqualify if a condition does not apply? categorize and and-together each category, which would equate to disqualifying)?
+		> omen: resting, combat, battleground/solo, with a pet, in a party, in a raid
+	x track down and fix nameplate show/hide vs text tag bug
+	x put nameplate display control into a module (that removes existing Aloft options and replaces them with its own functionality; default to the "old way" of displaying)
+	x mitigate nameplate display verbosity on module load/unload
+	x look into not clearing modules options when loading presets
+	x test and determine if Aloft is interfering with Blizzard chat bubbles, or if even Blizzard bar-style nameplates disabled chat bubbles
+	x finish fixing player title gathering to differentiate titles from player realms in tooltip data
+	x move target tracking into an always-load module of some sort
+	x beef up totem detection (scrape tooltip?), add totems to "Visibility" options
+	x try fixing frame border/background/glow positioning, to track "Health Bar>Position>X/Y Offset"; tweak SetPoint/SetAllPoints on health bar overlay?
+	x look into health bar color changes to indicate aggro, instead of "Nameplate Glow"; the whole threat status color progression should be exposed to user control
+	x flag how the Blizzard interface options affect nameplate glow, in the FAQ, if it is not already.
+	x talk about nameplate packing in the FAQ, if it is not already
+	x talk about debuff tracking options (HUDs, cooldown timers, Quartz, etc) in the FAQ
+	x investigate old shaman color (AllPlayed: 0x00dbba, ReTeal: 0x00dbba), determine if there was ever a consensus on that color (yes), incorporate it into Aloft
+	x figure out a way to incorporate at least the player focus target, possibly general group focus targets as well (check through the roster every second or so?)
+	x player focus at least for target tracking and crowd control (and cast warning)? would require genericization of crowd control, or at least 2 bars, one for focus and one for target; wait, is there a way to identify the focus nameplate?
+	x check latest/greatest libraries (get everything checked in first)
+	x regression test some PvP stuff... totems, class colors
+	x look into hunter snakes, adding that to totem nameplate mechanism
+	x describe exingencies of Visibility options (critter guessing, pets requiring a mouseover, etc), in conjunction with the friendly grouped nameplate FAQ entry
+	x describe group threat?
+	x describe limitations of target-of-target subsystem
+	x verify/update all URLs employed in README.txt
+	x proof README.txt
+	x clean up redundant instances of AceLocale-2.2 in Locale.lua files, for non-dynamic modules
+	x look into applying border art to the target only
+	x SVN delete per-language locale files from repository
+	x keep working on pet "OnNameplateShow" and/or IsUnitidDataChanged and/or PLAYER_ENTERING_WORLD issues
+	x look into border-related "OnNameplateShow" bug(s); some fixed, some could remain; these appear to be frame-delay related, keep working on them; also related to frame parent (needs nameplateFrame as parent, not UIParent)
+	x keep working on "orange" aggro glow issues
+	x make applying border art to the target only a user option: AloftFrame, AloftCrowdControl, AloftCastWarning, AloftMana, AloftThreat (AloftCastBar is already a target-only construct, in its entirety)
+	x regression test under WoW 3.1.x/PTR
+	x make "critter" level and health thresholds user options
+	x update crowd control module to use spell-name-specific logic like: "if not UnitAura("target", "Polymorph", "HARMFUL|PLAYER") then...."
+	x review "Data Options" functionality, make sure destructive clearing occurs when disabling, make sure no further collection occurs when disabled
+	x unique test (enable this as a user option?):
+		uc = UnitClassification("target")
+		if (IsInInstance() and uc == "elite" and UnitLevel("target") < 0) or uc == "rareelite" or uc == "rare" or uc == "worldboss" then
+			-- track the target
+		end
+	x "focus" is not updating correctly for DK pets; look at what IceHUD does, that is tracking properly
+	x update nameplate ID generation to exclude raid target assignment and race for hostile players, just use unit name; subsequent checking when nameplate appears should include class (to avoid collisions with pets)
+	x place everything relative to aloftData.backdropFrame
+	x figure out why aloftData.backdropFrame border is not showing; add a separate health bar border, in addition to frame border?
+	x increase range for left/right/vertical position offsets on all elements
+	x change health bar to a left/right/vertical position, relative to backdrop frame?
+	x change inset assignment from dynamic table allocation to an assignment of individual values; used a new frame instead
+	x incorporate a "hostilePlayer" aloftData.type; if original health bar color is a class color, plus check everywhere else "hostile" is used
+	x add arena unitids to tracking on entering an arena match
+	x CreateFrame on auxilliary bars (mana bar, threat bar, crowdControlBar) should use nil as a parent? this will require these bars to be hidden separately from aloftData.nameplateFrame
+	x pool referenceFrame and backdropFrame; these are not regions, but full frames, and there is no reason to create new ones for each nameplate
+	x create a "Unit Frame" preset; needs stacking points text
+	x fix combat text color mapping
+	x experiment more with nameplate backdrop/reference frame pooling, nil parent, and setup/association during combat
+	x make sure all sub-frames/regions use nameplateFrame as a parent, and clear the parent on hide/disassociation
+	x add shaman hex to crowd control
+	x figure out race conditions between creation of referenceFrame in Aloft:SetupFrame() and access of referenceFrame in places like AloftCommentText:UpdateText() (around line 158)
+		could this be related to health bar color changes? these are driven through Aloft:Update() on all visible nameplates at regular/short intervals
+		just acquire a referencFrame wherever needed
+	x figure out why text regions are ending up placed relative to the wrong nameplate, and back the calls to Aloft:PlaceFrame() on every text update back out
+	x supply layout position options, relative to nameplateFrame, for layoutFrame/backgroundFrame
+	x change name of referenceFrame to layoutFrame, everywhere
+	x revisit NameText placement, adjust for healthBar insets a la boss/raid icons?
+	x enhance cast bar and cast warning to flag uninterruptable spells with a particular bar color (based on new return value from UnitCastingInfo()/UnitChannelInfo())
+	x look into recently damaged icon, validate that it is working
+	x try to validate why Blizzard's "UnitCastingInfo"/"UnitChannelInfo" is flagging random stuff as non-interruptable
+	x add DK bloodworm nameplates to totem/snake control
+	x add non-interrupt cast bar color/texture/etc settings to presets
+	x enhance to allow totem nameplates of PvP significance (tremor, grounding, earthbind, maybe magma) to remain visible as a special case
+	x enhance to allow hostile totem nameplates of PvP significance (tremor, grounding, earthbind, maybe magma) to have their own nameplate color (i.e. like a class color)
+
+	x provide a "Invert Only When Tanking" option; jtbalogh code snippet, automatically invert nameplate glow only when legitimately tanking:
+
+		profile.invertAuto = true -- invert automatically if tanking or not
+		(profile.invert is overwritten by this feature)
+		profile.invertAuto = false -- no automatic invert, use profile.invert
+		local updateInterval = 1.0 -- seconds per invert
+		local updateCurrent = 0
+
+		function Aloft_OnUpdate(arg1)
+
+		  -- Invert automatically if tanking or not
+		  if not profile.invertAuto then -- nothing to do
+		  else
+
+			updateCurrent = updateCurrent + arg1
+			if updateCurrent < updateInterval then -- pending timer
+			else
+			  updateCurrent = 0 -- reset timer
+
+			  -- tanking = warrior defensive stance, druid bear form stance, pally righteous fury aura, dk frost presence stance
+			  local isTank = strupper(UnitClass("player")) == "WARRIOR" and GetBonusBarOffset() == 2
+			   or strupper(UnitClass("player")) == "DRUID" and GetBonusBarOffset() == 3
+			   or strupper(UnitClass("player")) == "PALADIN" and UnitAura("player", GetSpellInfo(25780))
+			   or strupper(UnitClass("player")) == "DEATHKNIGHT" and GetShapeshiftForm() ~= 0 and GetShapeshiftFormInfo(GetShapeshiftForm()) == "Interface\\Icons\\Spell_Deathknight_FrostPresence"
+
+			  if isTank then -- tank, invert off automatically if not already
+				if profile.invert then profile.invert = false; end
+			  else -- nontank, invert on automatically if not already
+				if not profile.invert then profile.invert = true; end
+			  end
+		  end
+
+		end
+
+	x provide a "Show Explicit Low Threat Indicator Only In Combat" option
+
+various older issues (historical, some may still be relevant):
+
+-----
+functional defects:
+
+	- refine the mana/threat bar/text lifecycle, so that bars and tags appear/disappear when they should (versus health bar/text; investigate event management around the issues of target de/selection and combat start/stop)
+		this is a more general problem; text tags that appear legitimately in strings are not updating; expect its a generic event problem
+	- attempt a workaround to the Frame:SetHeight() defect (mouse goes dead if frame height+stackheight are sufficient for the visible healthbar frame no longer to intersect its anchor point)
+	- figure out how to clean up recycled bars (mana/threat) when their enable flag is cycled repeatedly within the same game session
+		probably a matter of checking to see if they already exist, comprehensively/everywhere, and only creating them when they do not exist
+	- continue to fiddle around with background texture and text update artifact workarounds, see if the overhead can be reduced
+	- are encapsulated regions turning up nil when queried from aloftData, when in fact they are there? this would explain these artifacts; memory leak problems?
+	- figure out how to get the castbar and its text to appear "over" (in the layer sense) of mana/threat bars
+	- figure out odd threat max/gain calculation/display artifact while fighting solo against 2+ targets
+	- "[Class]" tag for enemy players in PvP
+	- keybinds
+
+code cleanup:
+
+	- rename all native event handlers after their events, and add arguments, Ace3 style; i.e. function Aloft:PLAYER_TARGET_CHANGED()
+	- comply with emerging Blizzard standards in argument handling, including passing around "self"
+	- comply with WoWWiki standards on UI development (http://www.wowwiki.com/UI_best_practices)
+	- convert all WoW API functions and other globals to locals for quick compile-time lookup facilitation
+	- use a combination of (aloftData.isTarget or Aloft:IsTarget()) uniformly, since aloftData.isTarget is not always valid
+		insure this functions even when nameplate target alpha is tweaked by the user
+		probably uses underlying blizzard health bar alpha somehow, so should be safe
+	- revisit Aloft:GetTargetNameplate() and Aloft:GetTargetNameplate2(), make sure the separation is necessary
+	- use CreateFontString(nil, "OVERLAY"), put all text in overlay layer
+	- check through code that iterates all nameplates and determine if it can iterate only visible nameplates instead
+		done: mana bar/text, threat bar/text
+	- some sort of global constants file? associated with the base module? constants at least at file scope
+
+efficiency:
+
+	- clean up new ThreatData module, in conjunction with other refinements
+	- check over gathering of "targettarget" GUID, make sure it is not happening redundantly
+	- gather battlefield scores in a centralized way
+	- make sure ToT system is not messing with throughput/framerates
+
+functional features:
+
+	- area threat/group threat: keep a history of recent player target GUIDs with associated nameplates
+		add when the target is selected, remove when the target is dead or goes invisible
+		process as part of "IterateVisibleNameplates()"
+		update all of these, with threat bars and flash frames, as threat events are processed
+		would allow tanks (esp druids/swipe and paladins/consecrate) to monitor multiple nearby targets for threat
+		would only work with something GUID-based like Threat-2.0, assuming it continues to parse the combat log generically under WoW 3.x
+	- fire flash frame on "targettarget"? or keep it on any/all nameplates with >=maximum threat?
+	- port the addon to Ace3; re-enable FuBar when ready
+	- port the addon to the Blizzard standard options subsystem, using Ace3, and get rid of Waterfall-1.0, and have the fubar module trigger this form of option presentation
+	- split the addon up into a series of major modules, each canonically to consist of Data/Bar/Text functionality, so that people can enable/disable separately
+	- enhance "active-while" options to include solo/battleground/dungeon/party/raid/resting/with pet?
+		construct a multi-toggle mechanism using Waterfall and Ace options
+	- finish localizations
+		inventory files that need work
+		solicit assistance
+		frFR, koKR, ruRU, zhCN, zhTW, any/all others
+		notes in TOC
+		separate localization out into per-language files?
+	- add an "Acapela" preset
+
+WotLK enhancement:
+
+	- start a v3.x utilities LUA to wrap native WoW APIs and Threat APIs (current Threat-2.0), use the Aloft module?
+	- prep for V3.x CVar API (HideNameplates() and ShowNameplates(), which will be stored on the server)
+		these events are not firing; Blizzard bug, or some other mechanism?
+	- see what changes there are to the CheckInteractDistance() API
+		this affects determination of melee distance, which in turn effects threat gain thresholds for the player
+
+codebase turnover:
+
+	- generate credits file
+		rummage WoWAce changelog
+		original development - roartindon
+		contributions - ..., acapela
+		threat subsystem development - ..., acapela
+		frFR localization - ...
+		koKR localization - ...
+		ruRU localization - ...
+		zhCN localization - ...
+		zhTW localization - ...
+	- continue to enrich AloftTag.rtf, include more examples and descriptions
+		its RTF, so use tag/output examples in colored text
+	- figure out how to encapsulate externals in new codebase SVN?
+		just directly bundled for now.
+	- come up with a meaningful strategy to detect, regression test, and incorporate new externals
+	- update externals/embeds to most recent versions? including both TOC and Libs
+		regular maintenance issue, for each release
+	- introductory block comment at the head of every file
+	- revision history block comment at the end of every file
+
+validate:
+
+	- test with defaults, insure that everything looks OK
+	- test with defaults and all menu-picked options (canned tag formats and etc), insure that everything looks OK
+	- test with optionals dependencies (debugging and threat-2.0) disabled and not installed
+
+distant future:
+
+	- investigate deficit bar mode for health (and presumably mana/threat? health is the useful, and also difficult, one)
+		2008/08/24: difficult for health, would require frame texture region juggling and suppression of the underlying blizzard statusbar drawing region, deferred for now
+		+ add a texture region to the blizzard health bar (right-anchored and in the OVERLAY layer) to serve as the health deficit bar, zap the underlying blizzard health bar color to zero alpha, then take over event-driven control of the health deficit bar?
+
+on new WoW patch:
+
+	- validate spell IDs (arguments to GetSpellInfo())
+	- validate buff/debuff count (40); UNIT_DEBUFF_MAX
+	- validate Crowd Control spell names
+	- validate Stacking Point spell names (lacerate, sunder)
+	- validate CVAR_UPDATE nameplate events
+	- validate GetCVar CVar names
+	- look for DeathKnight-specific data (class color, etc)
+	- check "Interface\\WorldStateFrame\\Icons-Classes" TexCoords
+	- check "Interface\\TARGETINGFRAME\\UI-RaidTargetingIcons" TexCoords
+	- check "Interface\\AddOns\\Blizzard_CombatLog\\Blizzard_CombatLog.lua" for changes to spell school masks/colors
+
+done:
+
+	- update UI version in TOC
+	- update mod version in TOC and LUA
+	- add optional dependency for ThreatLib-2.0 to TOC
+	- (re)integrate threat subsystem, using Threat-2.0; generate player threat indicator on target nameplate, and all friendly/grouped nameplates
+	- clean up debugging instrumentation, generate self-contained debug module, make debug a user-specified option
+	- use cached GUIds in threat subsystem
+	- generate cached GUId for player at startup, provide Aloft module method for accessing it
+	- generate cached GUID for target when target-change events are detected, provide Aloft module method for accessing it
+	- implement an "active while solo" capability for threat bars, for use by pet-owning classes, to affect whether group-oriented data (unitids, guids, targetcounts, etc) are collected, and dependent associated data (threat) is collected/displayed
+	- implement an "active while solo" capability for threat text, for use by pet-owning classes, to affect whether group-oriented data (unitids, guids, targetcounts, etc) are collected, and dependent associated data (threat) is collected/displayed
+	- make certain threat data module is properly tied to "enabled" and "active while solo" threat bar/text flags (done via ProvidedData()/RequiredData() and DetermineDataSources())
+	- implement threat gain indicator as an option (player threat display only; 110%/130% gain indicator, as a separate threat bar texture/region, to exceed generic threat max and incorporating its own user-specified color)
+	- make threat throttle interval a user-specified option (currently commented out)
+	- enhance debug subsystem functionality to allow filtering of individual modules
+		could not get Debug-1.0 to load in an Ace2 environment
+		used a proprietary method that passes addon/module names as arguments for filtering
+		packaged as an external library, conditionally subscribed to by Aloft, not required
+	- comprehensively update AloftTag.rtf, included all tags
+	- extract WoWAce changelog in some form
+		"svn log http://svn.wowace.com/wowace/trunk/Aloft/ > changelog.txt"
+		embeded as a legacy artifact, CHANGELOG_WOWACE.txt
+		got someone to do it for me
+	- established a new SVN (WoWInterface, very easy, very convenient, they are great folks)
+	- changed donate address in TOC
+	- see if there is a way to get mana/threat/cast text to appear at higher levels than health text and mana/threat bars
+		put underlying nameplate frame in level 1 (all text is implemented as a region off the nameplate frame)
+	- debug HealthBarColor: looks like a hooking function problem; collecting health bar component colors on demand, fix tested
+	- refineed default text tags, got rid of bogus leading/trailing text
+	- guard complex debug statements with an IsDebugEnabled, to make certain API overhead is minimized
+	- update maxThreat and associated bars/text on all visible nameplates when a threat event against the current target is received?
+		at least update for the current player target nameplate? this would be a good start
+		need to factor out a calculate-and-assign method that takes aloftData and basic gathered threat metrics
+		throttle this update processing at regular timed intervals? yes (even for just player<->target threat)
+		updating all threat bars/text would require driving an an UpdateAll (for threat bar and threat text)
+	- generate readme file
+	- prep for V3.x Threat API
+	- understand how to make Aloft sensitive to WotLK API

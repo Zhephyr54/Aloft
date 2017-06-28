@@ -1,0 +1,1469 @@
+acapela-52217:
+	- updated with new requests and recent progress.
+	- fored update of minor revision.
+	- updated change log.
+	- tweaked SetFrameLevel() processing so that underlying nameplate frame level can be checked to insure resulting value stays in range.
+	- updated major/minor revision.
+	- updated major revision.
+	- updated with new items and progress.
+	- updated change log.
+	- added option to bounce nameplates when overlap settings are automatically changed.
+	- added [Type] and [IsPlayer] tags.
+	- enhanced to handle empty tag data more "effectively".
+	- increased health bar height option range to 128.
+	- changed order of options to make room for startup message option.
+	- added startup message option.
+	- added startup message option. added [IsPlayer] tag.
+	- added [Type] and [IsPlayer] tag, fixed typo in comments crediting LibDogTags for [Truncate] source code.
+	- added some diagnostics (commented out).
+	- updated major/minor version.
+	- updated major/minor version.
+	- updated change log.
+	- updated major version.
+	- latest/greatest CallbackHandler-1.0 (from Ace3).
+	- 
+	- initializing blend mode of all texture regions, to "improve" layering.
+	- added a dereference to nameplateFrame, for use in Frame:SetFrameLevel().
+	- added new requests.
+	- adjusted frame levels, now relative against the underlying nameplateFrame. initializing blend mode of all texture regions, to "improve" layering.
+	- updated change log (for minor revision 1589).
+	- updated major/minor revision.
+	- updated major/minor revision.
+	- updated major version.
+	- changed a diagnostic.
+	- added processing to allow a cast warning bar in certain situations when the player's target changes and the target cast bar is not available.
+	- updated major version.
+	- removed IsTarget() check from player target update processing, to insure that pure target drops updated target tracking. added method to generate a nameplateId from a unitid (for use in validation of nameplate selection based on unitid). added various diagnostics (commented out) and comments.
+	- added news tasks and completed tasks.
+	- altered tooltip line for pet owner's name.
+	- altered tooltip line for comment text.
+	- altered way name text region is initialized, trying to avoid recursive loops with AloftNameText on OnNameplateShow processing.
+	- altered way name text region is initialized, trying to avoid recursive loops with AloftNameText on OnNameplateShow processing.
+	- updated major/minor version.
+	- updated TOC and major version.
+	- made WoW 3.3 auto-show/hide capabilities the default capabilities.
+	- added some additional requests.
+	- updated change log.
+	- updated tooltip scraping, for WoW 3.3.
+	- updated tooltip scraping, for WoW 3.3.
+	- forced update of minor version.
+	- added new requests.
+	- made new WoW 3.3 options contingent on a version check (avoid cluttering the WoW 3.2 interface).
+	- adjusted order of options.
+	- adjusted order of header.
+	- forced update of minor version.
+	- updated major/minor version.
+	- updated TOC, and major/minor version.
+	- updated change log.
+	- updated with recent tasks and progress.
+	- changed default setting for "Low Threat" from "red" to "green" (to differentiate from Blizzard threat colors).
+	- updated change log.
+	- updated change log.
+	- updated completed tasks, added new tasks.
+	- added new auto-show/hide options to presets.
+	- moved all show/hide options from Aloft module. these options are now exposed directly as Blizzard standard UI options. added new Blizzard nameplate options to auto-show/hide processing.
+	- moved all show/hide options to AloftAutoShow module. these options are now exposed directly as Blizzard standard UI options.
+	- slightly refactored handling of "Unknown" units.
+	- added handling for "Unknown" units.
+	- added handling for "Unknown" units.
+	- added handling for "Unknown" units.
+	- added handling for "Unknown" units.
+	- added health bar color for "Unknown" units.
+	- added handling for "Unknown" units.
+	- added explicit show/hide for cast bar spell icon (attempt to work around a problem with residual spell icons reported by a user).
+	- added health bar color for "Unknown" units.
+	- added handling for "Unknown" units.
+	- added handling for "Unknown" units.
+	- slightly refactored handling of "Unknown" units.
+	- refactored invocation of GetBuildInfo().
+	- commented out a diagnostic.
+	- incorporated load module name into check for whether to enable dynamic modules.
+	- converted dynamic flag to contain load module name.
+	- added some FAQ tasks.
+	- updated to latest/greatest versions of Ace2/Ace3.
+	- converted dynamic flag to contain load module name.
+	- extended check for RecentlyDamagedData module to include whether the module is active.
+	- converted dynamic flag to contain load module name.
+	- converted dynamic flag to contain load module name.
+	- converted dynamic flag to contain load module name.
+	- converted dynamic flag to contain load module name.
+	- converted dynamic flag to contain load module name.
+	- enhanced to adapt castBar frame level dynamically to the current nameplateFrame frame level.
+	- removed redundant locale from menu headers/etc.
+	- removed redundant locale from menu headers/etc.
+	- enhanced to adapt castWarningFrame/castWarningExtraFrame frame level dynamically to the current nameplateFrame frame level.
+	- enhanced to adapt layoutFrame frame level dynamically to the current nameplateFrame frame level.
+	- updated major/minor versions.
+	- updated change log.
+	- disabled mouse processing on nameplate hide.
+	- updated major/minor versions.
+	- updated major/minor versions.
+	- updated change log. altered the size of selected text.
+	- changed to Acapela preset. reverted (commented out) threat status color changes, tweaked alpha again.
+	- additional separation between invert logic from explicit low threat indication.
+	- updated Acapela preset.
+	- teased apart invert logic from explicit low threat indication, so that they work independently.
+	- moved GUID <> nameplateId tracking into AloftIsTargetTrackingData module. to faciliate Aloft combat text association with non-target/non-group nameplates.comprehensive overhaul. normalized spell school colors with Blizzard combat log colors.
+	- updated major version.
+	- moved GUID <> nameplateId tracking into AloftIsTargetTrackingData module. to faciliate Aloft combat text association with non-target/non-group nameplates.
+	- moved GUID <> nameplateId tracking into AloftIsTargetTrackingData module. to faciliate Aloft combat text association with non-target/non-group nameplates.
+	- updated with recent progress and requests.
+	- enhanced to do an UpdateAll() when stance/presence/aura changes. broke RegisterEvents() out of UpdateAll() to prevent redundant processing. promoted "recently damaged" check to a user option.
+	- added unit-name visibility filter, and associated options (enabled/disable, list maintenance, etc). uses digital search tree module to implement filter.
+	- moved GUID <> nameplateId tracking from AloftCastWarning into module. to faciliate combat text association with non-target/non-group nameplates.
+	- added comments and diagnostics (commented out).
+	- added beginnings of an itemized table for localized totem names. not used yet.
+	- added delete capability. updated comments/diagnostics. added diagnostics (commented out).
+	- guarded dereference of profile.
+	- comprehensive overhaul.
+	now uses COMBAT_LOG_* events (instead of UNIT_COMBAT event); availability of GUIDs allows display of combat text for identifiable non-target/non-group units. added multiple options to control appearance of combat text. refactored combat text color options, normalized with Blizzard combat log colors.
+	- added multiple options to control appearance of combat text.
+	- refactored combat text color options, normalized with Blizzard combat log colors.
+	- added some code to test "digital search trees" (commented out).
+	- added a simple digital search tree subsystem, in anticipation of efficient general unit name visibility filtration. updated major version.
+	- added a simple digital search tree subsystem, in anticipation of efficient general unit name visibility filtration.
+	- got rid of debug registration. added some diagnostics (commented out).
+	- attempted workaround for "Unknown" units.
+	- refactored processing of unitid data, to prevent redundant triggering of data propagation to the rest of the addon.
+	- attempted workaround for "Unknown" units.
+	- attempted workaround for "Unknown" units.
+	- attempted workaround for "Unknown" units.
+	- attempted workaround for "Unknown" units.
+	- attempted workaround for "Unknown" units. small refactoring of code here and there.
+	- enhanced to use nameplate alpha to control visibility only in combat. enhanced to switch over to Region:Hide() when combat ends. enhanced to disable the mouse on hidden nameplates when not in combat (seems to work only intermittently).
+	- added a new feature, and a reminder to continue working on workarounds to an apparent low-level defect.
+	- tweaked AloftAlpha settings for Acapela preset.
+	- enhanced to use nameplate alpha to control visibility only in combat. enhanced to switch over to Region:Hide() when combat ends. enhanced to disable the mouse on hidden nameplates (seems to work only intermittently).
+	- refactored use of Frame:EnableMouse() to check for "hidden" nameplates and facilitate diagnostics. diagnostics commented out.
+	- forced update of minor version.
+	- added a new issue discovered in testing, reprioritized a few second-level TODO items.
+	- bypass InCombatLockdown() when alpha is being used to control visibility.
+	- enhanced to fix various defects in applying alpha (and alphaOverride) to nameplates as target and alpha options change. added/enhanced diagnostics (commented out).
+	- updated major and minor version.
+	- updated major and minor version.
+	- fixed some bugs related to re-casting the same spell while the previous cast was still "fading". added some diagnostics (commented out).
+	- added some diagnostics (commented out).
+	- enhanced to override nameplate alpha on detectable active cast.
+	- enhanced to override nameplate Alpha on detectable active cast.
+	- updated major version.
+	- enhanced to override nameplate Alpha on detectable active cast. fixed some bugs related to re-casting the same spell while the previous cast was still "fading".
+	- added HasModule() check for Alpha module. invisibility.updated alpha option strings.
+	- updated alpha option strings.
+	- added HasModule() check for Alpha module. changed order of check guarding nameplate "alpha" invisibility.
+	- updated change log.
+	- fixed typo in major version.
+	- updated major version.
+	- added Truncate() tag. added an additional example to the Color Tags section.
+	- updated change log.
+	- updated with recent progress and new ideas.
+	- added capability to use nameplate alpha to control "visibility" (requires AloftAlpha module to be enabled).
+	- added capability to use nameplate alpha to control "visibility" (requires AloftAlpha module to be enabled). added deDE locale for totem names (totem visibility/color exception control).
+	- added capability to use nameplate alpha to control "visibility" (requires AloftAlpha module to be enabled).
+	- got rid of redundant snake patterns in enUS and ruRU locales. added deDE locale.
+	- added explicit SetParent() for health text region (attempt to fix intermittent layout problems).
+	- beefed up data checks guarding "advanced" color tag compilation.
+	- updated to enable an "Alpha Override" function, used to control nameplate alpha outside of the basic alpha settings (including using alpha to control nameplate "visibility", and to enable AloftCastWarning to temporarily update nameplate alpha during active spell casts).
+	- fixed typo in a locale table.
+	- updated major and minor version.
+	- updated major version.
+	- updated with recent progress and new ideas.
+	- added section on [Truncate] text tag. updated change log.
+	- updated nointerruptRegion lifecycle slightly.
+	- updated layoutFrame lifecycle slightly.
+	- added Cleansing Totem to exception processing. added Mana Tide totem to exception processing.
+	- added Cleansing Totem to exception processing. added Mana Tide totem to exception processing. got rid of friendly totem exception options (friendly totems do not have nameplates).
+	- added Cleansing Totem to exception processing. added Mana Tide totem to exception processing. re-ordered visibility processing to give detectable totems a higher priority than pets. factored nameplate hide operation out into its own function, so that its semantics can be refactored later (i.e. in peparation to experimenting with UIObject:SetAlpha() instead of Region:Hide() as a mechanism).
+	- re-ordered hostile color processing to give detectable totems a higher priority than pets.
+	- switched to ChatFrame diagnostics. added diagnostics.
+	- updated with recent progress and enhancement ideas/requests.
+	- updated with credits to CKnight for [Truncate] tag implementation.
+	- updated to latest/greatest Ace2 (apparently fixes a rare bug in AceEvent-2.0).
+	- backed out update-delay processing (seemed to cause problems, doesn't seem to be needed), switched neutral unit processing to apply the neutral color to totems (not really necessary, just trying to be complete).
+	- added "explicit low threat indicator only in combat" and "intert only when tanking" options. fixed typo in localizations (closing paren) for original "explicit low threat indicator" option.
+	- added "explicit low threat indicator only in combat" and "intert only when tanking" options.
+	- added [Truncate] text tag.
+	- updated neutral processing to watch for totems (probably a noop).
+StingerSoft-59681:
+	- ruRU update
+acapela-52217:
+	- updated major/minor version.
+	- updated major version.
+	- updated with recent progress and requests.
+	- updated change log.
+	- added a diagnostic.
+	- guarded premature access to profile during module load.
+	- introduced a frame delay into health bar color update process, to work around issues with hostile totems. got rid of exception color processing for friendly totems (which do not have health bars).
+	- re-applied repeating event to re-size/re-position spell icon regularly through spell cast (as a workaround to "changing spell icon syndrome"). enhanced diagnostics.
+	- fixed a typo in a diagnostic.
+	- restored more "expensive" approach to "giant cast bar" syndrome.
+	- updated with recent progress and new requests.
+	- enhanced to check for existence of Aloft:GetTotemExceptionColor() function before using it; the Visibility module is optional, so this function may not always be defined.
+	- update major and minor version.
+	- update major and minor version.
+	- updated major version.
+	- updated major version.
+	- reorganized, updated to reflect new progress and requests.
+	- updated change log.
+	- fixed a typo in unit channelled spellcast processing. commented out some diagnostics.
+	- attempted to track pets (but pets cannot have nameplateIds; no race, no raid target assignment, not unique, etc)
+	- added exception color/visibility handling for totems.
+	- added exception color handling for totems.
+	- attempted workaround to "unwanted disabled cast bar spell icon" syndrome.
+	- attempted refinement to workaround to "giant cast bar" syndrome.
+	- updated major and minor versions.
+	- updated major and minor versions.
+	- updated major version.
+	- updated major version.
+	- updated change log.
+	- updated with recent requests and progress.
+	- updated to set the alpha explicitly on the non-interruptable graphic.
+	- updated to set the alpha explicitly on the non-interruptable graphic.
+	- updated Acapela preset with cast bar interrupt/no-interrupt options.
+	- fixed defect in update of live nameplates when options are changed.
+	- added handlers events UNIT_SPELLCAST_INTERRUPTIBLE/UNIT_SPELLCAST_NOT_INTERRUPTIBLE (just generate diagnostics for now). beefed up verification and end-of-life handling for active cast tracking.
+	- added events UNIT_SPELLCAST_INTERRUPTIBLE/UNIT_SPELLCAST_NOT_INTERRUPTIBLE.
+	- fixed wording of an option description.
+	- enhanced to place a graphic over the spell icon for non-interruptable spells.
+	- enhanced to provide separate texture/color/border options for interruptable/non-interruptable spells.
+	- enhanced to provide separate texture/color/border options for interruptable/non-interruptable spells. enhanced to validate the current/active target has spell cast activity, and clear it if it doesn't.
+	- added death knight bloodworms.
+	- added death knight bloodworms.
+	- guarded access to duration local to prevent dereferencing a nil.
+	- enhanced to place a graphic over the spell icon for non-interruptable spells.
+	- moved spell name to layoutFrame assembly.
+	- moved spell name to layoutFrame assembly.
+	- enhanced to provide separate texture/color/border options for interruptable/non-interruptable spells.
+	- reworked extensively to enforce size/placement configuration on cast bar, to work around dynamic resizing on certain spellcast activity.
+	- enhanced to try to save and then restore unwanted Blizzard default textures on addon enable/disable.
+	- updated change log (again).
+	- updated change log.
+	- updated with most recent change to Shaman class color.
+	- added some diagnostics, in pursuit of the new Shaman class color.
+	- added "no-interrupt" graphics capability.
+	- added "no-interrupt" graphics capability.
+	- added "no-interrupt" graphics capability.
+	- updated with most recent change to Shaman class color.
+	- updated with recent requests and progress.
+	- added textures for "shielded"/no-interrupt cast bars.
+	- forced update of minor version.
+	- updated change log again.
+	- updated change log, got rid of some older HowTo information.
+	- updated major and minor versions.
+	- eliminated LibBabble-Class-3.0; replaced with localized class data from FrameXML/Constants.lua.
+	- enhanced to extract cast bar shield art region, and override it with an empty/noop texture.
+	- updated major version. eliminated LibBabble-Class-3.0.
+	- tried to fix formatting again, but formatting is not surviving being saved as RTF.
+	- eliminated LibBabble-Class-3.0; replaced with localized class data from FrameXML/Constants.lua.
+	- eliminated LibBabble-Class-3.0; replaced with localized class data from FrameXML/Constants.lua.
+	- switched to using the Blizzard TexCoords array for class icon art from FrameXML/Constants.lua.
+	- updated major/minor revisions.
+	- updated release notes again.
+	- updated release notes.
+	- updated major version.
+	- cleaned up some formatting (don't know if it will work).
+	- discovered cast bar spell icon region in a different location in the nameplate assembly, and changed code accordingly. added diagnostics (commented out) to help track a problem with cast bar spell icons.
+	- added a diagnostic (commented out) to help track a problem with cast bar spell icons.
+	- updated major and minor versions.
+	- update major and minor revisions.
+	- updated changelog.
+	- commented out superfluous invocation of GetBuildInfo().
+	- updated with recent progress and discoveries.
+	- refactored to fix fine-grained defects that were causing problems with fade of cast warnings.
+	- updated TOC and major version.
+	- refactored to fix fine-grained defects that were causing problems with fade of cast warnings.
+	- updated TOC and major version.
+	- updated with most recent changelog.
+	- added some PCs to my "thank you for helping me test in PvP by ganking my AFK characters" list.
+	- updated documentation on class color configuration option handling.
+	- reduced to 3.2-specific tooltip parsing.
+	- reduced to 3.2-specific tooltip parsing.
+	- reduced to 3.2-specific nameplate assembly.
+	- fixed typo in AloftVisibility module descriptions.
+	- added frame delay to race data update.
+	- fixed typo in AloftVisibility module descriptions.
+	- added frame delay to guild data update.
+	- fixed references to self that may occur before self is initialized, added frame delay to class data update.
+	- enhanced to force Blizzard standard Combat>Class Colors in Nameplates interface option on at startup, and warn user when it is disabled.
+	- updated with recent feature requests and progress.
+	- tracking clear cleans out GUID <> unitid tracking, which fixes a problem in AloftCastWarning.
+	- now detects some additional/intermittent tooltip data on the 3.2 PTR.
+	- now detects some additional/intermittent tooltip data on the 3.2 PTR.
+	- now loads for the Shaman class, uses a base duration of 10 seconds in PvP, includes Cheap Shot and Kidney Shot default timing, and uses the shortest of either base duration or default timing in PvP (for skills that last less than 10 seconds to begin with).
+	- beefed up EndActiveCast() processing to validate spell id/name/rank before ending spell, to insure that overlapping casting does not warning display prematurely.
+	- forced update of minor version.
+	- updated change log section.
+	- updated major/minor versions.
+	- updated major version.
+	- added credits for the textures lifted from Skinner and Recount.
+	- added an "Empty" bar texture (obtained from Recount).
+	- reorded file-scope declarations to try to work around a problem reported by a zhTW user.
+	- dded a "PvP" preset that assumes the user wants the "giant class icon over hostile PC targets' heads" look, adjusted the "Unit Frame" preset slightly.
+	- adjusted frame level of backdrop frame, and draw layer of backdrop region, to layer with the rest of the nameplate better.
+	- increased the allowed range of the class icon size option.
+	- enhanced to adjust settings of Alpha options to make it difficult to set default and/or non-target alpha to the same values as target alpha.
+	- enhanced to add an "Empty" bar texture (from Recount) to SharedMedia at startup.
+	- updated major/minor revision.
+	- updated major/minor revision.
+	- reordered inclusions, updated TOC and major version.
+	- updated recent changes.
+	- reordered inclusions, updated TOC and major version.
+	- added version information to top-level waterfall tooltip.
+	- broke out tooltip scraping, to handle WoW 3.1 and WoW 3.2 interchangeably.
+	- broke out tooltip scraping, to handle WoW 3.1 and WoW 3.2 interchangeably.
+	- enhanced diagnostics (commented out).
+	- reordered prepare/place processing.
+	- changed cast warning frame levels.
+	- changed threat bar and flash frame frame levels.
+	- adjusted "Unit Frame" preset.
+	- reordered prepare/place processing, got rid of some dead code.
+	- changed mana bar frame level.
+	- reordered prepare/place processing, got rid of some dead code.
+	- reordered prepare/place processing, got rid of some dead code.
+	- changed deficit bar frame level.
+	- changed health bar frame level.
+	- changed glow frame frame level and draw layer.
+	- changed nameplate frame frame level.
+	- changed crowd control bar frame level.
+	- changed cast bar frame level.
+	- refactored PLAYER_TARGET_CHANGED processing, changed layoutFrame frame level, added/enhanced diagnostics.
+	- update major/minor version.
+	- updated major version.
+	- forced update of minor version.
+	- reverted trade skill option... the API flags at least some trade skills.
+	- updated release notes.
+	- updated major/minor version.
+	- updated TOC and major version.
+	- updated major/minor version.
+	- updated TOC, major version
+	- updated with recent progress and tasks.
+	- updated with recent progress and tasks.
+	- added licensing.
+	- disabled tradeSkill option.
+	- additional fine tuning to marking spells "permanent".
+	- refactored spell recording.
+	- updated with recent progress and tasks.
+	- updated with recent change history, got rid of embedded FAQ.
+	- adjusted acapela preset.
+	- small refactoring to CreateTexture() usage.
+	- changed referenceFrame to layoutFrame, modified configuration option defaults.
+	- updated acapela and "unit frame" presets.
+	- fixed small problem that resulted in guild class data being gathered when it should not be, refactored to use self properly.
+	- removed frame delay, does not seem to be necessary.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled textRegion (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- enhanced diagnostics to provide additional information.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled threatBar/flashBar (now assembled into layoutFrame and re-used from there), refactored frame layering, modified configuration option defaults.
+	- added some comments (as a consequence of going through the code again and finding myself confused).
+	- reduced handling delay to 0.0 (next frame), added OnUnitidDataChanged handler, fixed some possible problems with delay event names.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled textRegion (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled manaBar (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored frame layering.
+	- refactored OnShow processing, adjusted frame layers.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled textRegion (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled deficitFrame (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled textRegion (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- changed referenceFrame to layoutFrame, refactored to non-pooled glowFrame (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- added layoutFrame/backdropFrame placement menu options.
+	- added layoutFrame/backdropFrame placement menu translations.
+	- changed referenceFrame to layoutFrame, refacted to non-pooled backdropFrame (now assembled into layoutFrame and re-used from there), refactored frame layering.
+	- small refactoring to CreateFontString() usage.
+	- small refactoring to CreateFontString() usage.
+	- small refactoring to CreateTexture() usage.
+	- added Shaman "Hex", fixed some default level-based timings, added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing, reverted to old font processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- refactored layout frame processing, adjusted frame layers.
+	- refactored layout frame processing, adjusted frame layers.
+	- refactored layout frame processing, adjusted frame layers.
+	- refactored layout frame processing, adjusted frame layers.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- eliminated some dead code.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid, refactored OnShow/OnTargetChanged processing.
+	- added a pooled layout frame, as the root for the Aloft-supplied nameplate frame assembly and as a layout aid.
+	- slight change to cast warning lifecycle management, enhanced to check for "bogus" spell schools.
+	- general overhaul of combat log event handling, spell record merging, and school recording/updating.
+	- adjusted Acapela and Unit Frame presets.
+	- fixed typo in mana bar lifecycle processing.
+	- refactored UNIT_COMBAT handling, added the beginnings of a COMBAT_LOG_* handling subsystem.
+	- fixed typo in subtype demultiplexing.
+	- refactored text region lifeycle processing.
+	- refactored text region lifeycle processing.
+	- refactored text region lifeycle processing.
+	- refactored text region lifeycle processing.
+	- refactored text region lifeycle processing.
+	- refactored text region lifeycle processing.
+	- disabled use of the ARENA_TEAM_ROSTER_UPDATE event.
+	- commented out some diagnostics.
+	- commented out some diagnostics.
+	- tweaked frame levels, refactored cast warning bar lifecycle processing.
+	- tweaked frame levels, refactored threat bar lifecycle processing.
+	- fixed some bugs in nameplateId construction (to insure only uniquely identifiable targets generate a nameplateId), added some diagnostics (commented out).
+	- small adjustments to Acapela and Unit Frame presets.
+	- tweaked frame levels, refactored mana bar lifecycle processing.
+	- tweaked frame levels, removed check for reference frame, refactored deficit frame lifecycle processing.
+	- tweaked frame levels, removed check for reference frame.
+	- tweaked frame levels, refactored glow frame lifecycle processing.
+	- tweaked frame levels, refactored backdrop frame lifecycle processing.
+	- factored common code out into a frame release method.
+	- files are identical. white space only?
+	- refactored reference frame lifecycle processing.
+	- updated to latest/greatest libraries.
+	- moved implementation of reference frame to Aloft.lua, and incorporated backdrop frame into nameplate frame assembly heirarchy.
+	- moved implementation of reference frame here, from AloftFrame.lua, and incorporated reference frame into nameplate frame assembly heirarchy.
+	- minor code reformatting, added some diagnostics.
+	- commented out a diagnostic.
+	- updated Acapela preset, added Unit Frame preset.
+	- code reformatting, added some diagnostics.
+	- comprehensive refactoring of deficit frame to handle borders, isTarget processing, etc.
+	- deleted some dead code.
+	- added a hostilePlayer type handler, added explicit defaults for colorByClass/colorHostileByClass, iterate all nameplates (not just visible) on UpdateAll(), made backdropFrame color process 2-stage (initial color, then a delay, then actual color), added diagnostics (commented out).
+	- enhanced to insure crowd control is active on target before attaching to target nameplate, added some comments.
+	- fixed mapping of UNIT_COMBAT school types to school colors, some small code reformatting.
+	- extracted nameplateId->targetId extraction to a method, added/enhanced diagnostics, refactored activation of cast warning, refactored spellIdBase OnEnable() processing, minor code reformatting.
+	- extracted nameplateId->targetId extraction to a method.
+	- border texture pulled out of Skinner.
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- updated flash frame size range.
+	- enhanced to include a "hostilePlayer" type, changed flash frame level.
+	- fixed typo in OnPlayerEnteringWorld() method, included IsInInstance() call in OnEnable() processing, included OnPlayerEnteringWorld() on roster change processing, added name argument to IsUnique() method, check against name "[invalid]".
+	- enhanced to include a "hostilePlayer" type.
+	- 
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- fixed typo.
+	- enhanced to include a "hostilePlayer" type.
+	- updated glow frame size range.
+	- enhanced to include a "hostilePlayer" type, changed glow frame level.
+	- reformatted code, refactored color update processing, enhanced to control background frame color/alpha properly.
+	- added profile check, for dynamic loading.
+	- fixed typo in UpdateAll() method.
+	- enhanced to include a "hostilePlayer" type.
+	- enhanced to include a "hostilePlayer" type.
+	- added profile check, for dynamic loading.
+	- added a border texture extracted from Skinner, enhanced to include a "hostilePlayer" type.
+	- updated trade skill handling, updated true/false/nil handling, fixed some typos.
+	- updated positioning range.
+	- updated positioning defaults.
+	- updated with noew items and recent progress.
+	- updated positioning defaults.
+	- updated positioning range.
+	- refactored spellBase cleanup during OnEnable() processing, updated positioning defaults.
+	- updated positioning defaults.
+	- updated positioning range.
+	- reformatted some code.
+	- updated positioning range.
+	- updated positioning range.
+	- updated positioning range.
+	- updated positioning range.
+	- alphabetized and updated "acapela" preset.
+	- reformatted some code, updated positioning range.
+	- updated positioning defaults.
+	- reformatted some code.
+	- reformatted some code, reordered options, updated positioning range.
+	- reformatted some code, updated positioning range.
+	- reformatted some code, updated positioning range.
+	- refactored positioning model, enhanced border processing.
+	- changed frame level.
+	- refactored positioning model.
+	- reformatted some code, reordered options, refactored positioning model.
+	- reformatted some code, updated positioning range.
+	- reformatted some code, reordered options, updated height/width range.
+	- refactored fairly extensively to simplify state tracking and attachment of crowd control on nameplate show/hide, fixed bugs in applying border on target only/etc, updated positioning defaults.
+	- updated positioning range.
+	- reformatted some code, updated positioning range.
+	- updated positioning range.
+	- updated positioning range.
+	- updated positioning range.
+	- updated positioning defaults.
+	- updated positioning range.
+	- refactored some diagnostics.
+	- changes to saved variables, substantial refactoring of COMBAT_LOG_* event handling, added parallel UNIT_SPELLCAST_* event handling, integrated with AloftTargetTrackingData "permanent" unitid management (friendly grouped and hostile arena).
+	- changes to saved variables, substantial refactoring of COMBAT_LOG_* event handling, added parallel UNIT_SPELLCAST_* event handling, integrated with AloftTargetTrackingData "permanent" unitid management (friendly grouped and hostile arena).
+	- added some InCombatLockdown() checking.
+	- placement relative to new referenceFrame, taking into account border insets.
+	- primarily code reformatting; small material change to IsTarget() invocation.
+	- placement taking into account border insets, use new cache flush parameter to CreateTag, changed logging to simple AddMessage() mechanism.
+	- added (experimental) subsystem for tracking rare/unique targets by unit name.
+	- refactored nameplateId formatting, added (experimental) subsystem for tracking rare/unique targets by unit name, added infrastructure for populating and tracking "permanent" unitids (friendly grouped and hostile arena), took race/class out of nameplateIds for players.
+	- no changes? white space only?
+	- placement relative to levelTextRegion.
+	- placement relative to new referenceFrame, implemented a narrower use of UnitAura().
+	- placement relative to new referenceFrame.
+	- placement relative to new referenceFrame.
+	- placement taking into account border insets, use new cache flush parameter to CreateTag.
+	- placement relative to new referenceFrame, taking into account border insets. minor changes to event names, nil checking, code format.
+	- added diagnostics, changed logging to simple AddMessage() mechanism.
+	- placement relative to new referenceFrame. use new cache flush parameter to CreateTag.
+	- placement relative to new referenceFrame. use new cache flush parameter to CreateTag.
+	- placement taking into account border insets.
+	- placement relative to new referenceFrame. use new cache flush parameter to CreateTag.
+	- placement relative to new referenceFrame. use new cache flush parameter to CreateTag.
+	- adjust frame level.
+	- added a reference frame (for layout management), placement taking into account border insets, enhanced backdrop frame to be independent of other elements (unit frame style), added default backdrop frame colors.
+	- added rogue crowd control, added diagnostics/comments, implemented a narrower use of UnitAura(), fixed some defects in various timing calculations/checks, placement relative to new referenceFrame, taking into account border insets.
+	- fixed bug related to dereferencing nil level.
+	- placement relative to new referenceFrame, taking into account border insets. use new cache flush parameter to CreateTag.
+	- placement relative to new referenceFrame, taking into account border insets.
+	- placement taking into account border insets.
+	- placement relative to new referenceFrame, taking into account border insets.
+	- placement relative to new referenceFrame.
+	- fixed typo in battleground entry handling, added ZONE_CHANGED_NEW_AREA to watched events, refactored usage of IsInInstance().
+	- fixed some bugs in the ValidateNameplateByAttribute mechanism, added optional adjustment/offset functionality to PlaceFrame().
+	- added an argument to CreateTag to clear the cache for a tag, changed logging to simple AddMessage() mechanism.
+	- forced update of minor revision.
+	- updated release notes (critter nameplates still show in WoW 3.1).
+	- updated major/minor version.
+	- updated major version.
+	- updated major/minor version.
+	- added ruRU contributors, updated major version.
+	- added patch notes.
+	- added recent ruRU localization contributions.
+	- simplified OnShowNameplate processing, added OnHideNameplate handler.
+	- extracted AloftCastWarning component into its own TODO.txt in that addon's folder.
+	- moved over from Aloft TODO.txt.
+	- added separate text colors for active cast and fade processing.
+	- refactored target id validation, added pool for active cast records (cuts down on dynamic table construction/destruction).
+	- added separate text colors for active cast and fade processing.
+	- added separate text colors for active cast and fade processing.
+	- simplified time change event propagation, added pool and re-use from pool for active cast records (cuts down on dynamic table creation).
+	- fixed typo in localizations, added ruRU translation, courtesy of vol4.
+	- simplified OnNameplateHide processing, increased OnShowNameplate update delay to 0.1 seconds, changed internal event names.
+	- added tracking of unitid "target", for use by AloftCastWarning.
+	- insured "Data Options" clear their data when disabled.
+	- insured "Data Options" clear their data when disabled.
+	- insured "Data Options" clear their data when disabled.
+	- fixed typo, added level and heath thresholds to critter identification. all of this will be obsolete in 3.1.
+	- added level and heath thresholds to critter identification. all of this will be obsolete in 3.1.
+	- insured "Data Options" clear their data when disabled.
+	- added level and heath thresholds to critter identification. all of this will be obsolete in 3.1.
+	- minor syntactic change.
+	- insured "Data Options" clear their data when disabled.
+	- insured "Data Options" clear their data when disabled.
+	- insured "Data Options" clear their data when disabled.
+	- obsolete, no longer relevant.
+	- updated major/minor version.
+	- updated major version.
+	- updated with additional information.
+	- expanded enUS to other locales.
+	- changed icon size.
+	- updated major/minor version.
+	- updated Acapela preset.
+	- updated localization credits, updated major version.
+	- did not update libraries after all.
+	- updated with latest change log information.
+	- updated to reflect recent issues and progress.
+	- gave OnIsTargetDataChanged its own handler.
+	- enhanced to handle a small 3.1 change, altered diagnostic mechanism.
+	- enhanced to use UnitAura, enhanced to handle some 3.1 changes.
+	- gave OnIsTargetDataChanged its own handler, added more robust IsTarget checking to OnNameplateShow processing.
+	- added druid hibernate, added the druid class, enhanced target-only border processing.
+	- revised diagnostics, in the process of chasing target change event bugs.
+StingerSoft-59681:
+	- ruRU update
+acapela-52217:
+	- added StingerSoft to credits for ruRU localization.
+	- added more robust IsTarget checking to OnNameplateShow processing, added diagnostics.
+	- revised diagnostics, in the process of chasing a potential bug.
+	- reordered OnIsTargetDataChanged event registration, to use option-specific processing, added diagnostics.
+	- refactored caching of nameplates versus their names, trying to get rid of a cryptic bug.
+	- deleted obsolete file.
+	- initial revision.
+	- commented out diagnostics.
+	- changed granularity of "verification interval" option.
+	- updated with new issues and progress.
+	- moved parts of the FAQ around, changed some wording, added a description for inverted nameplate glows.
+	- updated to latest/greatest.
+	- changed style of diagnostics, added diagnostics, have IsPetDataChanged event its own handling, increased update delay to 0.1 seconds.
+	- changed style of diagnistics.
+	- minor updates to comments/diagnostics.
+	- added Runic Power to watched/updated power types.
+	- changed SetParent to use healthBar instead of nameplateFrame.
+	- added a nil check.
+	- numerous enhancements and bugfixes. nearly ready to go into beta.
+	- added new option to display "low aggro" status explicitly (requires color override), and a color override option so the user can specify the color for "low aggro"; changed override color for "tanking securely" to a bright orange.
+StingerSoft-59681:
+	- ruRU update
+acapela-52217:
+	- updated major/minor versions.
+	- updated major version.
+	- decoupled Invert and Combat-Only options from Health-Bar option.
+	- updated with changelog for latest version.
+	- added current locale to info string.
+	- refactored the main part of processing, fixed a bug in color updating, added cleanup code to OnNameplateHide and OnDisable.
+	- moved boundary condition checking outside of module, added current locale to info string.
+	- moved boundary condition checking outside of module, added current locale to info string.
+	- fixed intermittent LUA error, improper function call.
+	- moved local declarations of localization instances outside of conditional processing, to make sure they are in scope at all times.
+	- updated major/minor version.
+	- added handling and user options for StateIconRegion (WoW 3.1.x, graphic/art indicator for elite units on nameplates), updated major version.
+	- updated with new release information.
+	- updated with new issues and progress.
+	- added handling and user options for StateIconRegion (WoW 3.1.x, graphic/art indicator for elite units on nameplates)
+	- commented out some diagnostics.
+	- trying to get rid of some minor level 2 taint issues.
+	- code reformatting.
+	- code reformatting.
+	- enhanced OnShow processing to add an option-specific frame delay, plus code reformatting.
+	- trying to get rid of some minor level 2 taint issues, plus code reformatting.
+	- added handling for StateIconRegion, plus code reformatting.
+	- fixed typo in status inversion, added in-combat flag processing for targets (as well as player).
+	- enhanced to put border on target only, reorganized some code.
+	- factored playerGUId out into its own method on the parent module.
+	- differentiate nameplate update from target tracking update, plus some code reformatting.
+	- mostly code reformatting, factoring code out into functions for use by other modules.
+	- enhanced to put border on target only, reorganized some code.
+	- added target drop/reaquire mechanism, when nameplate disappears/reappears.
+	- enhanced to make inverted aggro display happen in combat only, reorganized some code.
+	- enhanced to put border on target only, reorganized some code.
+	- code load order issue: making sure that the crowdControlExtraFrame exists before using it.
+	- code cleanup.
+	- enhanced to put norder on target only, reorganized some code.
+	- moved GetPlayerGUId() function to Aloft, so all can share; got rid of a couple of variable scope taint issues.
+	- forced minor version update.
+	- deleted obsolete locale files.
+	- forced minor version update.
+	- updated major version.
+	- initial minimally functional version.
+	- initial minimally functional version.
+	- got rid of extraneous instances of AceLocale-2.2, added some minor code formatting.
+	- updated to latest/greatest version of libraries (looks like just a Waterfall-1.0 TOC change).
+	- enhanced to track unitid change events, and put all nameplate hiding updates on next-frame delays.
+	- updated target tracking table/method names to conform to new naming conventions.
+	- enhanced to track target ids, rather than unitids, enhanced to track player focus (also general group focus, but blizzard does not recognize focus-related unitids other than "focus"), factored event registration out into its own method.
+	- centralized basic target options in target tracking; was "target of target" options.
+	- enhanced to track and broadcast player focus target.
+	- enhanced to interact with target-tracked (i.e. marked with raid assignment) nameplates.
+	- fixed disabled logic expression in threat status color option.
+	- combined all localization into one file per module.
+	- centralized basic target options here in target tracking; was "target of target" options.
+	- updated to use a full targetid for target tracking, attempt at adding group focus target tracking (but Blizzard does not recognize group focus unitids, so commented out).
+	- refactored to insert as discreet options, updated wording, deleted obsolete translations.
+	- updated major/minor version.
+	- updated to latest/greatest version.
+	- updated with new issues and progress.
+	- extensive enhancement and proofreading (hopefully no major typos).
+	- beefed up diagnostics, refactored AOE threat processing slightly, added general check for data from UnitDetailedThreatSituation before attempting to derive and update threat data.
+	- beefed up target tracking detection function.
+	- added a check for unitid == nil, to make certain there are no attempts to update target-of-target when the requisite data is not available.
+	- enhanced to update unitid "OnNameplateShow" and to trigger update events on clearing of unitid.
+	- added McFLY to list of ruRU contributors.
+	- combined all localization into one file per module, updated major version.
+	- comprehensively refactored to incorporate carefully constructed AOE/Group threat processing, with a little minor code cleanup along the way.
+	- refactored boolean logic for AOE/Group threat interval option disabled() function.
+	- took SHAMAN out of normal RAID_CLASS_COLORS processing, and enhanced to add current and old SHAMAN class color explicitly to raidColorClassMap construction.
+	- refactored principle target tracking driver, to insure nil unitids cannot sneak through and to decouple nameplate-based event triggers.
+	- refactored target change propogation and added some primitive unitid filtering.
+	- refactored to check nameplate name against an arbitrary number of patterns.
+	- added new AOE threat enable option, reworked threat option wording.
+	- reordered options to make room for a new AloftThreatData option.
+	- place threatBar relative to healthBar, instead of nameplateFrame, and removed player target requirement from gain display processing.
+	- changed stated semantics of target-of-target interval option.
+	- factored raid target index calculation, nameplateID generation, and function to determine if any group unit target tracking is active out into TargetTracking, made unitid a separate/dedicated argument to event handling, added nameplate type tracking to checks during target-of-target updates, fixed some typos in diagnostic statements, fixed a typo in local variable declaration.
+	- made unitid a separate/dedicated argument to event handling, factored nameplateId creation routine out of TargetName functionality to TargetTracking, added function to determine if any group unit target tracking is active, added diagnostic statements (commented out).
+	- added friendly totems to visibility options, added hunter snake trap spawn to totem visibility processing.
+	- added old shaman color to hex color tag documentation.
+	- combined all localization into one file per module.
+	- added locale conditionals back in.
+	- added ruRU localization, courtesy of McFLY.
+	- added an AOE threat enable option.
+	- reordered options to make room for a new AloftThreatData option.
+	- changed semantics of target-of-target update interval (0.0 now means: never update).
+	- added locale conditionals back in.
+	- cosmetic reformatting of code.
+	- changed commented-out AddMessage diagnostics to commented-out log-style diagnostics.
+	- refactored to employ multiple totem patterns, preparatory to the complexities of ruRU localization.
+	- refactored to propogate unitid directly, under all circumstances.
+	- expanded valid range of position options.
+	- added locale conditionals back in.
+	- integrated with AloftGlow health bar color control, added some code to enable the mouse on the health bar frame (commented out).
+	- added functionality to use nameplate healthbar color to flag glow (instead of glow), exposed threat status colors to user as options, increased default update interval from 0.20 seconds to 0.33 seconds.
+	- place backdropFrame relative to healthBar, instead of nameplateFrame.
+	- expanded valid range of packingHeight option.
+	- incorporated short forms for creature type, from Xisraa.
+	- added an optional name argument to the IsTarget() nameplate method.
+	- forced update of minor version.
+	- clarification of 2.7.3 release description.
+	- updated major/minor version.
+	- fixed typo.
+	- cleaned up some description/wording in the FAQ.
+	- updated major version.
+	- updated with new release information, new FAQ contents, and formatting.
+	- updated with new issues and progress.
+	- added [PlayerTitleSuffixSeparated] text tag.
+	- fixed typos and added some diagnostics.
+	- added [ClassColor] tag.
+	- refactored race processing.
+	- documented new tags.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- changed wording in a TODO comment.
+	- added option/processing to control visibility of enemy totem nameplates.
+	- deleted diagnostic print statements and other diagnostic code.
+	- deleted diagnostic print statements.
+	- enhanced totem name pattern to match names ending with with a spell rank.
+	- extracted totem name checking out into a function that can be accessed by Visibility processing.
+	- factored Ace2 event registration out into its own function, so that it can be invoked on option modification.
+	- refactored nameplate bouncing (used in module enable/disable and in visibility option processing).
+	- forced minor version update.
+	- added auto-show options to Acapela preset.
+	- updated minor version.
+	- factored target tracking into its own Ace2 module (not dynamic, always loads), updated major version.
+	- udated with new release information, new FAQ contents, and formatting.
+	- updated with new issues and progress.
+	- updated to latest/greatest version of Ace2.
+	- refactored to operate off of a regularly schedule event rather than an OnUpdate hook, improved logic slightly.
+	- moved initialization phase to an earlier point in the load order.
+	- added ruRU localization credits.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- cleaned up module acquisition during load.
+	- cleaned up module acquisition during load.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- updated to permit more aggressive load-order processing of dynamic modules.
+	- added location-based AutoShow options, updated UI language for AutoShow options.
+	- added location-based AutoShow options.
+	- declared local copies of commonly-used global variables/functions.
+	- blocked out options for selecting which of race/class/raidTargetIcon are involved in target tracking; always use all of them, when available.
+	- factored target tracking into its own Ace2 module (not dynamic, always loads), updated to receive "OnTargetTrackingDataUpdate" events as driver for [TargetName] changes, updated to set [TargetName] for current target nameplate (on timed intervals; starting a fight while target nameplate was visible was not updating).
+	- factored target tracking into its own Ace2 module (not dynamic, always loads), which now accepts and forwards player/group target change events. added an "OnTargetTrackingDataUpdate" event for use by other modules.
+	- updated major/minor versions.
+	- 
+	- updated with new issues and progress.
+	- tweaked, pending some interaction with TagCompiler-1.0 author(s), to generate empty strings when conditional tags involving color tags evaluate to "false".
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- enhanced to translate non-load message (on broker detection), added comments to ID language of localization.
+	- enhanced to translate non-load message (on broker detection).
+	- enhanced to translate non-load message (on broker detection).
+	- enhanced to translate non-load message (on broker detection), added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+	- added comments to ID language of localization.
+digmouse-75360:
+	- zhCN/TW update
+acapela-52217:
+	- updated major/minor version.
+	- updated with new issues and progress.
+	- added colors to separators and FAQ, underlined recent changes, fixed a few typos.
+	- updated with new issues and progress.
+	- enhanced to preserve modules settings when assigning a preset.
+	- updated with recent changes, applied colors to FAQ for readability.
+	- some prep work for titles on cross-realm units, but disabled cross-realm title gathering for now.
+	- fixed typo in AceDB namespace name.
+	- added resting states back into localization.
+	- added health threshold example to color tags documentation.
+	- factored AutoShow functionality out into a dynamic module, updated major version.
+	- factored AutoShow functionality out into a dynamic module, added non-hooked nameplate redisplay functionality, to avoid announcements, made SetNameplateName() functionality incrementally more robust (hopefully).
+	- reverted to version that does not have AutoShow options present.
+	- factored AutoShow functionality out into a dynamic module.
+	- factored AutoShow functionality out into a dynamic module.
+	- fixed typo.
+	- enhanced to use non-hooked nameplate redisplay functionality, to avoid announcements.
+	- added AutoShow module.
+	- refactored slightly in the course of debugging TagCompiler-1.0 problems; some diagnostic instrumentation remains, commented out, in case it is needed again.
+	- fixed typo causing LUA error.
+	- fixed to avoid dereferencing local "profile" if it is nil.
+	- enhanced to use non-hooked nameplate redisplay functionality, to avoid announcements.
+	- tweaked locally, pending some interaction with its author(s), to generate empty strings when ~Tag/Not(Tag)/ColorIf()/etc conditions evaluate to "false".
+	- forced update of minor version.
+	- removed obsolete XML.
+	- updated major/minor versions.
+	- updated major version, updated optional dependencies.
+	- attempted some workarounds to fix dynamic module enable/disable messing with nameplate display settings.
+	- updated to reflect some completed items.
+	- added documentation for high-level visibility options.
+	- (hopefully) fixed a typo/error in ruRU localization.
+	- (hopefully) fixed a typo/error in ruRU localization.
+	- enhanced to show nameplate display state in tooltip, made consistent with major version of most recent FuBarPlugin-2.0.
+	- enhanced to show nameplate display state in tooltip.
+	- updated to latest/greatest version of embedded library.
+	- added functionality/options to control automatic enable/disable of nameplates under various conditions.
+	- updated major/minor versions.
+	- updated major version, added FuBar/Broker dependencies, made FuBar, various LibDataBroker addons, and their respective brokers optional dependencies.
+	- updated with recent discoveries/process.
+	- broke module-loading documentation out into separate items, added documentation on Presets and interaction with module loading, added documentation on where text options appear.
+	- added check for presence of profile in OnDisable().
+	- got rid of obsolete XML.
+	- got rid of obsolete XML.
+	- condensed activation process somewhat, added calls to dynamic module OnDisable(), added checking for presence and type of initialization infrastructure.
+	- updated to use FuBarPlugin-2.1, refactored weaving of FuBar waterfall data, added an call to AceAddon-2.0 "InitializeAddon()" at the end of LUA initialization.
+	- added an call to AceAddon-2.0 "InitializeAddon()" at the end of LUA initialization.
+	- updated to latest/greatest version.
+	- returned zero (0) for a status from glow color reverse-engineering process.
+	- made default background color consistent with those of other bar-style artifacts.
+	- reverted background colors to defaults in Acapela presets.
+	- updated major/minor version.
+	- updated major version.
+	- added summary description line for AloftPlayerTitle module, used lighter-toned colors in text color directives, to improve readability.
+	- added caching capability.
+	- added caching capability, expanded to hostile players.
+	- forced minor version update.
+	- fixed left offset.
+	- updated major/minor versions.
+	- updated major version, added esES locale note, added initial version of player title module, hoisted all file inclusion into Aloft.toc, to cut down on file count during load time, added initial cut at a ruRU localization.
+	- added a TODO item.
+	- defaulted functionality to disabled on module load.
+	- defaulted functionality to disabled on module load.
+	- defaulted functionality to disabled on module load.
+	- added a TODO item.
+	- deleted diagnostic print statements, beefed up tooltip data checking, added frame delay to update process on target selection.
+	- changed frame delay event name to make it more localized/specific to AloftNameText.
+	- changed frame delay event name to make it more localized/specific to AloftNameText.
+	- changed default enable state to "true" (if the module is enabled, the CC bar will show); moved global function local redeclarations farther up towards the front of the file.
+	- updated Acapela preset with values for new cast bar, crowd control bar, and stacked debuff text options.
+	- neutral units can be attacked, therefore their nameplates may require a glow as well.
+	- removed diagnostic print statement.
+	- reordered spell name and spell time text translations.
+	- changed saved variables database name.
+	- enhanced with recent changes.
+	- enhanced with new items, checked off old items.
+	- added initial version of player title module.
+	- added player title module.
+	- tried to beef up handling of iterator generation for named nameplates.
+	- hoisted all file inclusion into Aloft.toc, to cut down on file count during load time.
+	- added initial cut at a ruRU localization.
+	- made AloftPresets a dynamic module.
+	- made AloftPresets a dynamic module.
+	- removed unnecessary check for AloftModules global.
+	- deleted obsolete folder, contents repackaged.
+	- fixed typo in PlaceFrame() method, enhanced to cache original Blizzard level text on nameplates.
+	- re-named the Aloft "AloftSpellNameText" module to "AloftCastBarSpellNameText".
+	- re-named the Aloft "AloftSpellNameText" module to "AloftCastBarSpellNameText".
+	- enhanced to detect unit type, level, and maximum health from associated nameplate, and assume that neutral units below a level (<=1) and max health (<=8) threshold are critters.
+	- added spell icon, spell name/rank text, and spell remaining time text to crowd control bar.
+	- added border/border color to crowd control bar, made crowd control bar like other bar functionality (in terms of placement/etc), added spell icon, spell name/rank text, and spell remaining time text to crowd control bar.
+	- added spell icon, spell name/rank text, and spell remaining time text to crowd control bar.
+	- added frame delay to target name text update.
+	- added frame delay to target level text update.
+	- added "color transition" capability for counter text, reorganized options menu(s) to match those of other "text" functionality.
+	- added "color transition" capability for counter text, reorganized options menu(s) to match those of other "text" functionality.
+	- unified handling of lacerate and sunder, added "color transition" capability for counter text.
+	- obsolete folder, contents have been repackaged.
+	- forced minor revision update.
+	- updated major version.
+	- updated major/minor version.
+	- updated major version.
+	- added border/border color as direct/independent options of threat bar.
+	- backed out attempted fixes for name/level changes behind Aloft's back, pending more thorough analysis of framerate/update issues.
+	- added border/border color as direct/independent options of mana bar.
+	- added border/border color as direct/independent options of cast bar, mana bar, and threat bar.
+	- added border/border color as direct/independent options of cast bar.
+	- changed file load order.
+	- added a comment.
+	- forced minor revision update.
+	- added a FAQ entry and some additional documentation.
+	- 
+	- updated with new items.
+	- updated tag module dependency documentation.
+	- added functionality to re-apply visibility settings to visible nameplates on end of combat (in case they disappear/reappear during combat).
+	- changed default threat flash texture.
+	- disabled diagnostic print statements.
+	- beefed up load-time nil checking, updated Acapela preset, fixed options load order issues.
+	- fixed options load order issues.
+	- fixed default module enable flags.
+	- repackaged.
+	- added a forced update of unit name on target action.
+	- added a forced update of unit level on target action.
+	- disabled "always" flag and related functionality.
+	- fixed typo in module checking.
+	- added unitName argument to Aloft:GetTargetNameplate() method, in case the caller has already obtained it, factored nameplate unit name assignment into its own method so it can be called from elsewhere.
+	- added change events for unit level and unit name.
+	- added svn:keywords/Revision tag.
+	- trying to force minor revision update.
+	- dedicated file for major/minor version data.
+	- repackaged all modules, updated major version.
+	- repackaged.
+	- repackaged.
+	- repackaged.
+	- repkackaged.
+	- repackaged.
+	- updated with new bugs, feature requests, and completed work.
+	- class colors in nameplates and FuBar/LDB are mentioned more prominently.
+	- Aloft include file.
+	- restored some (obsolete) creature types.
+	- restored some (obsolete) creature types, beefed up "not specified" checking.
+	- separated text tag processing out and added it as an option, reworded option text, made numerous modules dynamic.
+	- repackaged and made dynamic.
+	- repackaged and made dynamic.
+	- repackaged and made dynamic.
+	- repackaged and made dynamic.
+	- repackaged and made dynamic.
+	- fixed typos.
+	- fixed typos.
+	- obsolete folder, contents have been repackaged.
+	- repackaged.
+	- code formatting.
+	- renamed.
+	- repackaged AloftIsTargetData functionality into its own module, altered the name of this module.
+	- repackaged (yet again).
+	- repackaged.
+	- repackaged/added ShortGuildData options.
+	- fixed typo.
+	- changed the module name.
+	- cleaned up wording in options description text.
+	- fixed typo in module load guard statements at top of file, cleaned up wording in options description text.
+	- fixed typo in module load guard statements at top of file.
+	- repackaged and made dynamic.
+	- renamed.
+	- repackaged (yet again).
+	- repackaged.
+	- renamed.
+	- repackaged (yet again).
+	- 
+	- got rid of diagnostic print statements.
+	- got rid of diagnostic print statements.
+	- got rid of diagnostic print statements.
+	- got rid of diagnostic print statements.
+	- repackaged AloftHealthData and AloftHealthText functionality, and made dynamic.
+	- code formatting.
+	- renamed.
+	- repackaged AloftHealthBarDeficit functionality.
+	- repackaged AloftHealthBarDeficit functionality, fixed typo in module dependency check.
+	- 
+	- repackaged.
+	- cleaned up wording of module menu description text.
+	- repackaged PetOwnersName functionality and made dynamic.
+	- got rid of diagnostic print statements.
+	- fixed typo in dynamic flag.
+	- repackaged and made dynamic.
+	- code formatting changes.
+	- flagged as a dynamic module.
+	- flagged as a dynamic module.
+	- reordered bar initialization to fix small defect in application of borders.
+	- made dynamic.
+	- renamed.
+	- repackaged PetOwnersNameData functionality, made dynamic.
+	- enhanced to reload text tag generation after load of dynamic module.
+	- renamed.
+	- renamed.
+	- renamed.
+	- repackaged CastBarTimeText and CastBarSpellName functionality, and made dynamic.
+	- repackaged CastBarTimeText and CastBarSpellName functionality, and made dynamic.
+	- renamed.
+	- obsolete folder, contents have been repackaged.
+	- repackaged.
+	- repackaged.
+	- obsolete folder, contents have been repackaged.
+	- repackaged.
+	- obsolete folder, contents have been repackaged.
+	- repackaged.
+	- repackaged.
+	- repackaged.
+	- repackaged, made dynamic, added a threat bar border (options basically slaved to frame border).
+	- repackaged and made dynamic.
+	- repackaged.
+	- repackaged, made dynamic, added a mana bar border (options basically slaved to frame border).
+	- cheap home-grown dynamic module system for Aloft.
+	- repackaged.
+	- repackaged and made dynamic.
+	- repackaged.
+	- repackaged.
+	- repackaged and made dynamic.
+	- repackaged.
+	- repackaged and made dynamic.
+	- repackaged.
+	- repackaged, made dynamic.
+	- repackaged.
+	- repackaged, made dynamic.
+	- repackaged.
+	- repackaged, made dynamic, added a cast bar border (options basically slaved to frame border).
+	- repackaged, made dynamic.
+	- repackaged.
+	- repackaged.
+	- extracted version information to dedicated LUA.
+	- repackaged.
+	- repackaged, added a compile-cache invalidate method.
+	- repacked, made UpdateAloftData() a module-scope method.
+	- 
+	- repackaging.
+	- removed TOC.
+	- changed to allow any class to use combo points, enhanced to detect changes between druid forms and their stacking points.
+	- repackaging
+	- repackaging
+	- added Mana/Threat bar updates on look/feel changes.
+	- increased vertical offset for cast bar.
+	- repackaging.
+	- repackaging.
+	- repackaged back into Aloft.
+	- repackaged back into Aloft.
+	- combined into a single addon.
+	- combined into one addon.
+	- repackaged back into Aloft.
+	- repackaging (again).
+	- repackaging (again).
+	- repackaged to act as an Aloft module again, added dynamic load capabilities, added border to mana bar.
+	- repackaging.
+	- repackaged to act as an Aloft module again, added dynamic load capabilities, added border to mana bar.
+	- combining modules.
+	- fixed typo in file inclusions.
+	- fixed typo in file inclusions.
+	- renamed for consistency with other Aloft module names.
+	- renamed for consistency with other Aloft module names.
+	- renamed for consistency with other Aloft module names.
+	- renamed for consistency with other Aloft module names.
+	- cleaned out some diagnostics.
+	- renamed for consistency with other Aloft module names.
+	- renamed for consistency with other Aloft module names.
+	- renamed for consistency with other Aloft module names.
+	- changed color arithmetic to be 256-relative for consistency, updated major/minor versions.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes, updated major version.
+	- updated language disclaiming testing under WotLK.
+	- updated with new items, marked off old items.
+	- updated to reflect combo-points (+lacerate/sunder) and poly/shackle (+banish) enhancements.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- updated the graphics.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- added aggro inversion and a couple of extra textures.
+	- added a couple of extra textures.
+	- added threat inversion and a couple of extra textures.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes. added a default text color (for cases in which a school/action-based text color cannot be identified).
+	- formerly AloftPolymorph/AloftShackleUndead functionality. teased Aloft apart into separate addons. added banish support.
+	- added some text separators.
+	- formerly AloftComboPoint functionality. teased Aloft apart into separate addons. added lacerate/sunder support.
+	- added threat inversion, a couple of extra textures, and updated major version.
+	- updated major version.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- renaming module.
+	- renaming module.
+	- added embeds folder.
+	- moved embed to FuBar_AloftFu addon.
+	- added embeds folder.
+	- renaming module.
+	- renaming module.
+	- renaming module.
+	- renaming module.
+	- renaming module.
+	- renamed to Broker_Aloft
+	- renamed to Broker_Aloft
+	- updated major/minor version.
+	- updated major version.
+	- "enUS" localization is unconditional, as a default.
+	- updated major version.
+	- updated major version.
+	- updated major version.
+	- updated major version.
+	- updated major version.
+	- updated major version.
+	- updated major version.
+	- added a class color configuration capability, updated usage of class colors to employ the customized values.
+	- added a couple more "partial" glow textures.
+	- added a couple more "partial" glow textures.
+	- added a couple more "partial" glow textures.
+	- added a class color configuration capability, updated usage of class colors to employ the customized values.
+	- "enUS" localization is unconditional, as a default.
+	- "enUS" localization is unconditional, as a default.
+	- "enUS" localization is unconditional, as a default.
+	- added a couple more "partial" glow textures, "enUS" localization is unconditional, as a default.
+	- added a couple more "partial" glow textures.
+	- added a couple more "partial" glow textures.
+	- added a couple more "partial" glow textures.
+	- "enUS" localization is unconditional, as a default.
+	- "enUS" localization is unconditional, as a default.
+	- adding root folders for the next wave of separate Aloft addons.
+	- forced minor revision.
+	- updated to latest/greatest embedded libraries.
+	- updated major/minor revisions.
+	- stitched options in variably, based on whether bar addon is enabled.
+	- updated major/minor revision.
+	- stitched options in variably, based on whether bar addon is enabled.
+	- updated major/minor revisions.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- teasing Aloft apart into separate addons. no (intentional) functionality changes.
+	- updated major version, refactored cache of healthbar width, adjusted frame level to correspond to healthbar frame level.
+	- broke localizations out into their own files.
+	- broke localizations out into their own files.
+	- reordered file order, updated major version.
+	- updated major version, relocated mana and threat functionality to their own addons.
+	- relocated mana and threat functionality to their own addons.
+	- relocated mana and threat functionality to their own addons.
+	- relocated mana and threat functionality to their own addons.
+	- fixed a few errors, and added a column to the tag table describing which module tags originate under.
+	- fixed typo.
+	- added various items, per user requests.
+	- roots of new Aloft modules.
+	- roots of new Aloft modules.
+	- tracking data structures are now members of Aloft, so that they can be shared between modules.
+	- force minor revision update.
+	- updated usage of GetBattlefieldScore() to access new return value/order.
+	- updated usage of GetBattlefieldScore() to access new return value/order.
+	- refactored nameplate validation, extended proactive data updates to all nameplates (instead of just visible), fixed typo in usage of UnitClass(), added/modified some diagnostics, updated major/minor version.
+	- updated major version.
+	- extended position latitude for name text, so that it can go off the left/right ends of the healthbar.
+	- added OnUnitidDataChanged event listener, added some diagnostics.
+	- reintroduced RosterLib, fixed typo in usage of UnitClass().
+	- reintroduced RosterLib.
+	- added runes/runic power to PowerTypeColor tag color table, added PowerTypeName/ShortPowerTypeName tags.
+	- refined nameplate validation.
+	- no changes?
+	- enhanced attempts to differentiate players/pets with the same name.
+	- refined nameplate validation.
+	- races also have creature types, they are not incompatible.
+	- fixed typo in mouseover/target logic, refined nameplate validation, reintroduced RosterLib, normalized internal class-name representations.
+	- removed obsolete libraries.
+	- updated to latest/greatest version of libraries.
+	- added some new items, marked off some completed items.
+	- updated FAQ.
+	- added PowerTypeName/ShortPowerTypeName tags and documentation.
+digmouse-75360:
+	- Aloft:
+	-update zhCN/TW localizations for class-icon and glow module
+	-@acapela: where do the options for ToT module lie in?
+acapela-52217:
+	- updated major/minor version.
+	- updated version.
+	- cleaned up math for HealthFraction.
+	- cleaned up math for ThreatFraction.
+	- cleaned up math for ManaFraction.
+	- force minor revision update.
+	- added Death Knight to local class names, added a nil check.
+	- moved raid color class map and nameplate color checking to Aloft.lua, refactored GetNameplate() method selection, initial implementation of unit name <-> multiple name plate association, some code cleanup, updated major/minor revision.
+	- updated version number.
+	- beefed up target nameplate checking, removed group requirement.
+	- applied math.ceil() to HealthFraction value calculation.
+	- updated task status.
+	- beefed up some diagnostics.
+	- added runic power color.
+	- players do not have nameplates, and therefore don't need unitids... assume if "player" is received, it is actually for a pet named the same as the player, and assuming this solo sort of situation is the best that can be done via LibRoster (i.e. teasing apart players and pets named the same, in a group/raid, is not worth it).
+	- enhanced description of "Show Class Colors in Nameplates" FAQ entry.
+	- added runic power color.
+	- cache threatbar width for efficiency.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- added runic power color.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- refactored GetNameplate() methods.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- moved raid color class map to Aloft.lua, refactored data gathering to take nameplate class color into account, and to eliminate incompatible data values when data is confirmed.
+	- added PetOwnersName to color determination.
+	- added new material to FAQ, cleaned up FAQ wording slightly.
+	- prep-work, re-ordering options in conjunction with health bar deficit module.
+	- initial revision.
+	- initial revision.
+	- refactored toggle processing slightly, changed name of blizzard glow texture region, promoted showClassColorInVKey variable from a local to a member of Aloft, so that it can be used elsewhere.
+	updated major/minor version.
+	- updated with new/completed tasks.
+	- refactored slightly, added brokers to optional dependencies.
+	- reduced minimum height on bars to 1, per user request.
+	- reduced minimum height on bars to 1, per user request.
+	- refactored broker embeds in the process of dealing with the TargetNameData profile declaration bug.
+	- added ganker roll of honor.
+	- modified to use RAID_ROSTER_UPDATE event, added some nil checking, refactored unit target tracking slightly.
+	declared "profile" variable local!!!
+	- modified to use RAID_ROSTER_UPDATE event.
+	- refactored toggle processing slightly.
+	- refactored to permit straightforward hooking of nameplate display methods, got rid of unneeded translations, enhanced to check for incompatible broker, added title text for FuBar use, enhanced OnClick functionality, added dewdrop/waterfall refresh processing, additional nil checking.
+	- enhanced to check for incompatible broker, enhanced OnClick functionality, additional nil checking.
+	- modified to use RAID_ROSTER_UPDATE event.
+	- deleted some dead code, now lives in Class Data module (where it is actually used) if needed again.
+	- cleaned up slightly, changed name of blizzard glow texture region.
+	- enhanced to use nameplate class colors as a class indicator when the ShowClassColorInNameplate CVar is set, modified to use RAID_ROSTER_UPDATE event.
+	- updated to latest/greatest versions of embedded libraries.
+	- updated detection, processing, and diagnostics related to ShowClassColorInNameplate CVar, updated major/minor revision, commented out some diagnostic-only code.
+	- added ClassIcon subsystem, updated major version.
+	- updated various reminders.
+	- added initial cut at FAQ, mention of Class Icon system, mention of LDB support.
+	- added ClassIcon subsystem.
+	- changed flash frame position defaults.
+	- added classIcon presents to "Acapela", tweaked raid icon position and frame packing dimensions in "Acapela".
+	- added hooks to manage waterfall and dewdrop menu refresh when options are twiddled.
+	- added dependency to healthbar color change event, refactored class color processing, enhanced diagnostics.
+	- added dependency to healthbar color change event, enhanced diagnostics.
+	- all in pursuit of class color updates in PvP. simplified RAID_CLASS_COLORS output, added comments, added colorByClass check to enable required "[Class]" data, refactored color setting functions slightly, added class color check to neutral healthbars (arena?).
+	- fixed typo in color option profile variable name.
+	- added translations and current version name to menu system.
+	- added translations and current version name to menu system.
+	- revised dynamic event name syntactic conventions.
+	- revised dynamic event name syntactic conventions, commented out an extraneous line of code used in testing.
+	- revised dynamic event name syntactic conventions.
+	- deleted apparent duplicate definition of module method OnEnable.
+	- relocated one line of code.
+	- revised dynamic event name syntactic conventions.
+	- simplified to single event for text color tag notification.
+	- fixed typo in advanced color tag example, added hex color code for Death Knight.
+	- updated to latest/greated embedded libraries.
+	- updated major/minor version.
+	- updated some commentary to reflect progress.
+	- added some comments, and a special case group target count capability for ungrouped pet-owning classes.
+	- commented out LDB support; people should use Broker2FuBar.
+	- fixed typos in hook function invocation(s).
+	- updated to latest/greated embedded libraries.
+	- major/minor version update.
+	- version update, added LibDataBroker-1.1 support.
+	- updated with mention of keybindings and sharedmedia.
+	- updated with some new task reminders.
+	- enhanced to check target for buffs, and update cooldown indicator on next frame.
+	- enhanced to check target for buffs, and update cooldown indicator on next frame.
+	- updated "Acapela" preset.
+	- LibDataBroker-1.1 support.
+	- limited packing and normal height/width to more sensible ranges.
+	- enhanced to permit user specification of the cast bar color.
+	- LibDataBroker-1.1 support.
+	- LibDataBroker-1.1 support.
+	- fixed typo in plugin configuration.
+	- enhanced to permit user-specification of the cast bar color.
+	- fixed typo in block comment at top of file.
+	- moved chat command registration to OnInitialize(), added some preload debug infrastructure, updated major and minor revision.
+	- restored/refined FuBar support, updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits, updated major version.
+	- cleaned up header specifications.
+	- restored/refined FuBar support, updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- flagged ToT system as experimental
+	- updated with some new task reminders.
+	- switched from LibBabble-Spell-3.0 to native GetSpellInfo().
+	- switched from LibBabble-Spell-3.0 to native GetSpellInfo().
+	- updated to LibGratuity-3.0.
+	- updated to LibGratuity-3.0.
+	- added integrated ToggleAllNameplates() hook, for cleaner status change messages from keybinds.
+	- restored/refined FuBar support.
+	- eliminated unusued embedded libraries.
+	- eliminated unusued embedded libraries.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- updated to latest/greated embedded libraries. included TOCs and licensing where available in lieu of author credits.
+	- added Aloft key bindings and translations, changed the nature of the debugging diagnostics in the CVAR_UPDATE event handler, enhanced to assume hostile nameplates by default (in case original health bar color changes), major version change, minor revision change.
+	- added Aloft key bindings.
+	- updated TOC, re-enabled FuBar support.
+	- updated with summary of interaction between Blizzard and Aloft options for enemy nameplate class colors.
+	- re-enabled FuBar support.
+	- update with mnemonics of new/completed features.
+	- added description for target-of-target system, updated other comments.
+	- changed the display order of the ThreatFlash option set.
+	- added a generic (though limited) target-of-target capability. overloads "[TargetName]" text tag.
+	- added a generic (though limited) target-of-target capability. overloads "[TargetName]" text tag.
+	- added a generic (though limited) target-of-target capability. overloads "[TargetName]" text tag.
+	- added PetOwnerName to the list of required data (that can drive visibility control).
+	- changed the nature of the debugging diagnostics in the CVAR_UPDATE event handler.
+	- fixed typo in code that was causing LUA errors.
+	- changed the nature of the debugging diagnostics in the CVAR_UPDATE event handler.
+	- enhanced to collect race data from the battlefield score.
+	- added some debug diagnostics.
+	- fixed defect in mirroring Blizzard aggro "glow" color.
+	- added a TODO comment.
+	- re-enabled FuBar support.
+	- force revision update.
+	- fixed typo in texture paths.
+	- added a few more options to preset "Acapela".
+	- fixed typo in texture paths, added diagnostic debug statement.
+	- further updates/cleanup regarding audxilliary libraries and nameplate "glow".
+	- updated to expect the WoW 3.0.2 nameplate region/frame hirarchy, removed dead code related to obsolete nameplate Show/Hide API functions.
+	- updated for WoW 3.0.2 and the current state of the art in subsidiary libraries.
+	- most recent versions of embed, c. 2008/10/20.
+	- updated addon version, got rid of obsolete health estimation and threat libraries, got rid of FuBar saved variables.
+	- specified events for health bar color tags.
+	- additional textures for nameplate aggro-glow mechanism for Aloft (replaced the default Blizzard system)
+	- nameplate aggro-glow mechanism for Aloft (replaced the default Blizzard system)
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability), enhanced/simplified/debugged nameplate threat flash subsystem, integrated with aggro glow subsystem.
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- nameplate aggro-glow mechanism for Aloft (replaced the default Blizzard system).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability).
+	- code reformatting during debugging (for readability), made invocation of SharedMediaLib file-scope local.
+	- code reformatting during debugging (for readability)/
+	- removed dead code related to obsolete threat APIs.
+	- enhanced/simplified/debugged nameplate threat flash subsystem, integrated with aggro glow subsystem.
+	- removed dead code related to obsolete nameplate Show/Hide API functions.
+	- removed dead code related to obsolete health estimation APIs.
+	- removed dead code related to obsolete ComboPoint API function.
+	- changed AceDB namespace name for module, added comments on hook chaining, added a check to prevent redundant hooking.
+	- code reformatting during debugging (for readability)
+	- deleted all dead code related to obsolete nameplate Show/Hide API functions.
+	- added "Acapela" preset.
+	- nameplate aggro-glow mechanism for Aloft (replaced the default Blizzard system)
+	- removed explicit event registration for health bar color change event(s); now registered through the tag compilation mechanism when appropriate.
+	- removed explicit event registration for health bar color change event(s); now registered through the tag compilation mechanism when appropriate.
+	- added nil check for backdropRegion.
+	- updated version, forced revision update.
+	- updated zhCN/zhTW notes and version.
+	- updated credits with recent work and information from the WoWAce changelog.
+	- regressed embedded Ace2 library AceComm-2.0 to main r82173 (from WotLK branch r79554).
+digmouse-75360:
+	- -update the toc notes info
+	- zhCN update
+acapela-52217:
+	- version update, and forced revision update.
+	- version update.
+	- beefed up and simplified group threat processing.
+	- updated to use WoW 3.x combo point API when available. beefed up target nameplate cache/lifecycle.
+	- added a note about area threat (should Threat-2.0 ever get on its feet in WoW 3.x).
+	- beefed up wording to be more descriptive.
+	- leveraged to dump out Blizzard(tm) raid class colors, for use in documentation.
+	- documented color tags.
+	- force a revision change.
+	- updated flash frame texture notation, Frame:SetTexture() was not finding it as a string.
+	- put all the threat metrics through math.floor, to make sure any mantissa is trashed.
+	- outline texture for flash frame implementation. from SharedMedia (WoWAce), apologies for any copyright infringement.
+	- updated major version, force minor revision change.
+	- updated with new tasks/tasks completed.
+	- updated with new information.
+	- fixed passing and update of residual threat values on broad-spectrum nameplate update.
+	- added/subtracted embeds.
+	- no longer used.
+	- updated to latest/greatest SharedMedia-3.0 embed from the WoWAce WotLK development branch.
+	- updated to latest/greatest FuBar embed from the WoWAce WotLK development branch.
+	- updated to latest/greatest Ace2/Ace3 required embeds from the WoWAce WotLK development branch.
+	- no longer used.
+	- updating to LibBabble-*-3.0
+	- got rid of Babble-2.x
+	- added "threat flash" capabilities, resembling Blizzard(tm) native WotLK nameplate features.
+	- revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks).
+	- updated to sense and use Blizzard(tm) native threat API, if it is present. got rid of MaxThreatName text tag.
+	- added "threat flash" capabilities, resembling Blizzard(tm) native WotLK nameplate features.
+	- added target change handling for grouped units (including solo pets). added "next frame" delay.
+	- 
+	- updated to LibBabble-Spell-3.0.
+	- beefed up text region show/hide lifecycle so that bogus text would not show up from the region pool.
+	- disabled "experimental" UNIT_HEALTH updates, relying purely on "IsTargetDataChanged" events. revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks). condition mana bar display on presence of MaxMana (non-nil, non-zero value, i.e. only units that have any "power"). centralized mana data clear/assignment (mostly) in dedicated methods.
+	- beefed up mana bar show/hide lifecycle, to avoid showing empty mana bars out of the mana bar pool.
+	- revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks). added target change handling for grouped units (including solo pets).
+	- enhanced to sense and use any of MobHealth3, LibMobHealth-4.0, and MobInfo2, in that order of preference. tweaked HealthDeficit tag value calculation to sense presence of MaxHealth data.
+	- Enabled data collection and text tag to operate at all times.
+	- Updated some debug instrumentation.
+	- revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks).
+	- fixed some discrepancies in function argument naming. added a LogEvent() method.
+	- revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks).
+	- Made certain unitids are being cleared when they should.
+	- Enhanced update events to fire on a "next frame" delay.
+	- Updated some debug instrumentation.
+	- Updated to LibBabble-Class-3.0.
+	- Removed MaxThreatName tag, added a GroupTargetCount example.
+	- Updated translation notes to request assistance, included mob health APIs and LibStub in optional dependencies, disabled FuBar for the duration of the transition to Ace3 and WoW 3.x.
+	- revised nameplate handling for WoW 3.x (new nameplate frame heirarchy, CVar processing, and conditioning of obsolete hooks). updated some debug instrumentation.
+	- porting to WoW 3.x/WotLK.
+	- porting to WoW 3.x/WotLK.
+	- porting to WoW 3.x/WotLK.
+	- use LibSharedMedia-3.0 for fonts, borders, and backgrounds
+	- updated externals to match latest/greatest from WoWAce Aloft-80814.10.
+	- repaired translations, re-saved encoded as "UTF-8 without BOM".
+	- Forced global revision update.
+	- commented out debugging.
+	- implemented internal event to trigger text update on changes to health bar color.
+	- implemented internal event to trigger text update on changes to health bar color.
+	- refactored to centralize health bar color change processing in a single method; implemented internal event to trigger text update on changes to health bar color. commented out debugging.
+	- simplified some of the debug API method names.
+	- implemented internal event to trigger text update on changes to health bar color. commented out debugging.
+	- commented out debugging.
+	- commented out debugging.
+	- implemented internal event to trigger text update on changes to health bar color. commented out debugging.
+	- commented out debugging.
+	- commented out debugging.
+	- commented out debugging.
+	- implemented internal event to trigger text update on changes to health bar color. commented out debugging.
+	- commented out debugging.
+	- implemented internal event to trigger text update on changes to health bar color. commented out debugging.
+	- added event processing triggered by setting health bar color.
+	- changed debug subsystem name; commented out debugging.
+	- commented out debugging.
+	- registered AloftTag as a separate subsystem; commented out debugging.
+	- moved extraction of health bar colors from aloftData inside the heck for a string value; commented out debugging.
+	- Updated URLs for external WoWAce project references to be less revision-level specific. Formatted URLs using [url][/url] tags, to facilitate cut/paste into other forms of presentation.
+	- Forced global revision update.
+	- Updated disclaimer text. Supplied additional resource URLs.
+	- Forced global revision update.
+	- Relocated to sub-folder of trunk.
+	- Forced global revision update.
+	- Obsolete files. Looks like revision numbers are much easier than the documentation indicated.
+	- Obsolete file. Looks like revision numbers are much easier than the documentation indicated.
+	- Failed to save the file in an editor session before final commit.
+	- Additional disclaimer, request for localization assistance, and WoWInterface BETA forum thread URL.
+	- Revision of work to date, additional ideas.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- Refactored to deal with version number yet again.
+	- Testing revision number keyword.
+	- Testing revision number keyword.
+	- Testing revision number keyword.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- An attempt to embed revision numbers in the addon version.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- Revision update.
+	- alright, global repository version numbers are not transparent in SVN, nor are they handled by TortoiseSVN, the svn:keywords properties, or etc. have to use an external application. all configured now.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- Trying global revision keyword substitution again. This time with the svn:keywords property set.
+	- Updated revision number substitution to Tortoise/SVN key.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+	- Codebase migration from WoWAce to WoWInterface. Initial Revision.
+wowinterface:
+	- Creating inital directory structure

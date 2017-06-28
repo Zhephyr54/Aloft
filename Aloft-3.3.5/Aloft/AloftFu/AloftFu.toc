@@ -1,0 +1,31 @@
+## Interface: 30000
+## Version: 1.0.1
+## Title: AloftFu
+## Notes: Provide a FuBar interface for Aloft
+## Notes-deDE: Need translation, seeking volunteers
+## Notes-frFR: Need translation, seeking volunteers
+## Notes-koKR: Need translation, seeking volunteers
+## Notes-ruRU: Need translation, seeking volunteers
+## Notes-zhTW: Need translation, seeking volunteers
+## Notes-zhCN: Need translation, seeking volunteers
+## Author: Acapela (legacy: Roartindon/Silvermoon)
+## Dependencies: Aloft
+## OptionalDeps: Ace2, Dewdrop-2.0, FuBarPlugin-2.0, Waterfall-1.0, FuBar, Broker2FuBar
+## X-Category: Interface Enhancements
+## X-Embeds: FuBarPlugin-2.0
+## SavedVariables: AloftFuDB
+## X-License: LGPL v2.1 or later
+## X-Donate: PayPal: acapela at flash dot net OR PayPal:jeff at lim dot com dot au
+## X-Curse-Packaged-Version: r20100221163746
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+embeds.xml
+
+enUS.lua
+koKR.lua
+zhCN.lua
+zhTW.lua
+
+AloftFu.lua

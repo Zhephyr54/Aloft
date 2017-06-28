@@ -1,0 +1,21 @@
+﻿## Interface: 20400
+## LoadOnDemand: 1
+## Author: Maia
+## Title: Lib: RosterLib
+## Notes: Embeddable library to track raid/party roster
+## Version: 2.1
+## LastUpdate: $Date: 2008-03-26 11:55:28 +0000 (Wed, 26 Mar 2008) $
+## X-ReleaseDate: "$Date: 2008-03-26 11:55:28 +0000 (Wed, 26 Mar 2008) $"
+## X-Website: http://www.wowace.com
+## X-Email: maia.proudmoore@gmail.com
+## X-Category: Library
+## X-AceLibrary-Roster-2.1: true
+## X-Curse-Packaged-Version: r93
+## X-Curse-Packaged-Version: r20100221163746
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+## OptionalDeps: Ace2
+
+Roster-2.1\Roster-2.1.lua

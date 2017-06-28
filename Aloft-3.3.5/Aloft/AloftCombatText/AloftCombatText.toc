@@ -1,0 +1,30 @@
+## Interface: 30000
+## Version: 1.0.0
+## Title: AloftCombatText
+## Notes: Display combat text on Aloft nameplates
+## Notes-deDE: Need translation, seeking volunteers
+## Notes-frFR: Need translation, seeking volunteers
+## Notes-koKR: Need translation, seeking volunteers
+## Notes-ruRU: Need translation, seeking volunteers
+## Notes-zhTW: Need translation, seeking volunteers
+## Notes-zhCN: Need translation, seeking volunteers
+## Author: Acapela (legacy: Roartindon/Silvermoon)
+## Dependencies: Aloft
+## OptionalDeps: Ace2, LibSharedMedia-3.0
+## X-Category: Interface Enhancements
+## X-Embeds:
+## SavedVariables:
+## X-License: LGPL v2.1 or later
+## X-Donate: PayPal: acapela at flash dot net OR PayPal:jeff at lim dot com dot au
+## X-Curse-Packaged-Version: r20100221163746
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+enUS.lua
+koKR.lua
+zhCN.lua
+zhTW.lua
+
+AloftCombatText.lua
+AloftCombatTextOptions.lua

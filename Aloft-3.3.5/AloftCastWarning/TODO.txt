@@ -1,0 +1,37 @@
+priority:
+
+	x revise dynamic table allocation of active records to use instances out of a file-scope pool; pull elements out of a pool when an active cast starts, return to pool when an active cast ends, and mark invalid ones while they are in the pool
+	x update to use/share AloftTargetTrackingData and AloftTargetTrackingData:OnTargetTrackingDataChanged event
+	x get basic bars and spell name/rank text showing, in their own per-nameplate regions
+	x implement OnShow border setup, like the crowd control bar/etc
+	x options for:
+		x animated cast warning bar
+		x fadeout duration (contingent on animated cast warning bar)
+		x cast bar verification interval
+		x remaining time display (new module)
+		x rank display (text module option)
+		x min/max range display (text module option)
+		x outcome display (text module option)
+		x failure/interrupt reason display (text module option)
+		x filtering for tradeskills (is spell a tradeskill? global option)
+		x filtering for player GUId (is a player?  NPC-only? global option)
+		x filtering for friendly origin (is a friendly player/NPC? hostile only? global option)
+	x comment out diagnostics
+	- make cast warning spell text a tag?
+	x copy localization strings to other locales when complete
+	- make all the coordinated locals, as well as the 3-way logic values needed in VerifyActiveCast, attributes of AloftCastWarning
+	x implement a cast text color, and a fade text color (default white and green?) separate entire option sets for cast and fade (color and typeface)?
+
+	x change active cast tracking to nameplate ID
+	x nameplate IDs for players should never include raid target assignment or race, just unit name; subsequent checking when nameplate appears should include class (to avoid collisions with pets)
+	x refine combat log sniffing to track by casting unit name as well as casting unit GUID, associate unit name and unit GUID somehow
+	- filter unit name tracking to trigger only from combat log events originating from hostile players (and only for visible player nameplates?)
+	x look up spell id on combat log event, if cannot verify then add to spellbook anyway, use default cast time, flag when it heals or does damage, delete record of spell on startup when there is no heal/damage flag (or leave a basic placeholder with an indicator that it is not a damage/healing spell, and "erase" this indicator if damage/healing is detected later)
+	x some sort of collision detection/resolution, for things like "Intercept" and "Cleave", which may have a player form and an NPC/pet form
+	x figure out why cast warning text is not appearing (frame levels appear to be correct)
+	- make sure foreground colors for cast warning bar and extra frame are correct
+	- extend targetGUIdToNameplateTime on spellcast activity
+	x CreateFrame should use nil as a parent
+	x figure out why spellIdBase is not accepting records
+	- use UNIT_COMBAT event for schools as well?
+	x figure out why cast bars are not fading (happening on PTR, as well as for tradeskills on production); difficult to reproduce

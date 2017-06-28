@@ -1,0 +1,35 @@
+## Interface: 30300
+## Version: 0.7.9
+## Title: AloftCastWarning
+## Notes: Add cast warnings to Aloft unit nameplates
+## Notes-deDE: Need translation, seeking volunteers
+## Notes-frFR: Need translation, seeking volunteers
+## Notes-koKR: Need translation, seeking volunteers
+## Notes-ruRU: Добавить предупреждения о вражеских заклинаниях к табличкам Aloft; XisRaa (Henrietta/Хенриетта at Gordunni RU)
+## Notes-zhTW: Need translation, seeking volunteers
+## Notes-zhCN: Need translation, seeking volunteers
+## Author: Acapela
+## Dependencies: Aloft
+## OptionalDeps:
+## X-Category: Interface Enhancements
+## X-Embeds:
+## SavedVariables: AloftCastWarningDB
+## X-License: LGPL v2.1 or later
+## X-Donate: PayPal: acapela at flash dot net
+## X-Curse-Packaged-Version: r20100221163746
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+AloftCastWarningLocale.lua
+AloftCastWarning.lua
+Version.lua
+
+AloftCastWarningSpellProcess.lua
+AloftCastWarningOptions.lua
+AloftCastWarningSpellIcon.lua
+AloftCastWarningSpellIconOptions.lua
+AloftCastWarningTimeText.lua
+AloftCastWarningTimeTextOptions.lua
+AloftCastWarningSpellNameText.lua
+AloftCastWarningSpellNameTextOptions.lua

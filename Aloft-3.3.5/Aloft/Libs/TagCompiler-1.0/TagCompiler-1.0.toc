@@ -1,0 +1,13 @@
+﻿## Interface: 20300
+## LoadOnDemand: 1
+## Title: Lib: TagCompiler-1.0
+## Notes: A library to provide configuration via simple tag syntax
+## Author: Roartindon/Silvermoon
+## Version: 1.0
+## X-Category: Library
+## Dependencies: Ace2
+## X-Curse-Packaged-Version: r20100221163746
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+TagCompiler-1.0\TagCompiler-1.0.lua

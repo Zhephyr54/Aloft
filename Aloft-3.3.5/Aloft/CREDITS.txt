@@ -1,0 +1,26 @@
+URL:					http://www.wowinterface.com/downloads/info10864-AloftBeta.html
+Current development:	acapela (Cennarion Circle)
+Original development:	roartindon (Silvermoon), dreww
+Code contributions:		ckknight, kergoth, punkie, kebinusan, helium, speeddymon, solor, durcyn, nevcairiel, scorpio0920, mukha521
+deDE localization:		...
+frFR localization:		...
+koKR localization:		fenlis, next96
+ruRU localization:		XisRaa (Henrietta\Хенриетта at Gordunni RU), McFLY, StingerSoft, vol4
+zhCN localization:		taburiss, digmouse
+zhTW localization:		helium, digmouse
+
+a couple of textures (bundled into folder Textures) are "lifted" from Skinner and Recount, without permission (credit Jnd and Elsia/Cryect, respectively).
+the "Truncate" tag processing is "lifted" from LibDogTags3.0-90203, without permission (credit CKnight).
+
+enthusiasts who "helped" me by subjecting my AFK characters to "World PvP" during my attempts to test cross-faction functionality:
+
+	Gama - Level 70 Human Paladin <Servants of the Light> - Cennarion Circle
+	(blueflagged, and what is it about this need on the part of some people to be dismissive?)
+
+	Articis - Level 73 Draenei Death Knight <Shadows Embrace> - Cennarion Circle
+	Tessaria - Level 55 Night Elf Priest - Cennarion Circle
+	Vinbaidie - Level 66 Dwarf Death Knight <Naga Stole Our Loot> - Cennarion Circle
+	Stornrock - Level 80 Dwarf Hunter <Onoir Aiseagtha> - Cennarion Circle
+	(blueflagged, and it took all 4 of them to handle a single AFK 70 hunter... even my pet was on "defensive")
+
+ganking AFK characters that are deliberately located out of everyone's way is bad enough. spouting some self-absorbed rationale is even worse. i am trying to help people here, and this stuff is just unnecessary (not to mention bad manners).

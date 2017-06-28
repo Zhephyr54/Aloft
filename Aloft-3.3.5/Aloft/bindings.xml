@@ -1,0 +1,11 @@
+<Bindings>
+	<Binding name="ALOFT_SHOW_ENEMY_NAMEPLATES" description="Show Neutral/Enemy Name Plates" header="ALOFT">
+		Aloft:ToggleEnemyNameplates();
+	</Binding>
+	<Binding name="ALOFT_SHOW_FRIEND_NAMEPLATES" description="Show Friendly Name Plates">
+		Aloft:ToggleFriendNameplates();
+	</Binding>
+	<Binding name="ALOFT_SHOW_ALL_NAMEPLATES" description="Show All Name Plates">
+		Aloft:ToggleAllNameplates();
+	</Binding>
+</Bindings>

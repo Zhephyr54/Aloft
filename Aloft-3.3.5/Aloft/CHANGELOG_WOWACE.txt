@@ -1,0 +1,2323 @@
+------------------------------------------------------------------------
+r80814 | mukha521 | 2008-08-22 19:04:28 +0100 (Fri, 22 Aug 2008) | 2 lines
+
+Aloft:
+- Critter visibility fix for ruRU locale
+------------------------------------------------------------------------
+r69497 | ammo | 2008-04-13 09:19:20 +0100 (Sun, 13 Apr 2008) | 1 line
+
+.Undo
+------------------------------------------------------------------------
+r69448 | scorpio0920 | 2008-04-13 08:27:42 +0100 (Sun, 13 Apr 2008) | 2 lines
+
+Aloft:
+- toc to 2.4
+------------------------------------------------------------------------
+r66741 | nevcairiel | 2008-03-28 18:42:13 +0000 (Fri, 28 Mar 2008) | 1 line
+
+Aloft: remove Threat-1.0 OptDep and X-Embeds
+------------------------------------------------------------------------
+r66722 | nevcairiel | 2008-03-28 17:32:41 +0000 (Fri, 28 Mar 2008) | 1 line
+
+Aloft: removing threat-1.0 externals and commenting out the threat modules .. no idea if this works :P
+------------------------------------------------------------------------
+r66685 | durcyn | 2008-03-28 13:36:04 +0000 (Fri, 28 Mar 2008) | 1 line
+
+Aloft: /wave Parser-3.0, you will not be missed.
+------------------------------------------------------------------------
+r61982 | durcyn | 2008-02-19 00:05:07 +0000 (Tue, 19 Feb 2008) | 1 line
+
+Aloft: Add LibBabble-Spell and -Zone -3.0, since Threat-1.0 now requires them.  Internal references to Babble-2.2 remain and should be cleaned up by someone who cares more than I do.
+------------------------------------------------------------------------
+r61413 | solor | 2008-02-15 09:58:48 +0000 (Fri, 15 Feb 2008) | 1 line
+
+Aloft: - fix LibBanzai-2.0
+------------------------------------------------------------------------
+r61331 | roartindon | 2008-02-14 22:29:09 +0000 (Thu, 14 Feb 2008) | 2 lines
+
+Aloft: Updated to LibBanzai-2.0
+
+------------------------------------------------------------------------
+r57557 | roartindon | 2007-12-27 12:55:03 +0000 (Thu, 27 Dec 2007) | 2 lines
+
+Aloft: Made ManaBar for targets show outside of groups
+
+------------------------------------------------------------------------
+r57554 | roartindon | 2007-12-27 11:14:43 +0000 (Thu, 27 Dec 2007) | 2 lines
+
+Aloft: Make targets show mana bars
+
+------------------------------------------------------------------------
+r57028 | roartindon | 2007-12-16 00:02:28 +0000 (Sun, 16 Dec 2007) | 2 lines
+
+Aloft: Don't try and call :Hide() during InCombatLockdown()
+
+------------------------------------------------------------------------
+r55696 | roartindon | 2007-11-22 09:32:08 +0000 (Thu, 22 Nov 2007) | 2 lines
+
+Aloft: Fixed Speedymon's insertion of garbage characters on the CastBarOverlay.lua line, causing related problems
+
+------------------------------------------------------------------------
+r55081 | speeddymon | 2007-11-17 03:25:22 +0000 (Sat, 17 Nov 2007) | 2 lines
+
+.trunk: Bump TOC's of more addons
+
+------------------------------------------------------------------------
+r52008 | roartindon | 2007-10-14 15:10:27 +0100 (Sun, 14 Oct 2007) | 2 lines
+
+Aloft: Allow negative values for frame height/width
+
+------------------------------------------------------------------------
+r51363 | helium | 2007-10-08 11:59:05 +0100 (Mon, 08 Oct 2007) | 1 line
+
+Aloft: updated zhTW localization
+------------------------------------------------------------------------
+r50890 | helium | 2007-10-04 07:39:50 +0100 (Thu, 04 Oct 2007) | 1 line
+
+Aloft: bump toc to 20200
+------------------------------------------------------------------------
+r49019 | roartindon | 2007-09-16 16:35:02 +0100 (Sun, 16 Sep 2007) | 2 lines
+
+Aloft: Not having Threat-1.0 will disable ThreatData/ThreatBar modules
+
+------------------------------------------------------------------------
+r46196 | helium | 2007-08-10 17:53:19 +0100 (Fri, 10 Aug 2007) | 3 lines
+
+Aloft:
+- updated zhTW localization
+
+------------------------------------------------------------------------
+r46094 | helium | 2007-08-09 12:32:54 +0100 (Thu, 09 Aug 2007) | 2 lines
+
+Aloft:
+remove Localization-zhCN.lua line in toc
+------------------------------------------------------------------------
+r45880 | roartindon | 2007-08-07 12:58:13 +0100 (Tue, 07 Aug 2007) | 3 lines
+
+Aloft
+- Fixed syntax error introduced by taburiss
+
+------------------------------------------------------------------------
+r45867 | taburiss | 2007-08-07 10:03:04 +0100 (Tue, 07 Aug 2007) | 2 lines
+
+Aloft
+- Locale-zhCN added.
+------------------------------------------------------------------------
+r45783 | roartindon | 2007-08-06 16:27:45 +0100 (Mon, 06 Aug 2007) | 3 lines
+
+Aloft
+- Changed HealthPercent, ManaPercent to HealthFraction, ManaFraction for the change to :Percent in TagCompiler
+
+------------------------------------------------------------------------
+r45299 | roartindon | 2007-07-30 15:32:20 +0100 (Mon, 30 Jul 2007) | 3 lines
+
+Aloft
+- Small optimization change
+
+------------------------------------------------------------------------
+r44862 | roartindon | 2007-07-26 05:16:41 +0100 (Thu, 26 Jul 2007) | 3 lines
+
+Aloft
+- Alpha, instead of calling UnitExists for each nameplate, call it once when target is changed, store that value, and save lots of function calls
+
+------------------------------------------------------------------------
+r44860 | roartindon | 2007-07-26 05:10:52 +0100 (Thu, 26 Jul 2007) | 3 lines
+
+Aloft
+- Since AloftAlpha's update is called potentially thousands of times a second, make a local cache of UnitExists
+
+------------------------------------------------------------------------
+r44767 | roartindon | 2007-07-25 03:05:22 +0100 (Wed, 25 Jul 2007) | 3 lines
+
+Aloft
+- Updated AloftTags.rtf from Speeddymon
+
+------------------------------------------------------------------------
+r44714 | roartindon | 2007-07-24 07:58:44 +0100 (Tue, 24 Jul 2007) | 3 lines
+
+Aloft
+- [Class] tag now returns local classes
+
+------------------------------------------------------------------------
+r44193 | helium | 2007-07-19 12:07:10 +0100 (Thu, 19 Jul 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r44043 | roartindon | 2007-07-18 04:14:07 +0100 (Wed, 18 Jul 2007) | 3 lines
+
+Aloft
+- Made "profile" a local variable
+
+------------------------------------------------------------------------
+r43563 | helium | 2007-07-12 02:48:34 +0100 (Thu, 12 Jul 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r43556 | fenlis | 2007-07-12 01:36:02 +0100 (Thu, 12 Jul 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r43398 | roartindon | 2007-07-10 20:13:08 +0100 (Tue, 10 Jul 2007) | 3 lines
+
+Aloft
+- Now uses SharedMedia-1.0 for borders and backgrounds
+
+------------------------------------------------------------------------
+r42883 | roartindon | 2007-07-05 19:26:25 +0100 (Thu, 05 Jul 2007) | 4 lines
+
+Aloft
+- Fixed a few more tag casings
+- Reworked some tags to use TagCompiler-1.0 abilities better
+
+------------------------------------------------------------------------
+r42860 | roartindon | 2007-07-05 17:07:41 +0100 (Thu, 05 Jul 2007) | 2 lines
+
+Aloft: AloftTag - Added HealthBarColor as well
+
+------------------------------------------------------------------------
+r42859 | roartindon | 2007-07-05 16:57:31 +0100 (Thu, 05 Jul 2007) | 3 lines
+
+Aloft
+- Added OriginalHealthBarColor tag
+
+------------------------------------------------------------------------
+r42760 | fenlis | 2007-07-04 18:50:35 +0100 (Wed, 04 Jul 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r42725 | roartindon | 2007-07-04 10:14:15 +0100 (Wed, 04 Jul 2007) | 2 lines
+
+Aloft: Fixed typo in alpha options
+
+------------------------------------------------------------------------
+r42721 | roartindon | 2007-07-04 09:29:45 +0100 (Wed, 04 Jul 2007) | 2 lines
+
+Aloft:  Alpha Options - some small tweaks to option texts
+
+------------------------------------------------------------------------
+r42716 | helium | 2007-07-04 08:02:58 +0100 (Wed, 04 Jul 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r42712 | roartindon | 2007-07-04 07:14:34 +0100 (Wed, 04 Jul 2007) | 2 lines
+
+Aloft: Alpha - changed hooking code again
+
+------------------------------------------------------------------------
+r42711 | roartindon | 2007-07-04 07:07:42 +0100 (Wed, 04 Jul 2007) | 3 lines
+
+Aloft
+- Alpha: Shortcut one lookup and function call on nameplate updates
+
+------------------------------------------------------------------------
+r42701 | roartindon | 2007-07-04 05:41:26 +0100 (Wed, 04 Jul 2007) | 3 lines
+
+Aloft
+- Added Alpha module
+
+------------------------------------------------------------------------
+r42528 | roartindon | 2007-07-02 19:13:44 +0100 (Mon, 02 Jul 2007) | 3 lines
+
+Aloft
+- Takes advantage of newer TagCompiler-1.0
+
+------------------------------------------------------------------------
+r42505 | roartindon | 2007-07-02 16:51:04 +0100 (Mon, 02 Jul 2007) | 3 lines
+
+Aloft
+- Minor rearrangement of code
+
+------------------------------------------------------------------------
+r42497 | roartindon | 2007-07-02 14:43:34 +0100 (Mon, 02 Jul 2007) | 3 lines
+
+Aloft
+- Changed TagError/TagDebug to !TagError/!TagDebug
+
+------------------------------------------------------------------------
+r42485 | ckknight | 2007-07-02 10:52:35 +0100 (Mon, 02 Jul 2007) | 1 line
+
+Aloft - automatically fix the casing of tags on set.
+------------------------------------------------------------------------
+r42477 | ckknight | 2007-07-02 09:07:52 +0100 (Mon, 02 Jul 2007) | 3 lines
+
+Aloft - change all tags to PascalCase
+- also fix a typo
+
+------------------------------------------------------------------------
+r42221 | roartindon | 2007-06-29 13:24:03 +0100 (Fri, 29 Jun 2007) | 3 lines
+
+Aloft
+- CreatureType and ClassificationData default to not saving
+
+------------------------------------------------------------------------
+r41825 | roartindon | 2007-06-27 01:35:04 +0100 (Wed, 27 Jun 2007) | 3 lines
+
+Aloft
+- Removed a number of redundant UnitExists checks
+
+------------------------------------------------------------------------
+r41823 | roartindon | 2007-06-27 01:25:05 +0100 (Wed, 27 Jun 2007) | 2 lines
+
+Aloft: TargetNameData - fixed to us CancelScheduledEvent
+
+------------------------------------------------------------------------
+r41819 | roartindon | 2007-06-27 01:15:35 +0100 (Wed, 27 Jun 2007) | 3 lines
+
+Aloft
+- Fixes to GroupTargetCountData. Need to add in initial join/leave party handler sometime
+
+------------------------------------------------------------------------
+r41813 | roartindon | 2007-06-27 00:54:38 +0100 (Wed, 27 Jun 2007) | 3 lines
+
+Aloft
+- Added GroupTargetCountData module. Still needs a bit more work, but basic functionality seems correct.
+
+------------------------------------------------------------------------
+r41573 | roartindon | 2007-06-24 21:40:53 +0100 (Sun, 24 Jun 2007) | 2 lines
+
+Aloft: Added svn:keywords Rev
+
+------------------------------------------------------------------------
+r41216 | roartindon | 2007-06-22 06:08:06 +0100 (Fri, 22 Jun 2007) | 3 lines
+
+Aloft
+- Updated ThreatUpdated handler to use 3 parameters, and fetch threat value with Threat:GetThreat(..). Drycoded
+
+------------------------------------------------------------------------
+r41208 | helium | 2007-06-22 04:37:47 +0100 (Fri, 22 Jun 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r41088 | roartindon | 2007-06-21 17:12:47 +0100 (Thu, 21 Jun 2007) | 4 lines
+
+Aloft
+- Added Babble-2.2 to X-Embeds
+- Slight optimizations to the initial frame capturing code
+
+------------------------------------------------------------------------
+r40993 | roartindon | 2007-06-21 07:57:33 +0100 (Thu, 21 Jun 2007) | 2 lines
+
+Aloft: Updated .toc
+
+------------------------------------------------------------------------
+r40499 | fenlis | 2007-06-18 13:51:56 +0100 (Mon, 18 Jun 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r40456 | helium | 2007-06-18 07:52:02 +0100 (Mon, 18 Jun 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r40440 | roartindon | 2007-06-18 02:35:20 +0100 (Mon, 18 Jun 2007) | 2 lines
+
+Aloft: Changed RegisterChatCommand call to not use a table
+
+------------------------------------------------------------------------
+r40436 | roartindon | 2007-06-18 02:09:08 +0100 (Mon, 18 Jun 2007) | 2 lines
+
+Aloft: Fixed threat bar options overwriting mana bar options....
+
+------------------------------------------------------------------------
+r40244 | roartindon | 2007-06-16 17:42:47 +0100 (Sat, 16 Jun 2007) | 2 lines
+
+Aloft: Added Babble-Race-2.2 to the embeds/libraries used
+
+------------------------------------------------------------------------
+r40050 | fenlis | 2007-06-15 13:27:21 +0100 (Fri, 15 Jun 2007) | 2 lines
+
+Aloft :
+ - Updated localizations koKR
+------------------------------------------------------------------------
+r40030 | helium | 2007-06-15 11:17:16 +0100 (Fri, 15 Jun 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r39858 | kebinusan | 2007-06-14 13:12:42 +0100 (Thu, 14 Jun 2007) | 1 line
+
+Aloft: Typo in AloftOptionsLod.sh, #1/bin/sh should be #!/bin/sh
+------------------------------------------------------------------------
+r39679 | helium | 2007-06-13 09:16:44 +0100 (Wed, 13 Jun 2007) | 2 lines
+
+Aloft:
+- zhTW localization updated
+------------------------------------------------------------------------
+r39010 | roartindon | 2007-06-08 01:51:48 +0100 (Fri, 08 Jun 2007) | 2 lines
+
+Aloft: Delayed requesting Threat-1.0 until ThreatData is required. Now handles ClearThreat event too.
+
+------------------------------------------------------------------------
+r38886 | roartindon | 2007-06-07 09:38:06 +0100 (Thu, 07 Jun 2007) | 3 lines
+
+Aloft
+- Initial commit of ThreatBar, tested, seems to work.
+
+------------------------------------------------------------------------
+r38806 | roartindon | 2007-06-06 20:28:36 +0100 (Wed, 06 Jun 2007) | 3 lines
+
+Aloft
+- Added SpecialEvents-Aura to the svn:externals 
+
+------------------------------------------------------------------------
+r38804 | roartindon | 2007-06-06 20:19:28 +0100 (Wed, 06 Jun 2007) | 2 lines
+
+Aloft: Added AceComm to the embeds list
+
+------------------------------------------------------------------------
+r38742 | roartindon | 2007-06-06 10:27:02 +0100 (Wed, 06 Jun 2007) | 3 lines
+
+Aloft
+- Initial threat file commit. Not completed, or included in .toc yet. I need to be able to log onto my server before I continue working on this.
+
+------------------------------------------------------------------------
+r38740 | roartindon | 2007-06-06 10:12:50 +0100 (Wed, 06 Jun 2007) | 3 lines
+
+Aloft
+- First step in Threat-1.0 support is putting in all the svn:externals...
+
+------------------------------------------------------------------------
+r37774 | roartindon | 2007-05-31 10:43:20 +0100 (Thu, 31 May 2007) | 2 lines
+
+Aloft: AloftTag now uses common tags provided by TagCompiler-1.0
+
+------------------------------------------------------------------------
+r37683 | roartindon | 2007-05-30 14:40:37 +0100 (Wed, 30 May 2007) | 2 lines
+
+Aloft: Added "local" for parseTag
+
+------------------------------------------------------------------------
+r37594 | roartindon | 2007-05-29 21:29:14 +0100 (Tue, 29 May 2007) | 4 lines
+
+Aloft
+- Pulled out TagCompiler into separate library. Updated .toc and embeds.xml to reflect this
+- Removed redundant block comment at the top of AloftTag, and made it use TagCompiler-1.0
+
+------------------------------------------------------------------------
+r36580 | punkie | 2007-05-23 12:29:28 +0100 (Wed, 23 May 2007) | 1 line
+
+Aloft: AloftOptions.toc bumped to 20100
+------------------------------------------------------------------------
+r36383 | roartindon | 2007-05-22 15:14:46 +0100 (Tue, 22 May 2007) | 2 lines
+
+Aloft: .toc now up to 2.1
+
+------------------------------------------------------------------------
+r36275 | roartindon | 2007-05-22 06:27:57 +0100 (Tue, 22 May 2007) | 3 lines
+
+Aloft
+- Removed hideExpired options and code in preparation for 2.1
+
+------------------------------------------------------------------------
+r36054 | roartindon | 2007-05-21 06:23:54 +0100 (Mon, 21 May 2007) | 2 lines
+
+Aloft: Fixed duration for polymorph/shackle undead
+
+------------------------------------------------------------------------
+r35777 | roartindon | 2007-05-18 09:32:08 +0100 (Fri, 18 May 2007) | 4 lines
+
+Aloft
+- AloftTag: playerName inlined like it always should have been
+- IsTargetData: using nil instead of false
+
+------------------------------------------------------------------------
+r35695 | roartindon | 2007-05-17 15:45:20 +0100 (Thu, 17 May 2007) | 4 lines
+
+Aloft
+- Changes/fixes to TargetNameData
+- IsTargetData now sets the previous istarget to false when it finds a new one
+
+------------------------------------------------------------------------
+r35670 | roartindon | 2007-05-17 07:01:20 +0100 (Thu, 17 May 2007) | 2 lines
+
+Aloft: Just changed the description, since it's not "replacing" nameplates.
+
+------------------------------------------------------------------------
+r35667 | roartindon | 2007-05-17 06:08:15 +0100 (Thu, 17 May 2007) | 3 lines
+
+Aloft
+- Miscellaneous cleanup
+
+------------------------------------------------------------------------
+r35651 | roartindon | 2007-05-17 03:31:48 +0100 (Thu, 17 May 2007) | 5 lines
+
+Aloft
+- Changed method by which TagCompiler determines header variables
+- Added [playername] which always returns the player's name. This can allow coloration or display based on eg. targetName == playerName
+- Fixed passing multiple parameters into compileStrings
+
+------------------------------------------------------------------------
+r35648 | roartindon | 2007-05-17 02:12:48 +0100 (Thu, 17 May 2007) | 3 lines
+
+Aloft
+- Removed a lot of self.db.profile lookups to profile upvalues
+
+------------------------------------------------------------------------
+r35457 | roartindon | 2007-05-15 02:01:36 +0100 (Tue, 15 May 2007) | 5 lines
+
+Aloft
+- Tag data can now specify tags as numeric, even if the results aren't guaranteed
+- ManaPercent and ManaDeficit are now inlined tags
+- Annotated various tags with numeric type information
+
+------------------------------------------------------------------------
+r35209 | fenlis | 2007-05-12 12:59:25 +0100 (Sat, 12 May 2007) | 2 lines
+
+Aloft :
+ - Added localization koKR
+------------------------------------------------------------------------
+r35147 | roartindon | 2007-05-11 21:08:52 +0100 (Fri, 11 May 2007) | 3 lines
+
+Aloft
+- New ShackleUndead module. Shows shackle undead timers underneath units.
+
+------------------------------------------------------------------------
+r35095 | fenlis | 2007-05-11 03:23:52 +0100 (Fri, 11 May 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r35074 | roartindon | 2007-05-10 23:34:49 +0100 (Thu, 10 May 2007) | 4 lines
+
+Aloft
+- Added AliasData module, disabled by default
+- Options are found under Name Text menu.
+
+------------------------------------------------------------------------
+r34922 | roartindon | 2007-05-10 02:02:36 +0100 (Thu, 10 May 2007) | 2 lines
+
+Aloft: Polymorph - changes to default settings, and to some option wordings/ranges
+
+------------------------------------------------------------------------
+r34919 | roartindon | 2007-05-10 01:39:01 +0100 (Thu, 10 May 2007) | 2 lines
+
+Aloft: Polymorph - more safety checks..
+
+------------------------------------------------------------------------
+r34917 | roartindon | 2007-05-10 01:12:37 +0100 (Thu, 10 May 2007) | 3 lines
+
+Aloft
+- Added Polymorph timer bar module.
+
+------------------------------------------------------------------------
+r34858 | fenlis | 2007-05-09 03:22:49 +0100 (Wed, 09 May 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r34834 | roartindon | 2007-05-08 21:34:15 +0100 (Tue, 08 May 2007) | 3 lines
+
+Aloft
+- Minor code cleanups/modifications
+
+------------------------------------------------------------------------
+r34826 | roartindon | 2007-05-08 20:47:57 +0100 (Tue, 08 May 2007) | 4 lines
+
+Aloft
+- IsPetData simplified a little.
+- PetOwnersNameData is now only applied to friendlyNPC or hostile units
+
+------------------------------------------------------------------------
+r34819 | roartindon | 2007-05-08 20:22:37 +0100 (Tue, 08 May 2007) | 4 lines
+
+Aloft
+- Pet Owner's names are now gathered from roster also
+- GuildText provides a few more attach options
+
+------------------------------------------------------------------------
+r34815 | roartindon | 2007-05-08 19:44:52 +0100 (Tue, 08 May 2007) | 2 lines
+
+Aloft: Clearing guild short name database or comment database now shows a confirmation dialog first
+
+------------------------------------------------------------------------
+r34813 | roartindon | 2007-05-08 19:34:49 +0100 (Tue, 08 May 2007) | 5 lines
+
+Aloft
+- Added Pet Owner's name options. Shows under Name Text menu.
+- Added system for options that modify name text to register themselves with a priority when to be called
+- Modified GuildText options to use this.
+
+------------------------------------------------------------------------
+r34810 | roartindon | 2007-05-08 18:52:27 +0100 (Tue, 08 May 2007) | 3 lines
+
+Aloft
+- Added PetOwnersName data source and tag. For advanced users at the moment, as there's no UI to configure iet apart from tags
+
+------------------------------------------------------------------------
+r34715 | roartindon | 2007-05-07 12:45:05 +0100 (Mon, 07 May 2007) | 4 lines
+
+AloftTag
+- Added surroung and format tags.
+- Updated AloftTags.rtf list
+
+------------------------------------------------------------------------
+r34711 | roartindon | 2007-05-07 12:09:51 +0100 (Mon, 07 May 2007) | 3 lines
+
+Aloft
+- Added isTotem tag that advanced users can use to customise health bar colors/background frame colors/text
+
+------------------------------------------------------------------------
+r34696 | roartindon | 2007-05-07 05:32:43 +0100 (Mon, 07 May 2007) | 2 lines
+
+Aloft: AloftFu - opening waterfall by shift-clicking on the icon will now hide the tooltip
+
+------------------------------------------------------------------------
+r34695 | roartindon | 2007-05-07 04:53:54 +0100 (Mon, 07 May 2007) | 9 lines
+
+Aloft
+- TagCompiler now takes a parmeterTypes array to check and coerce parameters given into compileStrings or methods
+- Added ParseComplement phase between ParseChain and ParsePrimary to handle "~" operator
+- Made a few more tag functions compileStrings
+- TagCompiler will now spit out some information to help locate the position of tag errors
+- TagCompiler will report if insufficient parameters are provided, or if they're provided when none are used
+- Added CoerceToType method, and use it for all parameter coercion and final string coerce before concat
+- Improved use of numeric and guaranteeResult flags
+
+------------------------------------------------------------------------
+r34682 | fenlis | 2007-05-07 00:56:37 +0100 (Mon, 07 May 2007) | 2 lines
+
+Aloft :
+ - Updated localization koKR
+------------------------------------------------------------------------
+r34680 | roartindon | 2007-05-07 00:42:16 +0100 (Mon, 07 May 2007) | 4 lines
+
+Aloft
+- Tagged healthBarValue and healthBarMaxValue as numeric values for the purpose of avoiding numeric type coercion
+- Added Health & Percent option to health text
+
+------------------------------------------------------------------------
+r34678 | roartindon | 2007-05-07 00:31:57 +0100 (Mon, 07 May 2007) | 3 lines
+
+Aloft
+- AloftTag now creates inline code for isgroup, isnotgroup and hideif
+
+------------------------------------------------------------------------
+r34673 | roartindon | 2007-05-07 00:05:03 +0100 (Mon, 07 May 2007) | 3 lines
+
+Aloft
+- Added TargetNameData module to Aloft. Only accessible through custom tags at the moment
+
+------------------------------------------------------------------------
+r34671 | roartindon | 2007-05-06 23:40:06 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Moved all of the data options into respective Options/ files. All of CoreModules/Modules are now free from UI localizations.
+
+------------------------------------------------------------------------
+r34664 | roartindon | 2007-05-06 22:38:02 +0100 (Sun, 06 May 2007) | 2 lines
+
+Aloft: ClassData - just fixed indentation caused by fenlis' commit
+
+------------------------------------------------------------------------
+r34621 | fenlis | 2007-05-06 12:15:14 +0100 (Sun, 06 May 2007) | 2 lines
+
+Aloft :
+ - Fixed 'GetReverseTranslation' error issue.
+------------------------------------------------------------------------
+r34608 | roartindon | 2007-05-06 08:53:31 +0100 (Sun, 06 May 2007) | 2 lines
+
+Aloft: AloftFu - Changed Enabled/Disabled to use AddDoubleLine like Pitbull does
+
+------------------------------------------------------------------------
+r34607 | roartindon | 2007-05-06 08:38:21 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- ClassData, removed "Unknown", instead, just check if a reverse translation exists.
+
+------------------------------------------------------------------------
+r34606 | roartindon | 2007-05-06 08:29:06 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Checks to avoid errors on locales that don't have defined translations
+
+------------------------------------------------------------------------
+r34605 | roartindon | 2007-05-06 08:23:59 +0100 (Sun, 06 May 2007) | 4 lines
+
+Aloft
+- now uses FuBarPlugin-2.0 .blizzardTooltips = true option
+- Removed TabletLib yet again
+
+------------------------------------------------------------------------
+r34590 | roartindon | 2007-05-06 04:35:02 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Decided to revert tooltip code to use TabletLib. Using GameTooltip makes it look out of place compared to all other FuBar addons
+
+------------------------------------------------------------------------
+r34582 | roartindon | 2007-05-06 01:39:37 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Now sets overrideTooltip and properly updates/closes some stuff
+
+------------------------------------------------------------------------
+r34578 | roartindon | 2007-05-06 01:06:11 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Now uses GameTooltip, properly removed Tablet requirement
+
+------------------------------------------------------------------------
+r34576 | roartindon | 2007-05-06 00:49:08 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Optionally dependent on Tablet. Does not show a tooltip at the moment if tablet isn't installed.. will fix
+
+------------------------------------------------------------------------
+r34575 | roartindon | 2007-05-06 00:40:46 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- No longer includes TabletLib. Never used it, mistakenly thought I needed it for FuBarPlugin-2.0
+
+------------------------------------------------------------------------
+r34573 | roartindon | 2007-05-06 00:14:50 +0100 (Sun, 06 May 2007) | 3 lines
+
+Aloft
+- Fixed typo in Babble-Class-2.2
+
+------------------------------------------------------------------------
+r34572 | roartindon | 2007-05-06 00:01:01 +0100 (Sun, 06 May 2007) | 4 lines
+
+Aloft
+- Actually make the compileCache in AloftTag work
+- Shifted most methods in TagCompiler to be local, shifted dataTable to be local
+
+------------------------------------------------------------------------
+r34569 | roartindon | 2007-05-05 23:28:55 +0100 (Sat, 05 May 2007) | 6 lines
+
+Aloft - Huge Changes to AloftTag system
+- tags are finally case insensitive
+- tags provide information internally as to whether data needs to be coerced to numbers for calculations, or strings for final result
+- tags can create inline code
+- Separated AloftTag into AloftTag (core tags/methods) and TagCompiler (the actual parser, which has no Aloft specific code in it)
+
+------------------------------------------------------------------------
+r34543 | roartindon | 2007-05-05 20:01:32 +0100 (Sat, 05 May 2007) | 2 lines
+
+Aloft: ClassData - now uses string.split instead of string.gsub to remove the realm name
+
+------------------------------------------------------------------------
+r34542 | roartindon | 2007-05-05 19:52:45 +0100 (Sat, 05 May 2007) | 2 lines
+
+Aloft: Added Babble-2.2 as an optional dep in the .toc
+
+------------------------------------------------------------------------
+r34541 | roartindon | 2007-05-05 19:51:28 +0100 (Sat, 05 May 2007) | 3 lines
+
+Aloft
+- Now uses BabbleClass-2.2 for reverse translations of classes
+
+------------------------------------------------------------------------
+r34531 | fenlis | 2007-05-05 12:56:30 +0100 (Sat, 05 May 2007) | 2 lines
+
+Aloft :
+ - Changed method for 'reverse translation'
+------------------------------------------------------------------------
+r34521 | roartindon | 2007-05-05 10:19:49 +0100 (Sat, 05 May 2007) | 3 lines
+
+Aloft
+- Removed a lot of "or nil" clauses that weren't necessary
+
+------------------------------------------------------------------------
+r34506 | roartindon | 2007-05-05 06:47:04 +0100 (Sat, 05 May 2007) | 2 lines
+
+Aloft: ClassData module now uses locale lookups for local class->class translations
+
+------------------------------------------------------------------------
+r34457 | fenlis | 2007-05-04 21:06:56 +0100 (Fri, 04 May 2007) | 2 lines
+
+Aloft : 
+ - Updated localization koKR
+------------------------------------------------------------------------
+r34445 | roartindon | 2007-05-04 17:16:52 +0100 (Fri, 04 May 2007) | 3 lines
+
+Aloft
+- CommantData: Added include hostile option, which will enable automatic comment gathering for hostile units. Disabled by default
+
+------------------------------------------------------------------------
+r34437 | roartindon | 2007-05-04 15:40:33 +0100 (Fri, 04 May 2007) | 4 lines
+
+Aloft
+- Made Mana powerTypeColor brighter
+- Added option to color by type, default to off
+
+------------------------------------------------------------------------
+r34429 | roartindon | 2007-05-04 14:42:40 +0100 (Fri, 04 May 2007) | 5 lines
+
+Aloft
+- short tag now shortens negative numbers too
+- Added powerTypeColor tag
+- .. and made ManaText module use it
+
+------------------------------------------------------------------------
+r34419 | roartindon | 2007-05-04 09:45:00 +0100 (Fri, 04 May 2007) | 3 lines
+
+Aloft
+- CombatText: If the target is a party member, and enableGroup is turned on, then don't process the target message.
+
+------------------------------------------------------------------------
+r34401 | roartindon | 2007-05-04 06:24:43 +0100 (Fri, 04 May 2007) | 4 lines
+
+Aloft
+- IsTargetData now hooks ShowNameplates/ShowFriendNameplates as the alpha on the nameplates isn't accurate after they're just toggled
+- Disabling a module will call UnhookAll if it uses AceHook
+
+------------------------------------------------------------------------
+r34400 | roartindon | 2007-05-04 06:14:09 +0100 (Fri, 04 May 2007) | 3 lines
+
+Aloft
+- Added isTarget data. This allows text to be conditionally shown on whether a unit is the current target or not.
+
+------------------------------------------------------------------------
+r34381 | roartindon | 2007-05-04 00:19:13 +0100 (Fri, 04 May 2007) | 2 lines
+
+Aloft: Fixed Visibility module not having "Critter" translation
+
+------------------------------------------------------------------------
+r34328 | fenlis | 2007-05-03 10:52:05 +0100 (Thu, 03 May 2007) | 2 lines
+
+Aloft :
+ - Added some localization koKR
+------------------------------------------------------------------------
+r34327 | fenlis | 2007-05-03 10:49:47 +0100 (Thu, 03 May 2007) | 2 lines
+
+Aloft :
+ - Added localization 'koKR'
+------------------------------------------------------------------------
+r34320 | roartindon | 2007-05-03 09:10:23 +0100 (Thu, 03 May 2007) | 3 lines
+
+Aloft
+- Run a garbage collection cycle after loading options
+
+------------------------------------------------------------------------
+r34318 | roartindon | 2007-05-03 09:05:28 +0100 (Thu, 03 May 2007) | 2 lines
+
+Aloft: Another try at committing this LoD script..... last try ended up messing newlines
+
+------------------------------------------------------------------------
+r34317 | roartindon | 2007-05-03 09:02:02 +0100 (Thu, 03 May 2007) | 3 lines
+
+Aloft
+- Added unix script for LoD
+
+------------------------------------------------------------------------
+r34315 | roartindon | 2007-05-03 08:39:46 +0100 (Thu, 03 May 2007) | 3 lines
+
+Aloft
+- Split options off into their own files. They can be made LoD by shifting the entire Options directory to an addon called AloftOptions
+
+------------------------------------------------------------------------
+r34313 | roartindon | 2007-05-03 08:11:26 +0100 (Thu, 03 May 2007) | 2 lines
+
+Aloft: ReportStatusChanges - now calls UnhookAll as a precautionary measure
+
+------------------------------------------------------------------------
+r34309 | roartindon | 2007-05-03 07:03:32 +0100 (Thu, 03 May 2007) | 4 lines
+
+Aloft
+- Shifted ReportStatusChanges option into Extras as a separate module
+- Visibility: Fixed if just disabling hostile NPCs
+
+------------------------------------------------------------------------
+r34299 | roartindon | 2007-05-03 05:16:53 +0100 (Thu, 03 May 2007) | 3 lines
+
+Aloft
+- Removed AceLocale instances that weren't required
+
+------------------------------------------------------------------------
+r34286 | roartindon | 2007-05-02 23:35:40 +0100 (Wed, 02 May 2007) | 4 lines
+
+Aloft
+- SetAll moved out of CoreModules and into Extras.
+- SetAll is no longer a submodule of Aloft.
+
+------------------------------------------------------------------------
+r34285 | roartindon | 2007-05-02 23:04:34 +0100 (Wed, 02 May 2007) | 2 lines
+
+Aloft: CombatText - brightened shadow damage color
+
+------------------------------------------------------------------------
+r34281 | roartindon | 2007-05-02 20:02:34 +0100 (Wed, 02 May 2007) | 3 lines
+
+Aloft
+- CombatText: Added color options, so that schools of magic can all be uniquely colored, healing colors can be changed, etc.
+
+------------------------------------------------------------------------
+r34231 | roartindon | 2007-05-02 01:59:06 +0100 (Wed, 02 May 2007) | 2 lines
+
+Aloft: ManaBar - only register events if unitid data is available.
+
+------------------------------------------------------------------------
+r34230 | roartindon | 2007-05-02 01:43:48 +0100 (Wed, 02 May 2007) | 3 lines
+
+Aloft
+- Added a variable to early out of Aloft:GetTargetNameplate() if the target nameplate isn't availble.
+
+------------------------------------------------------------------------
+r34209 | roartindon | 2007-05-01 20:14:50 +0100 (Tue, 01 May 2007) | 3 lines
+
+Aloft
+- When GetTargetNameplate() is called and doesn't succeed the quick check, make it so that it is much more likely to on successive calls
+
+------------------------------------------------------------------------
+r34191 | roartindon | 2007-05-01 16:36:51 +0100 (Tue, 01 May 2007) | 3 lines
+
+Aloft
+- ManaData module now correctly handles OnUnitidDataChanged events
+
+------------------------------------------------------------------------
+r34189 | roartindon | 2007-05-01 15:56:59 +0100 (Tue, 01 May 2007) | 5 lines
+
+Aloft
+- Shifted HealthData out of CoreModules directory
+- A number of data modules used to trigger Aloft:UpdateData, this has been removed
+- Aloft:UpdateData is now local to Aloft.lua
+
+------------------------------------------------------------------------
+r34187 | roartindon | 2007-05-01 15:32:22 +0100 (Tue, 01 May 2007) | 9 lines
+
+Aloft
+- Unavailable data is now eliminated from the UpdateData list. eg. If you are not in a group, then the name->unitid determination is never attempted
+- Unavailable data is propagated. eg. if unitid is unavailable, then mana is also removed from the update list
+- Split HealthData into a separate core module. MobHealth3 is no longer looked up if the Health Text is disabled, set to Percent, Group Health or Group Health Deficit.
+- Tags can specify events that they override.
+- ManaBar module now disables gracefully
+- Unitid is only set for friendly players and friendly npcs. Avoids mobs with the same name as a group member from showing weird stuff
+- Added CombatText module to the .toc
+
+------------------------------------------------------------------------
+r34146 | roartindon | 2007-04-30 20:07:20 +0100 (Mon, 30 Apr 2007) | 3 lines
+
+Aloft
+- Initial commit of CombatText module. Intentionally NOT included in the .toc yet as it needs more testing.
+
+------------------------------------------------------------------------
+r34126 | roartindon | 2007-04-30 08:11:57 +0100 (Mon, 30 Apr 2007) | 3 lines
+
+Aloft
+- Changed several Aloft: methods to self:
+
+------------------------------------------------------------------------
+r34124 | roartindon | 2007-04-30 05:42:19 +0100 (Mon, 30 Apr 2007) | 3 lines
+
+Aloft
+- All embedded libraries now referenced from embeds.xml
+
+------------------------------------------------------------------------
+r34122 | roartindon | 2007-04-30 04:55:28 +0100 (Mon, 30 Apr 2007) | 3 lines
+
+Aloft
+- A number of small tweaks to reduce CPU/memory
+
+------------------------------------------------------------------------
+r34060 | roartindon | 2007-04-29 10:15:05 +0100 (Sun, 29 Apr 2007) | 5 lines
+
+Aloft:
+- Removed old optional Prat dep from .toc
+- Changed embedded Banzai-1.1 to BanzaiLib in .toc
+- ManaBar: Should update textures properly again
+
+------------------------------------------------------------------------
+r33967 | roartindon | 2007-04-28 10:49:54 +0100 (Sat, 28 Apr 2007) | 2 lines
+
+Aloft: Visibility - disabling showCritters no longer enables the creatureType database if showNeutralUnits is also disabled
+
+------------------------------------------------------------------------
+r33965 | roartindon | 2007-04-28 09:54:07 +0100 (Sat, 28 Apr 2007) | 2 lines
+
+Aloft: Visibility - reneged. Show Vermin is now called Show Critters, and enables the creature type database
+
+------------------------------------------------------------------------
+r33958 | roartindon | 2007-04-28 08:15:40 +0100 (Sat, 28 Apr 2007) | 3 lines
+
+Aloft
+- ManaBar: fixed position updates not applying immediately
+
+------------------------------------------------------------------------
+r33931 | roartindon | 2007-04-28 02:04:28 +0100 (Sat, 28 Apr 2007) | 4 lines
+
+Aloft:
+- ManaData now listens for a few more events like it should have
+- ManaBar reorganized a bit in preparation for extra options
+
+------------------------------------------------------------------------
+r33917 | roartindon | 2007-04-27 19:54:10 +0100 (Fri, 27 Apr 2007) | 2 lines
+
+Aloft: ManaBar - fixed preset colors
+
+------------------------------------------------------------------------
+r33915 | roartindon | 2007-04-27 19:47:35 +0100 (Fri, 27 Apr 2007) | 5 lines
+
+Aloft
+- Added new ManaBar module which shows mana for *group members only*
+- Added ManaText module
+- Added ManaData module that provides all this information
+
+------------------------------------------------------------------------
+r33894 | roartindon | 2007-04-27 13:48:32 +0100 (Fri, 27 Apr 2007) | 2 lines
+
+Aloft: HealthText - simplified FULL tag to use newer suffix methods
+
+------------------------------------------------------------------------
+r33891 | roartindon | 2007-04-27 13:11:34 +0100 (Fri, 27 Apr 2007) | 2 lines
+
+Aloft: Presets - since it doesn't seem to screw up if specified textures do not exist, we'll set some textures in our presets too....
+
+------------------------------------------------------------------------
+r33890 | roartindon | 2007-04-27 12:54:20 +0100 (Fri, 27 Apr 2007) | 4 lines
+
+Aloft
+- Changed db namespace of comment to commentData for consistency
+- Small simplification of Presets
+
+------------------------------------------------------------------------
+r33878 | roartindon | 2007-04-27 09:41:10 +0100 (Fri, 27 Apr 2007) | 3 lines
+
+Aloft
+- Added new Presets module. Aloft now comes with 4 different presets to give players a starting point for customizing their own nameplates
+
+------------------------------------------------------------------------
+r33869 | roartindon | 2007-04-27 06:29:22 +0100 (Fri, 27 Apr 2007) | 5 lines
+
+Aloft
+- AloftTag internally can substitute strings to make cleaner definitions
+- Added color, colorIf, hexColorIf, rgb, rgbIf tags
+- Moved AloftDebug into Aloft:Debug to avoid global namespace pollution
+
+------------------------------------------------------------------------
+r33822 | roartindon | 2007-04-26 17:48:07 +0100 (Thu, 26 Apr 2007) | 5 lines
+
+Aloft
+- Removed NPCTagText module
+- Added CommentText module which does essentially the same thing
+- CommentData will allow comments to be attached to any unit name (not to just NPC targets that NPCTagData restricted it to)
+
+------------------------------------------------------------------------
+r33786 | roartindon | 2007-04-26 06:27:03 +0100 (Thu, 26 Apr 2007) | 2 lines
+
+Aloft: AloftTag - numeric type information now stored as a local rather than inside dataTable.
+
+------------------------------------------------------------------------
+r33785 | roartindon | 2007-04-26 06:12:22 +0100 (Thu, 26 Apr 2007) | 5 lines
+
+Aloft
+- AloftTag now has a compile cache, which removes the need to special case empty string/nil (cache is preinitialised with it)
+- Since there's a cache, removed the need-to-update checks from all modules that used tags
+- Tags ending in "[" now give an aloft tag error result and proper warning, instead of a run time lua error
+
+------------------------------------------------------------------------
+r33783 | roartindon | 2007-04-26 05:57:46 +0100 (Thu, 26 Apr 2007) | 4 lines
+
+Aloft
+- AloftTag now has local GetByte() and AdvanceByte() methods, rather than putting them into the dataTable
+- tagMethods, headerTable, functionStringList are all now recycled tables
+
+------------------------------------------------------------------------
+r33772 | roartindon | 2007-04-26 03:36:54 +0100 (Thu, 26 Apr 2007) | 4 lines
+
+Aloft
+- AloftTag changed ConstantInteger to ConstantNumber, ie. it now parses values with a decimal point
+- Updated AloftTags.rtf with a few tags that were missing. Still incomplete.
+
+------------------------------------------------------------------------
+r33752 | roartindon | 2007-04-25 23:28:49 +0100 (Wed, 25 Apr 2007) | 3 lines
+
+Aloft
+- AloftTag: Added support for multiple data or events required for a single tag element
+
+------------------------------------------------------------------------
+r33750 | roartindon | 2007-04-25 23:14:13 +0100 (Wed, 25 Apr 2007) | 2 lines
+
+AloftTag: Fixed BNF that specified Primary instead of Chain, fixed location of numeric coercion for >= and <= operators
+
+------------------------------------------------------------------------
+r33748 | roartindon | 2007-04-25 23:06:35 +0100 (Wed, 25 Apr 2007) | 3 lines
+
+Aloft
+- AloftTag now propagates numeric type information to avoid multiple coercions to numbers when unnecessary
+
+------------------------------------------------------------------------
+r33746 | roartindon | 2007-04-25 22:43:32 +0100 (Wed, 25 Apr 2007) | 3 lines
+
+AloftTag
+- Completed implementation of AloftTag's BNF grammar. AloftTag is a LL1 parser with full support for expressions. eg. healthDeficit can be written [maxHealth - health]. Supports full precedence, eg. [(maxHealth-health):hideIfZero]. healthPercent could be written [(healthBarValue*100/healthBarMaxValue):percent]
+
+------------------------------------------------------------------------
+r33744 | roartindon | 2007-04-25 22:24:47 +0100 (Wed, 25 Apr 2007) | 3 lines
+
+AloftTag
+- Added numeric type coercion so that expressions such as [guild:hideIf(level < 60)] will show guilds only if the player is level 60 or above, and won't cause problems if the level is indeterminate
+
+------------------------------------------------------------------------
+r33730 | roartindon | 2007-04-25 13:23:09 +0100 (Wed, 25 Apr 2007) | 7 lines
+
+Aloft
+- AloftTag 
+-- Added relation level parser. Tags such as: [health:hideIf(healthPercent > 80)] are now possible
+-- Added suffix and prefix tag methods
+-- Changed hexColor to take a string parameter rather than chaining the value
+- Updated GuildText/HealthText/LevelText tags to take advantage of newer tags
+
+------------------------------------------------------------------------
+r33719 | roartindon | 2007-04-25 10:46:45 +0100 (Wed, 25 Apr 2007) | 2 lines
+
+Aloft: AloftTag - errors are now printed through Aloft:Print instead of the error-causing print
+
+------------------------------------------------------------------------
+r33717 | roartindon | 2007-04-25 10:42:07 +0100 (Wed, 25 Apr 2007) | 2 lines
+
+Aloft: AloftTag - replaced the string searches/substitutions with a LL1 parser. Only implements the basic elements to provide equivalent funcitonality as what existed before, as well as integer and string constants, and extra function parameters.
+
+------------------------------------------------------------------------
+r33704 | roartindon | 2007-04-25 02:38:24 +0100 (Wed, 25 Apr 2007) | 2 lines
+
+Aloft: Frame - adjusting enable mouse now takes effect immediately if possible, not on next nameplate show
+
+------------------------------------------------------------------------
+r33702 | roartindon | 2007-04-25 02:34:40 +0100 (Wed, 25 Apr 2007) | 2 lines
+
+Aloft: Frame - added Enable Mouse option
+
+------------------------------------------------------------------------
+r33657 | roartindon | 2007-04-24 17:15:35 +0100 (Tue, 24 Apr 2007) | 3 lines
+
+Aloft
+- Script hook methods properly pass on their parameters
+
+------------------------------------------------------------------------
+r33532 | roartindon | 2007-04-23 22:15:06 +0100 (Mon, 23 Apr 2007) | 3 lines
+
+Aloft
+- Added the ability to add NPC Tag text aliases.. eg "Stormpike Guard Recruiment Officer" can be aliased to "Stormpike Guard" to make it fit within a reasonable space
+
+------------------------------------------------------------------------
+r33527 | roartindon | 2007-04-23 20:31:24 +0100 (Mon, 23 Apr 2007) | 8 lines
+
+Aloft
+- Big change to how borders and backdrops work.
+- No longer creates UIFrame to adopt nameplate regions/children
+- Removed all of the intercept functions such as GetRegions(), GetNumRegions() since the hierarchy isn't changing
+- No longer adjusts any frame levels, adjusts DrawLayers instead.
+- Creates one less frame per nameplate if border or background are selected
+- Fixed some misplaced events in HealthBar
+
+------------------------------------------------------------------------
+r33521 | roartindon | 2007-04-23 18:57:07 +0100 (Mon, 23 Apr 2007) | 3 lines
+
+Aloft
+- Added advanced color option for HealthBar/Frame to override colors of specific frames controlled by tag string
+
+------------------------------------------------------------------------
+r33514 | roartindon | 2007-04-23 16:37:13 +0100 (Mon, 23 Apr 2007) | 3 lines
+
+Aloft
+- Tidy up and rearrangement of aceoptions data tables
+
+------------------------------------------------------------------------
+r33502 | roartindon | 2007-04-23 14:17:44 +0100 (Mon, 23 Apr 2007) | 3 lines
+
+Aloft
+- Will now update all nameplates when profile changes immediately
+
+------------------------------------------------------------------------
+r33463 | roartindon | 2007-04-23 07:13:03 +0100 (Mon, 23 Apr 2007) | 2 lines
+
+Aloft: SpellIcon - simplified code, and hopefully fixed possible disappearing icon at the same time
+
+------------------------------------------------------------------------
+r33456 | roartindon | 2007-04-23 05:14:24 +0100 (Mon, 23 Apr 2007) | 2 lines
+
+Aloft: Shifted RaidIcon to OVERLAY DrawLayer so that its layering is consistent whether backdrop frames exist or not
+
+------------------------------------------------------------------------
+r33455 | roartindon | 2007-04-23 05:07:16 +0100 (Mon, 23 Apr 2007) | 5 lines
+
+Aloft
+- Moved highlight to sit underneath HealthBar options
+- Made GuildText text regions create-on-demand
+- Fixed positioning changes not taking effect immediately on create-on-demand frames
+
+------------------------------------------------------------------------
+r33453 | roartindon | 2007-04-23 04:39:21 +0100 (Mon, 23 Apr 2007) | 4 lines
+
+Aloft
+- NPCTagText and HealthText regions are now created on demand and recycled
+- Fixed HealthText modes Group/GroupDeficit
+
+------------------------------------------------------------------------
+r33405 | roartindon | 2007-04-22 18:13:16 +0100 (Sun, 22 Apr 2007) | 4 lines
+
+Aloft
+- Moved SpellIcon options underneath CastBar
+- Changed alpha updates to be based off CastBar's alpha instead of spellIcon (which could be independently disabled, and hence appear incorrect)
+
+------------------------------------------------------------------------
+r33379 | roartindon | 2007-04-22 08:40:58 +0100 (Sun, 22 Apr 2007) | 3 lines
+
+Aloft
+- Added NPC tag text module, disabled by default. Will show tags like "Banker", "Blacksmith", etc on the nameplate
+
+------------------------------------------------------------------------
+r33378 | roartindon | 2007-04-22 08:27:29 +0100 (Sun, 22 Apr 2007) | 4 lines
+
+Aloft
+- Added NPCTag module which provides data eg. Banker, Flight Master, etc.
+- TODO: Add text display module
+
+------------------------------------------------------------------------
+r33359 | roartindon | 2007-04-22 01:59:59 +0100 (Sun, 22 Apr 2007) | 5 lines
+
+Aloft
+- Changed CastBarText module to SpellNameText
+- Moved options for CastBarTimeText and SpellNameText to be under CastBar
+- Tidied up some CastBar options
+
+------------------------------------------------------------------------
+r33315 | roartindon | 2007-04-21 17:09:35 +0100 (Sat, 21 Apr 2007) | 2 lines
+
+Aloft: ShortGuildData - added "in" to the list of trivial words in guild names
+
+------------------------------------------------------------------------
+r33307 | roartindon | 2007-04-21 15:19:47 +0100 (Sat, 21 Apr 2007) | 6 lines
+
+Aloft
+- Change all of the variable Frame misnomers to Regions
+- Moved highlight frame from HIGHLIGHT to ARTWORK
+- All created fontstrings/textures are at OVERLAY level
+- Shifted bossIconFrame from ARTWORK to OVERLAY
+
+------------------------------------------------------------------------
+r33285 | roartindon | 2007-04-21 09:35:29 +0100 (Sat, 21 Apr 2007) | 2 lines
+
+Aloft: CreatureTypeData - Small cleanup of code to remove comments that were incorrect.
+
+------------------------------------------------------------------------
+r33277 | roartindon | 2007-04-21 08:53:24 +0100 (Sat, 21 Apr 2007) | 4 lines
+
+Aloft
+- Added CreatureTypeData module
+- Added option to LevelText to show creature type after level
+
+------------------------------------------------------------------------
+r33268 | roartindon | 2007-04-21 05:57:31 +0100 (Sat, 21 Apr 2007) | 3 lines
+
+Aloft
+- Frame no longer scans for regions/children after the initial setup
+
+------------------------------------------------------------------------
+r33264 | roartindon | 2007-04-21 05:05:15 +0100 (Sat, 21 Apr 2007) | 3 lines
+
+Aloft
+- Another change to frame levels. Shifted adoption of healthbar/castbar to before creation of backdrop frame, which seems to fulfill all the requirements
+
+------------------------------------------------------------------------
+r33260 | roartindon | 2007-04-21 04:28:28 +0100 (Sat, 21 Apr 2007) | 4 lines
+
+Aloft
+- Added RaceData module
+- Added Show Race option to level text, disabled by default
+
+------------------------------------------------------------------------
+r33247 | roartindon | 2007-04-21 02:20:31 +0100 (Sat, 21 Apr 2007) | 3 lines
+
+Aloft
+- Slight update to docs. Commit is mainly to get a new package built with a newer AceEvents
+
+------------------------------------------------------------------------
+r33159 | roartindon | 2007-04-20 08:40:02 +0100 (Fri, 20 Apr 2007) | 3 lines
+
+Aloft
+- More changes/improvents to aloft tags, with some examples in the .rtf file
+
+------------------------------------------------------------------------
+r33157 | roartindon | 2007-04-20 06:51:58 +0100 (Fri, 20 Apr 2007) | 3 lines
+
+Aloft
+- UIFrame and BackdropFrame are set to the nameplate's alpha level on creation
+
+------------------------------------------------------------------------
+r33155 | roartindon | 2007-04-20 06:31:50 +0100 (Fri, 20 Apr 2007) | 3 lines
+
+Aloft
+- Changes to how Show/Hide nameplate functions are intercepted to make them work more consistently, even with addons that don't update the NAMEPLATES global variables appropriately.
+
+------------------------------------------------------------------------
+r33154 | roartindon | 2007-04-20 06:19:57 +0100 (Fri, 20 Apr 2007) | 2 lines
+
+Aloft: ClassificationData - small tidy up
+
+------------------------------------------------------------------------
+r33153 | roartindon | 2007-04-20 06:16:05 +0100 (Fri, 20 Apr 2007) | 4 lines
+
+Aloft
+- AloftTag now uses a local tagMethods variable in generated tag functions to avoid GETGLOBAL (in preference of GETUPVALUE)
+- ClassificationData is now account wide
+
+------------------------------------------------------------------------
+r33152 | roartindon | 2007-04-20 06:05:47 +0100 (Fri, 20 Apr 2007) | 2 lines
+
+Aloft: AloftTag - stray character fix....
+
+------------------------------------------------------------------------
+r33151 | roartindon | 2007-04-20 05:59:34 +0100 (Fri, 20 Apr 2007) | 6 lines
+
+Aloft
+- Added UnitClassification database (Stores rares/elites/rare elites/world bosses)
+- Added "Show Classification" option to Level text
+- Removed reference to roster from GuildData which didn't use it
+- Updated AloftTag to allow for better conditional expressions
+
+------------------------------------------------------------------------
+r33142 | roartindon | 2007-04-20 04:06:10 +0100 (Fri, 20 Apr 2007) | 2 lines
+
+Aloft: Banzai - removed a lingering self:UnregisterAllEvents()
+
+------------------------------------------------------------------------
+r33091 | roartindon | 2007-04-19 17:50:29 +0100 (Thu, 19 Apr 2007) | 2 lines
+
+Aloft: Banzai - small cleanup of code
+
+------------------------------------------------------------------------
+r33085 | roartindon | 2007-04-19 16:06:04 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- Changes to FrameLevels yet again.. hopefully going to stick with this now
+
+------------------------------------------------------------------------
+r33082 | roartindon | 2007-04-19 15:39:20 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- Fixed data required method for detailed background frame colorations
+
+------------------------------------------------------------------------
+r33079 | roartindon | 2007-04-19 15:04:36 +0100 (Thu, 19 Apr 2007) | 2 lines
+
+Aloft: Banzai - updated to store colors on hook
+
+------------------------------------------------------------------------
+r33074 | roartindon | 2007-04-19 14:05:12 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- Hopefully a fix for lingering spell icons
+
+------------------------------------------------------------------------
+r33064 | roartindon | 2007-04-19 11:04:34 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- Added Banzai module, disabled by default
+
+------------------------------------------------------------------------
+r33060 | roartindon | 2007-04-19 08:49:44 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- On second thoughts, leaving Overlay how it used to be, because other mods require the texture to find hte nameplate. CastBarOverlay is still getting smacked :)
+
+------------------------------------------------------------------------
+r33059 | roartindon | 2007-04-19 08:48:32 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- New approach to hiding overlay/castbaroverlay - just set its texture to nothing, then we don't have to fight with blizzard's nameplate code trying to show it at inconvenient times.
+
+------------------------------------------------------------------------
+r33047 | roartindon | 2007-04-19 06:00:39 +0100 (Thu, 19 Apr 2007) | 5 lines
+
+Aloft
+- LevelText is now a tag that can be customized
+- difficultyColor tag added
+- Changed hooking of nameTextFrame:GetText() and levelTextFrame:GetText() to use AceHook
+
+------------------------------------------------------------------------
+r33042 | roartindon | 2007-04-19 04:45:27 +0100 (Thu, 19 Apr 2007) | 5 lines
+
+Aloft
+- IsDataAvailable defaults to return true, to be tied into the AloftTag more directly soon
+- AloftTag checks against nil tag strings to prevent problems with upgrading from old saved variables
+- Unitid now reliably triggers UnitidChanged events and makes unitid available as a tag element
+
+------------------------------------------------------------------------
+r33037 | roartindon | 2007-04-19 03:12:05 +0100 (Thu, 19 Apr 2007) | 4 lines
+
+Aloft
+- Unitid module always reports that it can provide unitid data, even if out of group
+- IsDataAvailable changed to use a method lookup table
+
+------------------------------------------------------------------------
+r33036 | roartindon | 2007-04-19 02:28:31 +0100 (Thu, 19 Apr 2007) | 3 lines
+
+Aloft
+- Changed all of the intercept functions to each use a single local function
+
+------------------------------------------------------------------------
+r33035 | roartindon | 2007-04-19 01:57:18 +0100 (Thu, 19 Apr 2007) | 5 lines
+
+Aloft
+- Moved CastBar/HealthBar framelevel code into their respective modules
+- Frames now have a myriad of background color options.
+- Added Set All Hostile/Set All Friendly color options to NameText
+
+------------------------------------------------------------------------
+r33028 | roartindon | 2007-04-19 00:34:58 +0100 (Thu, 19 Apr 2007) | 6 lines
+
+Aloft
+- UIFrame is now created at level 2 instead of level 3
+- healthBar/castBar are now at level 1 instead of level 2
+- UIFrame handles border display, backdropFrame handles backdrop
+- UIFrame will not adopt the highlight frame that was causing it not to display properly
+
+------------------------------------------------------------------------
+r32981 | roartindon | 2007-04-18 11:09:34 +0100 (Wed, 18 Apr 2007) | 3 lines
+
+Aloft
+- AloftTag now takes advantage of that ill-documented %q option.
+
+------------------------------------------------------------------------
+r32972 | roartindon | 2007-04-18 09:12:00 +0100 (Wed, 18 Apr 2007) | 2 lines
+
+Aloft: AloftTag now escapes literal quotes " -> \" to avoid tag compilation errors.
+
+------------------------------------------------------------------------
+r32970 | roartindon | 2007-04-18 08:50:40 +0100 (Wed, 18 Apr 2007) | 3 lines
+
+Aloft
+- Tag compiler now uses AloftTagMethods["method"] instead of AloftTagMethods.method to avoid keyword collisions (eg. "not")
+
+------------------------------------------------------------------------
+r32969 | roartindon | 2007-04-18 08:43:16 +0100 (Wed, 18 Apr 2007) | 2 lines
+
+Aloft: aloftData.level is nil if it can't be determined, rather than -1.
+
+------------------------------------------------------------------------
+r32963 | roartindon | 2007-04-18 08:14:36 +0100 (Wed, 18 Apr 2007) | 2 lines
+
+Aloft: Pulled out a couple of unused methods
+
+------------------------------------------------------------------------
+r32961 | roartindon | 2007-04-18 08:03:42 +0100 (Wed, 18 Apr 2007) | 2 lines
+
+Aloft: HealthText - full format no longer shows brackets around health percentage if health isn't known.
+
+------------------------------------------------------------------------
+r32957 | roartindon | 2007-04-18 07:59:10 +0100 (Wed, 18 Apr 2007) | 3 lines
+
+Aloft
+- Moved MobHealth3 code into Aloft.lua
+
+------------------------------------------------------------------------
+r32954 | roartindon | 2007-04-18 07:39:00 +0100 (Wed, 18 Apr 2007) | 3 lines
+
+Aloft
+- GuildText now uses tagging system
+
+------------------------------------------------------------------------
+r32948 | roartindon | 2007-04-18 07:13:29 +0100 (Wed, 18 Apr 2007) | 2 lines
+
+Aloft: Attached guild text now honors show own setting again
+
+------------------------------------------------------------------------
+r32946 | roartindon | 2007-04-18 06:47:18 +0100 (Wed, 18 Apr 2007) | 5 lines
+
+Aloft
+- Added a number of basic tag types/modifiers
+- Converted HealthText to the tag system
+- Now absolutely requires MobHealth3 for health text information, no longer messes with MobHealthDB directly
+
+------------------------------------------------------------------------
+r32917 | roartindon | 2007-04-17 18:12:11 +0100 (Tue, 17 Apr 2007) | 2 lines
+
+Aloft: typo..
+
+------------------------------------------------------------------------
+r32916 | roartindon | 2007-04-17 18:11:07 +0100 (Tue, 17 Apr 2007) | 3 lines
+
+Aloft
+- Now provides GetNumRegions and GetNumChildren
+
+------------------------------------------------------------------------
+r32913 | roartindon | 2007-04-17 17:48:22 +0100 (Tue, 17 Apr 2007) | 4 lines
+
+Aloft
+- ClassData now exports its tag.
+- ShortGuildData now makes some extra letters lowercase in the middle of guild name abbreviations
+
+------------------------------------------------------------------------
+r32907 | roartindon | 2007-04-17 16:36:21 +0100 (Tue, 17 Apr 2007) | 5 lines
+
+Aloft
+- Removes that castbar overlay frame when chain casting
+- NameText will only generate a single Tag error if you set it to something invalid
+- GuildText modified to account for NameText change
+
+------------------------------------------------------------------------
+r32904 | roartindon | 2007-04-17 15:49:07 +0100 (Tue, 17 Apr 2007) | 5 lines
+
+Aloft
+- Modules can be tagged as data only, meaning that they are removed from the dependency tree if not required
+- Added AloftTag module
+- GuildText now uses the tagging module by modifying NameText.format, instead of hooking a group of functions
+
+------------------------------------------------------------------------
+r32894 | roartindon | 2007-04-17 12:14:54 +0100 (Tue, 17 Apr 2007) | 2 lines
+
+Aloft: Initial commit of AloftTagging system. Not hooked in in any way, but tests from command line seem to show code working as intended
+
+------------------------------------------------------------------------
+r32887 | roartindon | 2007-04-17 10:57:48 +0100 (Tue, 17 Apr 2007) | 4 lines
+
+Aloft
+- Guild Text in attached mode no longer removes colour settings in NameText
+- NameText now uses shorter UpdateTextSimple if possible in response to OnNameplateShow
+
+------------------------------------------------------------------------
+r32864 | roartindon | 2007-04-17 04:37:04 +0100 (Tue, 17 Apr 2007) | 3 lines
+
+Aloft
+- Adopted child frames have their alpha set to the parent, hopefully this stops the sporadic half-alpha healthbars
+
+------------------------------------------------------------------------
+r32863 | roartindon | 2007-04-17 04:24:25 +0100 (Tue, 17 Apr 2007) | 4 lines
+
+Aloft
+- Intercepts nameTextFrame:GetText() so that adding guild/whatever information doesn't interfere with other mods that require unit names returned
+- moved lastCastTimeValue initialization into its proper module
+
+------------------------------------------------------------------------
+r32862 | roartindon | 2007-04-17 03:54:11 +0100 (Tue, 17 Apr 2007) | 3 lines
+
+Aloft
+- Added unit name -> nameplate lookup table to remove the need to iterate when the name is probable to be unique.
+
+------------------------------------------------------------------------
+r32861 | roartindon | 2007-04-17 03:23:45 +0100 (Tue, 17 Apr 2007) | 4 lines
+
+Aloft
+- Fixed another frame->aloftData variable
+- PetData now does NOT save by default
+
+------------------------------------------------------------------------
+r32860 | roartindon | 2007-04-17 03:13:40 +0100 (Tue, 17 Apr 2007) | 4 lines
+
+Aloft
+- Uses AceHook to hook scripts
+- Now inserts its own GetRegions, GetChildren and GetParent methods so that other addons work without modification
+
+------------------------------------------------------------------------
+r32856 | roartindon | 2007-04-17 02:32:35 +0100 (Tue, 17 Apr 2007) | 2 lines
+
+Aloft: Small cleanup
+
+------------------------------------------------------------------------
+r32855 | roartindon | 2007-04-17 02:28:48 +0100 (Tue, 17 Apr 2007) | 2 lines
+
+Aloft: ComboPointsText: fixed for updated return types (aloftData instead of frame)
+
+------------------------------------------------------------------------
+r32852 | roartindon | 2007-04-17 02:17:23 +0100 (Tue, 17 Apr 2007) | 3 lines
+
+Aloft
+- Huge internal changes. No longer passes nameplate frame around for events/iterations, it instead uses aloftData. This saves quite a number of lookups overall.
+
+------------------------------------------------------------------------
+r32849 | roartindon | 2007-04-17 00:55:39 +0100 (Tue, 17 Apr 2007) | 2 lines
+
+Aloft: Now honors packing variables when backdrop/border are turned off
+
+------------------------------------------------------------------------
+r32848 | roartindon | 2007-04-17 00:44:41 +0100 (Tue, 17 Apr 2007) | 5 lines
+
+Aloft
+- To work around the border/background level problems, Aloft now uses a different approach
+- 1. If no border/backdrop is required, it doesn't do anything
+- 2. If it is required, a border frame is created, and a UIFrame is created. UIFrame then adopts all regions and children of frame
+
+------------------------------------------------------------------------
+r32841 | roartindon | 2007-04-16 23:08:09 +0100 (Mon, 16 Apr 2007) | 2 lines
+
+Aloft: Packing Width/Height are now back in, and not just implicitly part of Frame Width/Height
+
+------------------------------------------------------------------------
+r32840 | roartindon | 2007-04-16 22:54:50 +0100 (Mon, 16 Apr 2007) | 2 lines
+
+Aloft: Frame - oops. Didn't rename SetFrameSize in one place to the newer OnNameplateShow
+
+------------------------------------------------------------------------
+r32839 | roartindon | 2007-04-16 22:52:02 +0100 (Mon, 16 Apr 2007) | 4 lines
+
+Aloft
+- SetFrameLevel stuff all moved to Frame.lua.
+- Only tries to adjust frame levels if options require borders or backdrops
+
+------------------------------------------------------------------------
+r32837 | roartindon | 2007-04-16 22:41:11 +0100 (Mon, 16 Apr 2007) | 2 lines
+
+Aloft: Frames are now set to FrameLevel 2 every time they are shown, instead of just on frame setup. This will avoid some of the problems with text appearing behind frames, but will still cause problems initially if the nameplate was captured during combat.
+
+------------------------------------------------------------------------
+r32832 | roartindon | 2007-04-16 22:10:06 +0100 (Mon, 16 Apr 2007) | 2 lines
+
+Aloft: Overlay, fixed disabling
+
+------------------------------------------------------------------------
+r32771 | roartindon | 2007-04-16 08:26:23 +0100 (Mon, 16 Apr 2007) | 6 lines
+
+Aloft
+- Removed Overlay and CastBarOverlay options
+- Added backdrop color to CastBar and HealthBar options
+- SetAll will no longer set fonts if the new size is the same as the previous one (stops all font sizes being set just by hovering over the dewdrop menu item)
+- CastBarText now responds to set all font size option properly
+
+------------------------------------------------------------------------
+r32763 | roartindon | 2007-04-16 05:28:14 +0100 (Mon, 16 Apr 2007) | 3 lines
+
+Aloft
+- Small tidy up of Frame code, slight modifications to HealthBar (no real functional changes)
+
+------------------------------------------------------------------------
+r32761 | roartindon | 2007-04-16 04:21:21 +0100 (Mon, 16 Apr 2007) | 3 lines
+
+Aloft
+- New frame/border method creates an additional frame for backdrop and border purposes
+
+------------------------------------------------------------------------
+r32751 | roartindon | 2007-04-16 02:30:21 +0100 (Mon, 16 Apr 2007) | 2 lines
+
+Aloft: ShortGuildData - now that empty guilds are nil in GuildData, remove some unnecessary checks, and change string.gsub(value...) to value:gsub(...) to save a lookup
+
+------------------------------------------------------------------------
+r32749 | roartindon | 2007-04-16 01:24:50 +0100 (Mon, 16 Apr 2007) | 6 lines
+
+Aloft
+- Added Frame options, including Backdrop Color, border style, border color
+- Added HealthBar positioning options relative to the frame
+- Removed Packing width/height from HealthBar. They are now in the Frame options
+- Removed Images directory along with SimpleBorder
+
+------------------------------------------------------------------------
+r32671 | roartindon | 2007-04-15 04:47:21 +0100 (Sun, 15 Apr 2007) | 5 lines
+
+Aloft
+- GuildData module now returns nil if a player is not part of a guild. This also avoids storing their data
+- Visibility now properly works with Group Only and Guild Only options again
+- Guild Text attach now no longer displays "[name] - " for non-guilded players
+
+------------------------------------------------------------------------
+r32669 | roartindon | 2007-04-15 04:42:25 +0100 (Sun, 15 Apr 2007) | 2 lines
+
+Aloft: HealthBar - Changed the default colours to match what blizzard bars are (namely group pets)
+
+------------------------------------------------------------------------
+r32651 | roartindon | 2007-04-15 01:25:11 +0100 (Sun, 15 Apr 2007) | 2 lines
+
+Aloft: And disabled the debug code.. oops
+
+------------------------------------------------------------------------
+r32650 | roartindon | 2007-04-15 01:24:12 +0100 (Sun, 15 Apr 2007) | 5 lines
+
+Aloft
+- Added "reset short guild" option to data menu
+- Changed default abbreviation for two-word guild names to be simply the first character of each word
+- Moved the definition location of spacers into less stupid places
+
+------------------------------------------------------------------------
+r32646 | roartindon | 2007-04-15 01:04:38 +0100 (Sun, 15 Apr 2007) | 3 lines
+
+Aloft
+- Core upgrade: Modules can provide multiple data sources, and the data dependency resolver has been upgraded to support this
+
+------------------------------------------------------------------------
+r32645 | roartindon | 2007-04-14 23:59:42 +0100 (Sat, 14 Apr 2007) | 3 lines
+
+Aloft
+- Persistent data storage for guild, class and pet information is now optional and can be disabled from the menus.
+
+------------------------------------------------------------------------
+r32641 | roartindon | 2007-04-14 23:14:59 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: Visibility - now registers for IsPetDataChanged events if required.
+
+------------------------------------------------------------------------
+r32600 | roartindon | 2007-04-14 09:22:51 +0100 (Sat, 14 Apr 2007) | 5 lines
+
+Aloft
+- Commented out some debug code
+- Tidied up aloftData.level
+- Fixed old comment in RecentlyDamagedData
+
+------------------------------------------------------------------------
+r32599 | roartindon | 2007-04-14 09:14:53 +0100 (Sat, 14 Apr 2007) | 4 lines
+
+Aloft
+- Recently damaged flag used to be determined in the core, but was unlikely to be used. This has been removed
+- RecentlyDamagedData source added, and RecentlyDamagedIcon flagged to require that data.
+
+------------------------------------------------------------------------
+r32598 | roartindon | 2007-04-14 08:56:05 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: ComboPointsText now does extra update checks when a player's target changes, and tries to reattach/update if appropriate
+
+------------------------------------------------------------------------
+r32595 | roartindon | 2007-04-14 08:48:21 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: ComboPointsText: Added sanity check
+
+------------------------------------------------------------------------
+r32593 | roartindon | 2007-04-14 08:38:10 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: Changes to ComboPointsText attachment logic to hopefully alleviate problems with non-updating combo points
+
+------------------------------------------------------------------------
+r32579 | roartindon | 2007-04-14 02:23:06 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: Reverted to earlier non-AceHook code. Doesn't seem to unhook the global functions as I expected, causing problems when Aloft is disabled
+
+------------------------------------------------------------------------
+r32578 | roartindon | 2007-04-14 02:00:22 +0100 (Sat, 14 Apr 2007) | 2 lines
+
+Aloft: ShortGuildData - Separated data out into a cached list and a stored list so that in general short names aren't stored persistently
+
+------------------------------------------------------------------------
+r32577 | roartindon | 2007-04-14 01:43:09 +0100 (Sat, 14 Apr 2007) | 3 lines
+
+Aloft
+- Short guild data will change " and " to " & " before performing its previous processing
+
+------------------------------------------------------------------------
+r32572 | roartindon | 2007-04-14 00:44:49 +0100 (Sat, 14 Apr 2007) | 3 lines
+
+Aloft
+- And attached mode now honors showOwn guild setting
+
+------------------------------------------------------------------------
+r32571 | roartindon | 2007-04-14 00:41:40 +0100 (Sat, 14 Apr 2007) | 3 lines
+
+Aloft
+- Tidy up of some logic to both fix lingering override-colors in nametext, and double-applying guild text
+
+------------------------------------------------------------------------
+r32570 | roartindon | 2007-04-14 00:25:08 +0100 (Sat, 14 Apr 2007) | 3 lines
+
+Aloft
+- Changed packing width/height ranges
+
+------------------------------------------------------------------------
+r32569 | roartindon | 2007-04-14 00:23:13 +0100 (Sat, 14 Apr 2007) | 4 lines
+
+Aloft
+- Now uses AceHook in Aloft.lua too
+- Changed GuildText to default to attach mode
+
+------------------------------------------------------------------------
+r32568 | roartindon | 2007-04-14 00:15:06 +0100 (Sat, 14 Apr 2007) | 4 lines
+
+Aloft
+- Added attach-to-name options for Guild text
+- Now requires AceHook
+
+------------------------------------------------------------------------
+r32558 | roartindon | 2007-04-13 22:38:56 +0100 (Fri, 13 Apr 2007) | 4 lines
+
+Aloft
+- Added packing options to health bar - ie. how far apart nearby healthbars are allowed to be
+- Added Reset to Defaults option for health bar colors
+
+------------------------------------------------------------------------
+r32555 | roartindon | 2007-04-13 22:08:45 +0100 (Fri, 13 Apr 2007) | 5 lines
+
+Aloft
+- Added guild text module, disabled by default
+- Added Guild and ShortGuild data modules
+- Added long form to HealthText. HealthText will get an overhaul soon-ish.
+
+------------------------------------------------------------------------
+r32528 | roartindon | 2007-04-13 10:31:38 +0100 (Fri, 13 Apr 2007) | 3 lines
+
+Aloft
+- Added a lot of extra color options to Name text
+
+------------------------------------------------------------------------
+r32526 | roartindon | 2007-04-13 09:34:31 +0100 (Fri, 13 Apr 2007) | 4 lines
+
+Aloft
+- Added support for optionally provided data
+- Added many more visibility control options
+
+------------------------------------------------------------------------
+r32512 | roartindon | 2007-04-13 04:34:39 +0100 (Fri, 13 Apr 2007) | 8 lines
+
+Aloft
+- Added check to ClassData to avoid nil problems when data hasn't loaded in yet
+- NameText no longer depends on any data if it isn't visible
+- Unitid data source separated out
+- IsPet data source added
+- ClassData now updates from targets
+- HealthBar gained a number of new colouration options - friendlyPet/hostilePet/pet
+
+------------------------------------------------------------------------
+r32508 | roartindon | 2007-04-13 01:31:42 +0100 (Fri, 13 Apr 2007) | 5 lines
+
+Aloft
+- Brand new data dependency graph system will only enable data modules if they're required, and will call them in the correct order if they too are dependent upon other data sources
+- Added color by class option to Name Text
+- Separated guild logic out of Visibility into IsGuildMemberData module
+
+------------------------------------------------------------------------
+r32487 | roartindon | 2007-04-12 22:21:22 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Fixed health bars being sized properly after disable and reenable of Aloft
+
+------------------------------------------------------------------------
+r32485 | roartindon | 2007-04-12 22:12:31 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: LevelText - changes to reapply position options on nameplate show
+
+------------------------------------------------------------------------
+r32422 | roartindon | 2007-04-12 08:34:37 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Disabling aloft now disables all of the module options
+
+------------------------------------------------------------------------
+r32421 | roartindon | 2007-04-12 08:16:26 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Aloft now gracefully disables/enables. Some parameters aren't exactly right for non-widescreen users.
+
+------------------------------------------------------------------------
+r32410 | roartindon | 2007-04-12 06:27:53 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Fix for nameplates not appearing on login properly if they were previously enabled at logout
+
+------------------------------------------------------------------------
+r32409 | roartindon | 2007-04-12 06:20:57 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Added SetAll module, which allows you to set all fonts, textures and font sizes in Aloft with a single click
+
+------------------------------------------------------------------------
+r32396 | roartindon | 2007-04-12 03:00:14 +0100 (Thu, 12 Apr 2007) | 4 lines
+
+Aloft
+- Added Shift-Click to open configuration similar to oRA2/BigWigs/etc
+- Waterfall configuration will work without dewdrop
+
+------------------------------------------------------------------------
+r32393 | roartindon | 2007-04-12 02:29:11 +0100 (Thu, 12 Apr 2007) | 4 lines
+
+Aloft
+- All modules that have an "enable" option should show it as the top option
+- Added disabled functions for almost all configuration options dependent on enable
+
+------------------------------------------------------------------------
+r32387 | roartindon | 2007-04-12 02:04:54 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: AloftWaterfall - Disables GUI Configuration if the menu is already open. Hides Dewdrop menu when waterfall menu is opened
+
+------------------------------------------------------------------------
+r32385 | roartindon | 2007-04-12 01:42:02 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: AloftWaterfall - changed configuration type to TREE. Just seems to look/work better
+
+------------------------------------------------------------------------
+r32381 | roartindon | 2007-04-12 01:06:25 +0100 (Thu, 12 Apr 2007) | 2 lines
+
+Aloft: Addons/Game code calling ShowNameplates/HideNameplates when nameplates are already in that state no longer trigger status reports
+
+------------------------------------------------------------------------
+r32380 | roartindon | 2007-04-12 00:59:05 +0100 (Thu, 12 Apr 2007) | 4 lines
+
+Aloft
+- Added Waterfall configuration
+- Added tooltip for AloftFu
+
+------------------------------------------------------------------------
+r32378 | roartindon | 2007-04-12 00:11:28 +0100 (Thu, 12 Apr 2007) | 6 lines
+
+Aloft
+- Changed how outline options worked, allowing for easier localization
+- Separated AloftFu out from Aloft
+- Changed OnMenuRequest to a generic Options table
+- Merged localization into Aloft.lua
+
+------------------------------------------------------------------------
+r32352 | roartindon | 2007-04-11 13:50:05 +0100 (Wed, 11 Apr 2007) | 4 lines
+
+Aloft
+- Made playerClasses persistent. Options to be created later
+- Slight change/optimization in initial gathering of frames
+
+------------------------------------------------------------------------
+r32341 | roartindon | 2007-04-11 11:39:53 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: Small cleanup of recently damaged code.
+
+------------------------------------------------------------------------
+r32339 | roartindon | 2007-04-11 11:05:22 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: Visibility - Fixed a typo that prevented "Guild Only" mode from working
+
+------------------------------------------------------------------------
+r32338 | next96 | 2007-04-11 10:36:13 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft :
+- sorry Typo fix :)
+------------------------------------------------------------------------
+r32336 | roartindon | 2007-04-11 10:33:57 +0100 (Wed, 11 Apr 2007) | 5 lines
+
+Aloft
+- Removed roster from HealthBar
+- Added RedisplayNameplates/RedisplayFriendlyNameplates method to Aloft
+- Added visibility module
+
+------------------------------------------------------------------------
+r32330 | next96 | 2007-04-11 09:45:49 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft :
+- Add locale koKR
+------------------------------------------------------------------------
+r32327 | roartindon | 2007-04-11 09:01:10 +0100 (Wed, 11 Apr 2007) | 5 lines
+
+Aloft
+- Separated class database into its own file, that provides data
+- Added new Aloft:OnNameplateUpdateData event for data providers to hook into
+- Removed class database code from HealthBar
+
+------------------------------------------------------------------------
+r32325 | roartindon | 2007-04-11 07:35:00 +0100 (Wed, 11 Apr 2007) | 4 lines
+
+Aloft
+- HealthBar - Added friends list as a player class source
+- CastBar - Removed some deprecated code
+
+------------------------------------------------------------------------
+r32324 | roartindon | 2007-04-11 07:24:18 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: HealthBar: removed the usage of Prat. Database internally updated by mouseover, guild, roster, battlegrounds
+
+------------------------------------------------------------------------
+r32323 | roartindon | 2007-04-11 06:55:46 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: Fixed castBar being nil errors
+
+------------------------------------------------------------------------
+r32316 | roartindon | 2007-04-11 05:32:00 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: CastBar - added HideExpired option, which stops expired casting bars from showing upon initial nameplate display.. don't know why blizzard made this occur (bug on their part?)
+
+------------------------------------------------------------------------
+r32313 | roartindon | 2007-04-11 05:17:11 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: RecentlyDamagedIcon - fixes the logic that caused icons to display on all visible frames when initially enabled
+
+------------------------------------------------------------------------
+r32311 | roartindon | 2007-04-11 05:10:11 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: CastBarOverlay: Cleaned up some code/comments. still seems to have that single pixel error...
+
+------------------------------------------------------------------------
+r32310 | roartindon | 2007-04-11 04:46:17 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: HealthBar - fixed changing width/height not updating immediately
+
+------------------------------------------------------------------------
+r32309 | roartindon | 2007-04-11 04:36:15 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: CastBarOverlay - some changes so that 'expired' spells don't appear all dark with the overlay
+
+------------------------------------------------------------------------
+r32308 | roartindon | 2007-04-11 04:02:34 +0100 (Wed, 11 Apr 2007) | 4 lines
+
+Aloft
+- Completed modularization of core features.
+- Defaults/Options code now tiny and merged into main Aloft.lua file
+
+------------------------------------------------------------------------
+r32302 | roartindon | 2007-04-11 02:39:27 +0100 (Wed, 11 Apr 2007) | 2 lines
+
+Aloft: Temporary fix for cast bar display problems.
+
+------------------------------------------------------------------------
+r32300 | roartindon | 2007-04-11 02:27:20 +0100 (Wed, 11 Apr 2007) | 5 lines
+
+Aloft
+- Enabled combo points for druids
+- Separated HealthBar into a different module
+- Added SharedMedia_SetGlobal events again
+
+------------------------------------------------------------------------
+r32291 | roartindon | 2007-04-11 01:10:45 +0100 (Wed, 11 Apr 2007) | 5 lines
+
+Aloft
+- Renamed AggroIcon to RecentlyDamagedIcon, as that's what it seemed to be doing (was converting old red nameplate text -> icon display)
+- Some extra checks in CastBarText/CastBarTimeText to stop the frame getting stolen by newly created ones
+- Changes to intercept name frame adjustment and health bar coloration
+
+------------------------------------------------------------------------
+r32286 | roartindon | 2007-04-10 23:28:45 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: Trialling a new AggroIcon module
+
+------------------------------------------------------------------------
+r32284 | roartindon | 2007-04-10 23:07:51 +0100 (Tue, 10 Apr 2007) | 4 lines
+
+Aloft
+- Aloft now provides aloftData.hasAggro for modules to use
+- Moved Overlay, NameText and Highlight to core modules
+
+------------------------------------------------------------------------
+r32277 | roartindon | 2007-04-10 21:40:04 +0100 (Tue, 10 Apr 2007) | 4 lines
+
+Aloft
+- Shifted all optional modules into Modules subdirectory
+- Added SpellIcon into CoreModules
+
+------------------------------------------------------------------------
+r32270 | roartindon | 2007-04-10 21:16:21 +0100 (Tue, 10 Apr 2007) | 4 lines
+
+Aloft
+- Made all modules local scope
+- Moved RaidIcon into its own module
+
+------------------------------------------------------------------------
+r32266 | roartindon | 2007-04-10 20:27:43 +0100 (Tue, 10 Apr 2007) | 4 lines
+
+Aloft
+- Eliminated a bunch of unnecessary event processing
+- Separated LevelText and BossIcon into core modules
+
+------------------------------------------------------------------------
+r32231 | roartindon | 2007-04-10 08:54:52 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: Changed the positioning options to match level text/etc rather than like name text
+
+------------------------------------------------------------------------
+r32229 | roartindon | 2007-04-10 08:43:32 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: New ComboPointsText module for rogues.
+
+------------------------------------------------------------------------
+r32225 | roartindon | 2007-04-10 06:55:26 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: Now triggers OnNameplateHide event like it was meant to
+
+------------------------------------------------------------------------
+r32216 | roartindon | 2007-04-10 02:38:55 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: Now only unregisters all events for cast bar text/time text if stuff doesn't need to be shown
+
+------------------------------------------------------------------------
+r32215 | roartindon | 2007-04-10 01:37:03 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft: And CastBarTimeText now separated out also. TODO: Fix these modules to unregister events when they're not required
+
+------------------------------------------------------------------------
+r32211 | roartindon | 2007-04-10 01:12:06 +0100 (Tue, 10 Apr 2007) | 2 lines
+
+Aloft - Split CastBarText into its own module now too.
+
+------------------------------------------------------------------------
+r32209 | roartindon | 2007-04-10 00:36:07 +0100 (Tue, 10 Apr 2007) | 4 lines
+
+Aloft
+- Now uses AceModuleCore
+- Separated out HealthText. CastBarText and CastBarTimeText still todo
+
+------------------------------------------------------------------------
+r32199 | roartindon | 2007-04-09 20:53:19 +0100 (Mon, 09 Apr 2007) | 4 lines
+
+Aloft
+- Added some methods to allow Aloft-Plugins to be created
+- Changed the FrameSize determination method as the older one didn't scale to large width/height bars as well
+
+------------------------------------------------------------------------
+r32197 | roartindon | 2007-04-09 19:46:39 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Changes to default colours
+
+------------------------------------------------------------------------
+r32193 | roartindon | 2007-04-09 19:13:35 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Added option to report status changes.
+
+------------------------------------------------------------------------
+r32189 | roartindon | 2007-04-09 16:16:08 +0100 (Mon, 09 Apr 2007) | 3 lines
+
+Aloft
+- Added option for overlays to operate as proper backgrounds. Turned on by default. Changed default coloration as a result
+
+------------------------------------------------------------------------
+r32186 | roartindon | 2007-04-09 15:08:30 +0100 (Mon, 09 Apr 2007) | 4 lines
+
+Aloft
+- Added simple border texture
+- Added ability to pad out overlay textures for the purpose of using this kind of border texture
+
+------------------------------------------------------------------------
+r32163 | roartindon | 2007-04-09 08:30:46 +0100 (Mon, 09 Apr 2007) | 4 lines
+
+Aloft
+= Removed withAlpha for nameText colors
+- Changed default healthbar width to 115
+
+------------------------------------------------------------------------
+r32158 | roartindon | 2007-04-09 06:50:03 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Added width/height options for health bar.
+
+------------------------------------------------------------------------
+r32155 | roartindon | 2007-04-09 06:23:20 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Now includes RosterLib in dependencies/.toc
+
+------------------------------------------------------------------------
+r32152 | roartindon | 2007-04-09 06:17:59 +0100 (Mon, 09 Apr 2007) | 5 lines
+
+Aloft
+- Changed "Party Pets" to "Group Pets"
+- Fixed group pet name text option to work properly
+- Fixed group pets colour not being set if colour player by class wasn't enabled
+
+------------------------------------------------------------------------
+r32146 | roartindon | 2007-04-09 04:55:50 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Referenced a variable that no longer exists... fixed.
+
+------------------------------------------------------------------------
+r32145 | roartindon | 2007-04-09 04:48:45 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Updated name text color when health bar color mismatch too. Also removed some debugging code
+
+------------------------------------------------------------------------
+r32144 | roartindon | 2007-04-09 04:23:46 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: An unexpected colour now triggers a reevaluation of the type of the unit, so that players that become hostile/friendly (eg. duels) don't end up with the wrong colour health bars
+
+------------------------------------------------------------------------
+r32142 | roartindon | 2007-04-09 03:55:58 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Cleanup mostly. Added MobHealth as an optional dep. Changed some variable names, changed some option text
+
+------------------------------------------------------------------------
+r32135 | roartindon | 2007-04-09 02:07:16 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Modified ranges for all other font size options too
+
+------------------------------------------------------------------------
+r32134 | roartindon | 2007-04-09 02:04:18 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Increased the range of permissible font sizes for name text. Also increased vertical/left/right offset for nameplate text.
+
+------------------------------------------------------------------------
+r32130 | roartindon | 2007-04-09 01:51:24 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Maintains a list of visible namepaltes and checks periodically that the game hasn't dicked with their colours.
+
+------------------------------------------------------------------------
+r32128 | roartindon | 2007-04-09 01:27:38 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Cast bar text/cast bar time text now has alpha option
+
+------------------------------------------------------------------------
+r32127 | roartindon | 2007-04-09 01:10:27 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Removed a bit of stray debug code
+
+------------------------------------------------------------------------
+r32126 | roartindon | 2007-04-09 01:08:11 +0100 (Mon, 09 Apr 2007) | 2 lines
+
+Aloft: Added font options using SharedMediaLib.
+
+------------------------------------------------------------------------
+r32124 | roartindon | 2007-04-09 00:13:18 +0100 (Mon, 09 Apr 2007) | 4 lines
+
+Aloft
+- Added option to disable cast text
+- Added cast time text option
+
+------------------------------------------------------------------------
+r32120 | roartindon | 2007-04-08 23:28:52 +0100 (Sun, 08 Apr 2007) | 5 lines
+
+Aloft
+- Updated .toc with x-deps and newer optional deps
+- Removed LoadOnDemand (ooops)
+- Added some missing ClearAllPoints()
+
+------------------------------------------------------------------------
+r32116 | roartindon | 2007-04-08 23:01:15 +0100 (Sun, 08 Apr 2007) | 4 lines
+
+Aloft
+- Clicking on the icon now toggles nameplates
+- Added nameplates/friendly nameplates to the option menu
+
+------------------------------------------------------------------------
+r32093 | roartindon | 2007-04-08 09:33:40 +0100 (Sun, 08 Apr 2007) | 4 lines
+
+Aloft
+- Now uses a single frame for all castbar texts, rather than one per nameplate
+- Now fades out castbar text with its statusbar
+
+------------------------------------------------------------------------
+r32090 | roartindon | 2007-04-08 07:08:45 +0100 (Sun, 08 Apr 2007) | 4 lines
+
+Aloft
+- Attempt to fix external libraries so that FuBar isn't required
+- Small cleanup of code
+
+------------------------------------------------------------------------
+r32073 | roartindon | 2007-04-08 01:12:47 +0100 (Sun, 08 Apr 2007) | 5 lines
+
+Aloft
+- Added cast bar options
+- Added cast bar text options
+- Added spell icon options
+
+------------------------------------------------------------------------
+r32031 | roartindon | 2007-04-07 08:54:26 +0100 (Sat, 07 Apr 2007) | 2 lines
+
+Aloft: Trialling a new technique on capturing internally recycled/re-purposed frames
+
+------------------------------------------------------------------------
+r32021 | roartindon | 2007-04-07 02:51:13 +0100 (Sat, 07 Apr 2007) | 2 lines
+
+Aloft: Large health values are now abbreviated to 123k and 1.23m instead of taking absurd amounts of space
+
+------------------------------------------------------------------------
+r32017 | roartindon | 2007-04-07 02:07:19 +0100 (Sat, 07 Apr 2007) | 4 lines
+
+Aloft
+- Hides level text shadow
+- Added positioning options for name (left/right/vertical offsets)
+
+------------------------------------------------------------------------
+r32013 | roartindon | 2007-04-07 01:16:15 +0100 (Sat, 07 Apr 2007) | 2 lines
+
+Aloft: Changed the way health bar alphas were set, which should avoid problems that caused the frame to suddenly show full alpha sporadically
+
+------------------------------------------------------------------------
+r32011 | roartindon | 2007-04-07 00:51:51 +0100 (Sat, 07 Apr 2007) | 2 lines
+
+Aloft: Disables shadow on name font. Not sure if this will become an option; Outline options seem to be sufficient.
+
+------------------------------------------------------------------------
+r32009 | roartindon | 2007-04-07 00:32:36 +0100 (Sat, 07 Apr 2007) | 4 lines
+
+Aloft
+- Split into several files
+- Added ability to color name text according to type
+
+------------------------------------------------------------------------
+r32002 | roartindon | 2007-04-06 23:40:17 +0100 (Fri, 06 Apr 2007) | 4 lines
+
+Aloft
+- Uses MobHealth3:GetHealth() instead of GetMH3Cache() hackery.
+- Only created healthTextFrame if mode is not set to hidden.
+
+------------------------------------------------------------------------
+r31967 | roartindon | 2007-04-06 10:33:33 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added code that's slightly better if MobHealth3 is installed instead of using MobHealthDB (ugh)
+
+------------------------------------------------------------------------
+r31966 | roartindon | 2007-04-06 10:24:32 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added Health option to display current health, including enemies estimated health via MobHealth
+
+------------------------------------------------------------------------
+r31964 | roartindon | 2007-04-06 09:56:07 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added group health and group health deficit modes
+
+------------------------------------------------------------------------
+r31963 | roartindon | 2007-04-06 09:26:11 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Changed "Elite Icon" naming to "Boss Icon". Added separate colors for boss units. Added party pet color.
+
+------------------------------------------------------------------------
+r31961 | roartindon | 2007-04-06 07:08:04 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Stupid little error fixed
+
+------------------------------------------------------------------------
+r31958 | roartindon | 2007-04-06 06:38:08 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Pulled out the initial "testing" for health text. Commented out some other debug code.
+
+------------------------------------------------------------------------
+r31953 | roartindon | 2007-04-06 04:54:13 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added initial health text options. Plenty more to do here....
+
+------------------------------------------------------------------------
+r31948 | roartindon | 2007-04-06 02:16:38 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added support for coloration of group nameplates via RosterLib if it's installed
+
+------------------------------------------------------------------------
+r31946 | kergoth | 2007-04-06 01:43:01 +0100 (Fri, 06 Apr 2007) | 1 line
+
+Aloft: respond to the SharedMedia_SetGlobal event, so that !SurfaceControl setting the global texture affects it.
+------------------------------------------------------------------------
+r31942 | roartindon | 2007-04-06 00:24:41 +0100 (Fri, 06 Apr 2007) | 2 lines
+
+Aloft: Added mouseover highlight options
+
+------------------------------------------------------------------------
+r31938 | roartindon | 2007-04-05 23:43:44 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added level text display options
+
+------------------------------------------------------------------------
+r31935 | roartindon | 2007-04-05 23:18:46 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added overlay options, so that the position of the full health bar can be seen
+
+------------------------------------------------------------------------
+r31933 | roartindon | 2007-04-05 22:15:19 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added a ton of new options. Can set alpha of raid icon/elite icon, customize colors of bars. More to come!
+
+------------------------------------------------------------------------
+r31910 | roartindon | 2007-04-05 10:11:51 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added raid icon placement options, and the elite icon that I haven't been able to test yet...
+
+------------------------------------------------------------------------
+r31909 | roartindon | 2007-04-05 09:12:27 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Now uses an InterateChildFrames(...) method to eliminate the need for a temporary or transient table to process WorldFrame:GetChildFrames()
+
+------------------------------------------------------------------------
+r31908 | ckknight | 2007-04-05 08:33:33 +0100 (Thu, 05 Apr 2007) | 1 line
+
+Aloft - minor optimizations
+------------------------------------------------------------------------
+r31907 | roartindon | 2007-04-05 07:51:53 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added health bar texture option, Added SharedMediaLib as a dependency/external
+
+------------------------------------------------------------------------
+r31906 | roartindon | 2007-04-05 07:32:51 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Fixed AceLocale-2.2 external
+
+------------------------------------------------------------------------
+r31905 | roartindon | 2007-04-05 07:25:51 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Added text size option for nameplates
+
+------------------------------------------------------------------------
+r31903 | roartindon | 2007-04-05 07:02:04 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: A small change that may fix colouration of some status bars
+
+------------------------------------------------------------------------
+r31902 | roartindon | 2007-04-05 06:51:07 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: First commit of nameplate alteration tool. Still needs options/more bug fixing/etc.
+
+------------------------------------------------------------------------
+r31894 | roartindon | 2007-04-05 05:17:38 +0100 (Thu, 05 Apr 2007) | 2 lines
+
+Aloft: Initial empty directory import. Nameplates addon
+
+------------------------------------------------------------------------
