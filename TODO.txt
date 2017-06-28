@@ -1,0 +1,18 @@
+- Général
+    - l'option d'affichage des nameplates des alliés et ennemis est enlevée après un reload
+
+- AloftHealthBar
+    - voir le problème de refresh de la barre de vie
+    - revoir l'affichage de la barre de vie en ghost
+      
+- AloftCastBar
+    - la barre de cast disparait dès que l'on change de cible = il faudrait qu'elle reste affiché jusqu'à la fin du sort
+
+- AloftLevelText
+    - quand ennemi niveau trop haut (crâne) : mauvais positionnement
+
+- AloftNameText
+    - revoir la gestion de l'ellipse sur les noms trop longs
+
+- [MODULE]AloftCastWarning
+    - la barre de cast ne s'affiche plus après un reload
