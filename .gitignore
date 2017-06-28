@@ -1,0 +1,8 @@
+# Ignore tout
+*
+# Sauf
+!.gitignore
+!Aloft/
+!AloftCastWarning/
+!README.md
+!TODO.txt
