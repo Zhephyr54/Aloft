@@ -1,0 +1,15 @@
+## Interface: 40200
+## Version: 2.0
+## Title: Lib: TagCompiler-2.0
+## Notes: A library to provide configuration via simple tag syntax.
+## X-Category: Library
+## X-Website: http://www.wowace.com/projects/libtagcompiler-2-0/
+## Author: Roartindon, Phanx
+## OptionalDeps: LibStub
+## X-Curse-Packaged-Version: r9
+## X-Curse-Project-Name: LibTagCompiler-2.0
+## X-Curse-Project-ID: libtagcompiler-2-0
+## X-Curse-Repository-ID: wow/libtagcompiler-2-0/mainline
+
+LibStub.lua
+TagCompiler-2.0.lua

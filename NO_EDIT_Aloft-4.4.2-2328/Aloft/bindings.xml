@@ -1,0 +1,14 @@
+<Bindings>
+	<Binding name="ALOFT_SHOW_ENEMY_NAMEPLATES" description="Show Neutral/Enemy Name Plates" header="ALOFT">
+		-- ChatFrame7:AddMessage("ALOFT_SHOW_ENEMY_NAMEPLATES: toggle")
+		Aloft:ToggleEnemyNameplates();
+	</Binding>
+	<Binding name="ALOFT_SHOW_FRIEND_NAMEPLATES" description="Show Friendly Name Plates">
+		-- ChatFrame7:AddMessage("ALOFT_SHOW_FRIEND_NAMEPLATES: toggle")
+		Aloft:ToggleFriendNameplates();
+	</Binding>
+	<Binding name="ALOFT_SHOW_ALL_NAMEPLATES" description="Show All Name Plates">
+		-- ChatFrame7:AddMessage("ALOFT_SHOW_ALL_NAMEPLATES: toggle")
+		Aloft:ToggleAllNameplates();
+	</Binding>
+</Bindings>

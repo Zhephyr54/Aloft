@@ -1,0 +1,274 @@
+## Interface: 40200
+## Version: 4.4.2
+## Title: AloftOptions (Ace3)
+## Notes: Options for Aloft
+## Notes-deDE: Need translation, seeking volunteers
+## Notes-esES: Need translation, seeking volunteers
+## Notes-frFR: Need translation, seeking volunteers
+## Notes-koKR: Need translation, seeking volunteers
+## Notes-ruRU: Need translation, seeking volunteers
+## Notes-zhTW: Aloft設定 ; taburiss & digmouse & aa9012456
+## Notes-zhCN: Need translation, seeking volunteers
+## Author: Acapela (legacy: Roartindon\Silvermoon)
+## LoadOnDemand: 1
+## Dependencies: Aloft
+## OptionalDeps: Ace3, LibStub, LibSharedMedia-3.0
+## X-Category: Interface Enhancements
+## X-Embeds:
+## SavedVariables:
+## X-License: LGPL v2.1 or later
+## X-Curse-Packaged-Version: 4.4.2-2328
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+##
+
+Aloft\AloftLocale.lua
+Aloft\Aloft.lua
+
+Aloft\AloftOptions.lua
+
+## AloftModules is included out of alphabetic order because several other things depend on it
+
+AloftModules\AloftModulesLocale.lua
+AloftModules\AloftModulesOptions.lua
+
+## NOTE: AloftTargetTrackingData is included out of alphabetic order because several other things depend on it
+
+AloftTargetTrackingData\AloftTargetTrackingDataLocale.lua
+AloftTargetTrackingData\AloftTargetTrackingDataOptions.lua
+
+##
+
+AloftAliasData\AloftAliasDataLocale.lua
+AloftAliasData\AloftAliasDataOptions.lua
+
+##
+
+AloftAlpha\AloftAlphaLocale.lua
+AloftAlpha\AloftAlphaModuleOptions.lua
+AloftAlpha\AloftAlphaOptions.lua
+
+##
+
+AloftAutoShow\AloftAutoShowLocale.lua
+AloftAutoShow\AloftAutoShowModuleOptions.lua
+AloftAutoShow\AloftAutoShowOptions.lua
+
+##
+
+AloftBossIcon\AloftBossIconLocale.lua
+AloftBossIcon\AloftBossIconOptions.lua
+
+##
+
+AloftBroker\AloftBrokerLocale.lua
+AloftBroker\AloftBrokerModuleOptions.lua
+
+##
+
+AloftCastBar\AloftCastBarLocale.lua
+AloftCastBar\AloftCastBarOptions.lua
+AloftCastBar\AloftSpellIconOptions.lua
+AloftCastBar\AloftCastBarTimeTextModuleOptions.lua
+AloftCastBar\AloftCastBarTimeTextOptions.lua
+AloftCastBar\AloftSpellNameTextModuleOptions.lua
+AloftCastBar\AloftSpellNameTextOptions.lua
+
+##
+
+AloftClassData\AloftClassDataLocale.lua
+AloftClassData\AloftClassDataOptions.lua
+
+##
+
+AloftClassIcon\AloftClassIconLocale.lua
+AloftClassIcon\AloftClassIconModuleOptions.lua
+AloftClassIcon\AloftClassIconOptions.lua
+
+##
+
+AloftClassificationData\AloftClassificationDataLocale.lua
+AloftClassificationData\AloftClassificationDataOptions.lua
+
+##
+
+AloftCombatText\AloftCombatTextLocale.lua
+AloftCombatText\AloftCombatTextModuleOptions.lua
+AloftCombatText\AloftCombatTextOptions.lua
+
+##
+
+AloftComment\AloftCommentLocale.lua
+AloftComment\AloftCommentModuleOptions.lua
+AloftComment\AloftCommentDataOptions.lua
+AloftComment\AloftCommentTextOptions.lua
+
+##
+
+AloftCreatureTypeData\AloftCreatureTypeDataLocale.lua
+AloftCreatureTypeData\AloftCreatureTypeDataOptions.lua
+
+##
+
+AloftCrowdControl\AloftCrowdControlLocale.lua
+AloftCrowdControl\AloftCrowdControlModuleOptions.lua
+AloftCrowdControl\AloftCrowdControlOptions.lua
+AloftCrowdControl\AloftCrowdControlSpellIconOptions.lua
+AloftCrowdControl\AloftCrowdControlSpellNameTextOptions.lua
+AloftCrowdControl\AloftCrowdControlTimeTextOptions.lua
+
+##
+
+AloftFaction\AloftFactionLocale.lua
+AloftFaction\AloftFactionModuleOptions.lua
+AloftFaction\AloftFactionDataOptions.lua
+
+##
+
+AloftFrame\AloftFrameLocale.lua
+AloftFrame\AloftFrameOptions.lua
+
+##
+
+AloftFu\AloftFuLocale.lua
+AloftFu\AloftFuModuleOptions.lua
+
+##
+
+AloftGuild\AloftGuildLocale.lua
+AloftGuild\AloftGuildModuleOptions.lua
+AloftGuild\AloftGuildDataOptions.lua
+AloftGuild\AloftGuildTextOptions.lua
+AloftGuild\AloftShortGuildDataOptions.lua
+
+##
+
+AloftHealthBar\AloftHealthBarLocale.lua
+AloftHealthBar\AloftHealthBarOptions.lua
+
+## NOTE: AloftGlow is included out of alphabetic order because it is dependent on AloftHealthBar
+## NOTE: AloftThreat now depends on SharedMedia textures registered by AloftGlow; make sure AloftThreat always loads after AloftGlow
+
+AloftGlow\AloftGlowLocale.lua
+AloftGlow\AloftGlowOptions.lua
+
+##
+
+AloftHealthText\AloftHealthTextLocale.lua
+AloftHealthText\AloftHealthTextModuleOptions.lua
+AloftHealthText\AloftHealthTextOptions.lua
+
+##
+
+AloftHighlight\AloftHighlightLocale.lua
+AloftHighlight\AloftHighlightOptions.lua
+
+##
+
+AloftIsPetData\AloftIsPetDataLocale.lua
+AloftIsPetData\AloftIsPetDataOptions.lua
+
+##
+
+AloftLevelText\AloftLevelTextLocale.lua
+AloftLevelText\AloftLevelTextOptions.lua
+
+##
+
+AloftMana\AloftManaLocale.lua
+AloftMana\AloftManaModuleOptions.lua
+AloftMana\AloftManaBarOptions.lua
+AloftMana\AloftManaTextOptions.lua
+
+##
+
+AloftNameText\AloftNameTextLocale.lua
+AloftNameText\AloftNameTextOptions.lua
+
+##
+
+AloftPetOwnersNameData\AloftPetOwnersNameDataLocale.lua
+AloftPetOwnersNameData\AloftPetOwnersNameDataModuleOptions.lua
+AloftPetOwnersNameData\AloftPetOwnersNameDataOptions.lua
+
+##
+
+AloftPlayerTitleData\AloftPlayerTitleDataLocale.lua
+AloftPlayerTitleData\AloftPlayerTitleDataModuleOptions.lua
+AloftPlayerTitleData\AloftPlayerTitleDataOptions.lua
+
+##
+
+AloftPresets\AloftPresetsLocale.lua
+AloftPresets\AloftPresetsModuleOptions.lua
+AloftPresets\AloftPresetsOptions.lua
+
+##
+
+AloftRaceData\AloftRaceDataLocale.lua
+AloftRaceData\AloftRaceDataOptions.lua
+
+##
+
+AloftRaidIcon\AloftRaidIconLocale.lua
+AloftRaidIcon\AloftRaidIconOptions.lua
+
+##
+
+AloftRecentlyDamaged\AloftRecentlyDamagedLocale.lua
+AloftRecentlyDamaged\AloftRecentlyDamagedModuleOptions.lua
+AloftRecentlyDamaged\AloftRecentlyDamagedIconOptions.lua
+
+##
+
+AloftReportStatusChanges\AloftReportStatusChangesLocale.lua
+AloftReportStatusChanges\AloftReportStatusChangesOptions.lua
+
+##
+
+AloftSetAll\AloftSetAllLocale.lua
+AloftSetAll\AloftSetAll.lua
+
+##
+
+AloftStackedPointsText\AloftStackedPointsTextLocale.lua
+AloftStackedPointsText\AloftStackedPointsTextModuleOptions.lua
+AloftStackedPointsText\AloftStackedPointsTextOptions.lua
+
+##
+
+AloftStateIcon\AloftStateIconLocale.lua
+AloftStateIcon\AloftStateIconOptions.lua
+
+##
+
+AloftTarget\AloftTargetLocale.lua
+AloftTarget\AloftTargetModuleOptions.lua
+AloftTarget\AloftTargetNameDataOptions.lua
+
+## NOTE: AloftThreat now depends on SharedMedia textures registered by AloftGlow; make sure AloftThreat always loads after AloftGlow
+
+AloftThreat\AloftThreatLocale.lua
+AloftThreat\AloftThreatModuleOptions.lua
+AloftThreat\AloftThreatDataOptions.lua
+AloftThreat\AloftThreatBarOptions.lua
+AloftThreat\AloftThreatTextOptions.lua
+
+##
+
+AloftVisibility\AloftVisibilityLocale.lua
+AloftVisibility\AloftVisibilityModuleOptions.lua
+AloftVisibility\AloftVisibilityOptions.lua
+
+## NOTE: AloftCastWarning depends on several things, including AloftCastBar and AloftVisibility; load AloftCastWarning last
+
+AloftCastWarning\AloftCastWarningLocale.lua
+AloftCastWarning\AloftCastWarningModuleOptions.lua
+AloftCastWarning\AloftCastWarningOptions.lua
+AloftCastWarning\AloftCastWarningSpellIconOptions.lua
+AloftCastWarning\AloftCastWarningTimeTextOptions.lua
+AloftCastWarning\AloftCastWarningSpellNameTextOptions.lua
+
+##

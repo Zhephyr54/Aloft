@@ -1,0 +1,293 @@
+## Interface: 40200
+## Version: 4.4.2
+## Title: Aloft (Ace3)
+## Notes: Customize and enhance unit nameplates
+## Notes-deDE: Need complete translation, seeking volunteers; totem names by zukuu/community
+## Notes-esES: Need translation, seeking volunteers
+## Notes-frFR: Personnaliser et améliorer des barres d'info d'unités; totem names by Ayana; Need complete translation, seeking volunteers
+## Notes-koKR: Need translation, seeking volunteers
+## Notes-ruRU: Изменить и расширить возможности табличек существ; XisRaa (Henrietta\Хенриетта at Gordunni RU) & McFLY & StingerSoft & vol4
+## Notes-zhTW: 自定和增強名牌 ; helium & digmouse & aa9012456
+## Notes-zhCN: 自定义和增强姓名板显示; taburiss & digmouse
+## Author: Acapela (legacy: Roartindon\Silvermoon, Alpha module by DrewW)
+## OptionalDeps: Ace3, LibStub, LibBabble-3.0, LibBabble-Faction-3.0, LibDataBroker-1.1, LibFuBarPlugin-3.0, LibGratuity-3.0, LibSharedMedia-3.0, TagCompiler-2.0, FuBar, Broker2FuBar, FuBar2Broker
+## X-Category: Interface Enhancements
+## X-Embeds: Ace3, LibStub, LibBabble-3.0, LibBabble-Faction-3.0, LibDataBroker-1.1, LibFuBarPlugin-3.0, LibGratuity-3.0, LibSharedMedia-3.0, TagCompiler-2.0
+## SavedVariables: AloftDB, AloftCastWarningDB
+## X-License: LGPL v2.1 or later
+## X-Curse-Packaged-Version: 4.4.2-2328
+## X-Curse-Project-Name: Aloft
+## X-Curse-Project-ID: aloft
+## X-Curse-Repository-ID: wow/aloft/mainline
+
+##### TODO: look into ##LoadWith: FuBar, Broker2FuBar, FuBar2Broker
+#####
+
+Libs\LibStub\LibStub.lua
+
+##
+
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+
+##
+
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceHook-3.0\AceHook-3.0.xml
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+
+##
+
+Libs\LibBabble-Faction-3.0\lib.xml
+Libs\LibGratuity-3.0\lib.xml
+Libs\LibSharedMedia-3.0\lib.xml
+
+##
+
+Libs\TagCompiler-2.0\TagCompiler-2.0.lua
+
+##### Core Aloft
+
+Aloft\AloftLocale.lua
+Aloft\Aloft.lua
+
+Version.lua
+
+Aloft\AloftOptions.lua
+Aloft\AloftTag.lua
+
+## AloftDigitalSearchTree is included out of alphabetic order because several other things depend on it
+
+Aloft\AloftDigitalSearchTree.lua
+
+## AloftModules is included out of alphabetic order because several other things depend on it
+
+Aloft\AloftModules.lua
+
+##
+
+## NOTE: AloftRoster is included out of alphabetic order because several other things depend on it
+
+Aloft\AloftRoster.lua
+
+## NOTE: AloftTargetTrackingData is included out of alphabetic order because several other things depend on it
+
+Aloft\AloftTargetTrackingData.lua
+
+##
+
+Aloft\AloftAliasData.lua
+
+##
+
+Aloft\AloftAlpha.lua
+
+##
+
+Aloft\AloftAutoShow.lua
+
+##
+
+Aloft\AloftBossIcon.lua
+
+##
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Aloft\AloftBrokerLocale.lua
+Aloft\AloftBroker.lua
+
+##
+
+Aloft\AloftCastBar.lua
+Aloft\AloftCastBarOverlay.lua
+Aloft\AloftSpellIcon.lua
+Aloft\AloftCastBarTimeText.lua
+Aloft\AloftSpellNameText.lua
+
+##
+
+Aloft\AloftClassData.lua
+
+##
+
+Aloft\AloftClassIcon.lua
+
+##
+
+Aloft\AloftClassificationDataLocale.lua
+Aloft\AloftClassificationData.lua
+
+##
+
+Aloft\AloftCombatText.lua
+
+##
+
+Aloft\AloftCommentData.lua
+Aloft\AloftCommentText.lua
+
+##
+
+Aloft\AloftCreatureTypeDataLocale.lua
+Aloft\AloftCreatureTypeData.lua
+
+##
+
+Aloft\AloftCrowdControl.lua
+Aloft\AloftCrowdControlSpellIcon.lua
+Aloft\AloftCrowdControlSpellNameText.lua
+Aloft\AloftCrowdControlTimeText.lua
+
+##
+
+Aloft\AloftFactionLocale.lua
+Aloft\AloftFactionData.lua
+
+##
+
+Aloft\AloftFrame.lua
+
+## NOTE: AloftOverlay is included out of alphabetic order because several other things depend on it
+
+Aloft\AloftOverlay.lua
+
+##
+
+Libs\LibFuBarPlugin-3.0\lib.xml
+
+Aloft\AloftFuLocale.lua
+Aloft\AloftFu.lua
+Aloft\AloftFuOptions.lua
+
+##
+
+Aloft\AloftGuildLocale.lua
+Aloft\AloftGuildData.lua
+Aloft\AloftGuildText.lua
+Aloft\AloftIsGuildMemberData.lua
+Aloft\AloftShortGuildData.lua
+
+##
+
+Aloft\AloftHealthBar.lua
+
+## NOTE: AloftGlow is included out of alphabetic order because it is dependent on AloftHealthBar
+## NOTE: AloftThreat now depends on SharedMedia textures registered by AloftGlow; make sure AloftThreat always loads after AloftGlow
+
+Aloft\AloftGlow.lua
+
+##
+
+Aloft\AloftHealthData.lua
+Aloft\AloftHealthText.lua
+
+##
+
+Aloft\AloftHighlight.lua
+
+##
+
+Aloft\AloftIsPetData.lua
+
+##
+
+Aloft\AloftIsTargetData.lua
+
+##
+
+Aloft\AloftIsTotemTagLocale.lua
+Aloft\AloftIsTotemTag.lua
+
+##
+
+Aloft\AloftLevelText.lua
+
+##
+
+Aloft\AloftManaData.lua
+Aloft\AloftManaBar.lua
+Aloft\AloftManaText.lua
+
+##
+
+Aloft\AloftNameText.lua
+
+##
+
+Aloft\AloftPetOwnersNameDataLocale.lua
+Aloft\AloftPetOwnersNameData.lua
+
+##
+
+Aloft\AloftPlayerTitleDataLocale.lua
+Aloft\AloftPlayerTitleData.lua
+
+##
+
+Aloft\AloftPresetsLocale.lua
+Aloft\AloftPresets.lua
+
+##
+
+Aloft\AloftRaceDataLocale.lua
+Aloft\AloftRaceData.lua
+
+##
+
+Aloft\AloftRaidIcon.lua
+
+##
+
+## Aloft\AloftRecentlyDamagedData.lua ## TODO: remove this file from the repository
+Aloft\AloftRecentlyDamagedIcon.lua
+
+##
+
+Aloft\AloftReportStatusChangesLocale.lua
+Aloft\AloftReportStatusChanges.lua
+
+##
+
+Aloft\AloftStackedPointsText.lua
+
+##
+
+Aloft\AloftStateIcon.lua
+
+##
+
+Aloft\AloftGroupTargetCountData.lua
+Aloft\AloftTargetNameData.lua
+
+## NOTE: AloftThreat now depends on SharedMedia textures registered by AloftGlow; make sure AloftThreat always loads after AloftGlow
+
+Aloft\AloftThreatLocale.lua
+Aloft\AloftThreatData.lua
+Aloft\AloftThreatBar.lua
+Aloft\AloftThreatText.lua
+
+##
+
+Aloft\AloftUnitidData.lua
+
+##
+
+Aloft\AloftVisibilityLocale.lua
+Aloft\AloftVisibility.lua
+
+## NOTE: AloftCastWarning depends on several things, including AloftCastBar and AloftVisibility; load AloftCastWarning last
+
+AloftCastWarning\AloftCastWarning.lua
+AloftCastWarning\AloftCastWarningSpellProcess.lua
+AloftCastWarning\AloftCastWarningSpellIcon.lua
+AloftCastWarning\AloftCastWarningTimeText.lua
+AloftCastWarning\AloftCastWarningSpellNameText.lua
+
+##
