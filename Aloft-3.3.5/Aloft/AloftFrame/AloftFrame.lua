@@ -90,6 +90,10 @@ function AloftFrame:RegisterEvents()
 	-- no background, the default
 	backgroundColorMethod = AloftFrame.ClearBackdropColor
 
+    -- Si cette méthode est appelée avant OnInitialize
+    -- permet d'éviter que profile soit non initialisé
+    if (profile == nil) then AloftFrame:OnInitialize() end
+    
 	if (profile.backgroundAlpha ~= 0) and
 	   (not self:IsArrayEqual(backgroundColors.friendlyPlayer, backgroundColors.friendlyPet) or
 		not self:IsArrayEqual(backgroundColors.friendlyPlayer, backgroundColors.friendlyNPC) or

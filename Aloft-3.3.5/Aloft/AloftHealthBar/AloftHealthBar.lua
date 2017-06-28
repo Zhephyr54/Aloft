@@ -156,6 +156,10 @@ end
 local dataRequiredList = { }
 function AloftHealthBar:RequiresData()
 	if not self.colorMethodData or not self.colorMethod then
+        -- Si cette méthode est appelée avant OnInitialize
+        -- permet d'éviter que profile soit non initialisé
+        if (profile == nil) then AloftHealthBar:OnInitialize() end
+        
 		self.colorMethodData = Aloft:CreateTag(profile.colorFormat, true)
 		self.colorMethod = self.colorMethodData.method
 	end
@@ -206,6 +210,11 @@ function AloftHealthBar:GetBorder(aloftData)
 	end
 end
 
+--[[
+    En commentant le contenu de cette méthode, on corrige le bug d'affichage lors du rafraîchissement des nameplates
+    MAIS la barre de vie n'est plus dessinée entièrement (notamment une partie à droite).
+    Le fonctionnement de cette méthode est donc IMPORTANT.
+]]
 function AloftHealthBar:SetupFrame(aloftData)
 	local healthBar = aloftData.healthBar
 	local layoutFrame = aloftData.layoutFrame

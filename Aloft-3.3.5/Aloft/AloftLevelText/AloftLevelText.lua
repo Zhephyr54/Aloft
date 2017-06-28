@@ -78,7 +78,11 @@ function AloftLevelText:RegisterEvents()
 											self:UpdateAll()
 										end
 									  end)
-
+    
+    -- Si cette méthode est appelée avant OnInitialize
+    -- permet d'éviter que profile soit non initialisé
+    if (profile == nil) then AloftLevelText:OnInitialize() end
+    
 	if profile.enable then
 		if profile.overrideText then
 			if not self.textMethodData or not self.textMethodData.events or not self.textMethod then
