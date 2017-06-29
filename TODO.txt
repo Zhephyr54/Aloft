@@ -14,5 +14,8 @@
 - AloftNameText
     - revoir la gestion de l'ellipse sur les noms trop longs
 
+- AloftWaterfall
+    - les couleurs ne sont pas affichées dans la fenêtre (mais bien dans le colorpicker)
+
 - [MODULE]AloftCastWarning
     - la barre de cast ne s'affiche plus après un reload

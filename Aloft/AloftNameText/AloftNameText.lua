@@ -65,7 +65,11 @@ function AloftNameText:UpdateAll()
 end
 
 function AloftNameText:RegisterEvents()
-	self:UnregisterAllEvents()
+	-- Si cette méthode est appelée avant OnInitialize
+    -- permet d'éviter que profile soit non initialisé
+    if (profile == nil) then AloftNameText:OnInitialize() end
+    
+    self:UnregisterAllEvents()
 	self:RegisterEvent("Aloft:SetupFrame", "SetupFrame")
 
 	-- self:RegisterEvent("PLAYER_TARGET_CHANGED", "UpdateNameFromTarget")
@@ -196,7 +200,7 @@ function AloftNameText:SetupFrame(aloftData)
 	if aloftData then -- apparently we can get here with a nil nameplate
 		local layoutFrame = Aloft:AcquireLayoutFrame(aloftData)
 		local nameTextRegion = aloftData.nameTextRegion
-
+        
 		nameTextRegion:SetDrawLayer("OVERLAY")
 		self:PrepareText(nameTextRegion, profile)
 

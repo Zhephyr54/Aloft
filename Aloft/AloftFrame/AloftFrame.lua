@@ -179,6 +179,10 @@ end
 local dataRequiredList = { }
 function AloftFrame:RequiresData()
 	if not self.colorMethodData or not self.colorMethod then
+        -- Si cette méthode est appelée avant OnInitialize
+        -- permet d'éviter que profile soit non initialisé
+        if (profile == nil) then AloftFrame:OnInitialize() end
+
 		self.colorMethodData = Aloft:CreateTag(profile.colorFormat, true)
 		self.colorMethod = self.colorMethodData.method
 		-- ChatFrame7:AddMessage("AloftFrame:RequiresData(): establish color method")
