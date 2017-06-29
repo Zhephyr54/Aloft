@@ -1,6 +1,7 @@
 - Général
     - l'option d'affichage des nameplates des alliés et ennemis est enlevée après un reload
-
+    - revoir l'ordre de draw des nameplates selon la distance si possible
+    
 - AloftHealthBar
     - voir le problème de refresh de la barre de vie
     - revoir l'affichage de la barre de vie en ghost
@@ -12,8 +13,9 @@
     - quand ennemi niveau trop haut (crâne) : mauvais positionnement
 
 - AloftNameText
-    - revoir la gestion de l'ellipse sur les noms trop longs
-
+    - [OK sans débug SI l'alignement est CENTER] revoir la gestion de l'ellipse sur les noms trop longs
+        (si alignement=CENTER) peut-être corrigé via les options d'ui en ajoutant des offsets opposés à droite et à gauche du nom
+        
 - AloftWaterfall
     - les couleurs ne sont pas affichées dans la fenêtre (mais bien dans le colorpicker)
 
